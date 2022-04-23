@@ -1,5 +1,9 @@
 import * as THREE from 'https://unpkg.com/three@latest/build/three.module.js';
 
+const raycaster = new THREE.Raycaster();
+const pointer = new THREE.Vector2();
+let pointerOver;
+
 const dotColor = 0xffffff;
 const boundryColor = 0x404040
 const maxParticleCount = 1000;
@@ -111,6 +115,7 @@ function init() {
 
     window.addEventListener( 'resize', onWindowResize );
     window.addEventListener('wheel', onMouseScroll, false);
+    window.addEventListener('pointermove', onPointerMove);
 }
 
 function onMouseScroll(event) {
@@ -122,6 +127,11 @@ function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize( window.innerWidth, window.innerHeight );
+}
+
+function onPointerMove( event ) {
+	pointer.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+	pointer.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
 }
 
 function animate() {
@@ -206,6 +216,10 @@ function animate() {
 
     // Intro: camera zoom
     camera.setFocalLength(Math.min(FOV, FOV*currentScroll/4500));
+
+    // Assign the object the mouse pointer is over
+    raycaster.setFromCamera(pointer, camera);
+    pointerOver = raycaster.intersectObjects(scene.children)[0];
 
     renderer.render( scene, camera );
 }
