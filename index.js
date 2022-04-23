@@ -6,7 +6,6 @@ const maxParticleCount = 1000;
 const particleCount = 500;
 const minDistance = 150;
 const numberOfFaces = 4;
-const defaultScale = 800
 
 const lerpAlpha = 0.3;
 const minScroll = 0;
@@ -203,7 +202,6 @@ function animate() {
 
     // Camera rotation for intro
     camera.rotation.x = -Math.min(0, currentScroll*Math.PI/18000-Math.PI/4);
-    console.log(currentScroll);
 
     renderer.render( scene, camera );
 }
