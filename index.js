@@ -6,10 +6,11 @@ const maxParticleCount = 1000;
 const particleCount = 500;
 const minDistance = 150;
 const numberOfFaces = 4;
+const FOV = 25;
 
 const lerpAlpha = 0.3;
 const minScroll = 0;
-const maxScroll = 3600 * numberOfFaces;
+const maxScroll = 3600 * numberOfFaces + 900;
 let currentScroll = 0;
 let targetScroll = 0;
 let scale = 800;
@@ -200,8 +201,11 @@ function animate() {
     currentScroll = lerp(currentScroll, targetScroll, lerpAlpha);
     group.rotation.x = -currentScroll*Math.PI/7200 + Math.PI/8;
 
-    // Camera rotation for intro
-    camera.rotation.x = -Math.min(0, currentScroll*Math.PI/18000-Math.PI/4);
+    // Intro: camera rotation
+    camera.rotation.x = -Math.min(0, currentScroll*Math.PI/18000-Math.PI/4) - Math.PI/500; // added offset for camera rotation
+
+    // Intro: camera zoom
+    camera.setFocalLength(Math.min(FOV, FOV*currentScroll/4500));
 
     renderer.render( scene, camera );
 }
