@@ -20,7 +20,9 @@ let targetScroll = 0;
 let scale = 800;
 
 let group;
-let camera, scene, renderer;
+let camera, overlayCamera;
+let scene, overlay;
+let renderer;
 let positions, colors;
 let particles;
 let pointCloud;
@@ -38,13 +40,18 @@ particles.setDrawRange(0, particleCount);
 document.body.style.overflow = 'hidden';
 
 function init() {
+    const ratio = screenRatio();
 
-    camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 4000 );
+    camera = new THREE.PerspectiveCamera( 45, ratio, 1, 4000 );
     camera.position.z = 1550;
 
     scene = new THREE.Scene();
     group = new THREE.Group();
     scene.add( group );
+
+    // overlay setup
+    overlay = new THREE.Scene();
+    overlayCamera = new THREE.OrthographicCamera(-window.innerWidth/2, window.innerWidth/2, window.innerHeight/2, -window.innerHeight/2, 1, 10); // TODO this
 
     const helper = new THREE.BoxHelper( new THREE.Mesh( new THREE.BoxGeometry( scale, scale, scale ) ) );
     helper.material.color.setHex( boundryColor );
@@ -108,10 +115,11 @@ function init() {
     linesMesh = new THREE.LineSegments( geometry, material );
     group.add( linesMesh );
 
-    renderer = new THREE.WebGLRenderer( { antialias: true, canvas: canvas } );
+    renderer = new THREE.WebGLRenderer( { antialias: true, canvas: canvas, alpha: true } );
     renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize( window.innerWidth, window.innerHeight );
     renderer.outputEncoding = THREE.sRGBEncoding;
+    renderer.setClearColor(0x000000, 0);
 
     window.addEventListener( 'resize', onWindowResize );
     window.addEventListener('wheel', onMouseScroll, false);
@@ -124,7 +132,7 @@ function onMouseScroll(event) {
 }
 
 function onWindowResize() {
-    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.aspect = screenRatio();
     camera.updateProjectionMatrix();
     renderer.setSize( window.innerWidth, window.innerHeight );
 }
@@ -221,9 +229,20 @@ function animate() {
     raycaster.setFromCamera(pointer, camera);
     pointerOver = raycaster.intersectObjects(scene.children)[0];
 
+    // render background
+    renderer.autoClear = true;
     renderer.render( scene, camera );
+
+    // render overlay
+    renderer.autoClear = false;
+    renderer.render(overlay, overlayCamera);
 }
 
+function screenRatio() {
+    return window.innerWidth / window.innerHeight;
+}
+
+// Linear Interpolation to smooth scrolling
 function lerp(v0, v1, t) {
     return v0*(1-t)+v1*t
 }
