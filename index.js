@@ -8,9 +8,11 @@ const minDistance = 150;
 const numberOfFaces = 4;
 const defaultScale = 800
 
+const lerpAlpha = 0.3;
 const minScroll = 0;
 const maxScroll = 3600 * numberOfFaces;
-let scroll = 0;
+let currentScroll = 0;
+let targetScroll = 0;
 let scale = 800;
 
 let group;
@@ -112,7 +114,7 @@ function init() {
 }
 
 function onMouseScroll(event) {
-    scroll = Math.min(Math.max(minScroll, scroll+event.deltaY), maxScroll);
+    targetScroll = Math.min(Math.max(minScroll, targetScroll+event.deltaY), maxScroll);
     return false;
 }
 
@@ -196,10 +198,16 @@ function animate() {
     requestAnimationFrame(animate);
     
     // Aligns cube rotation 
-    group.rotation.x = -scroll*Math.PI/7200 + Math.PI/8;
+    currentScroll = lerp(currentScroll, targetScroll, lerpAlpha);
+    group.rotation.x = -currentScroll*Math.PI/7200 + Math.PI/8;
 
     // Camera rotation for intro
-    camera.rotation.x = -Math.min(0, scroll*Math.PI/18000-Math.PI/4);
+    camera.rotation.x = -Math.min(0, currentScroll*Math.PI/18000-Math.PI/4);
+    console.log(currentScroll);
 
     renderer.render( scene, camera );
+}
+
+function lerp(v0, v1, t) {
+    return v0*(1-t)+v1*t
 }
