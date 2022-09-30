@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:b|Lato">
+        <link rel="stylesheet" type="text/css" href="main.css"/>
+        <title>Home</title>
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/597/597874.png">
+    </head>
+    <body style="background-color:rgb(40, 40, 40);">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="logo" href="#hostname">Raymond Wong</a>
+            <a href="#whoami">About Me</a>
+            <a href="#history">Experience</a>
+            <a href="#hwinfo">Education</a>
+            <a href="#ps">Skills & Hobbies</a>
+            <a href="/r.html" target="_blank">Resume</a>
+            <a href="#ping">Contact Info</a>
+            <a id="bottom" href="mailto:raymondwong.exe@gmail.com">Send an Email</a>
+        </div>
+
+        <div id="parallax-effect">
+            <section>
+                <div class="parallax-container" style="background-image: 
+                url('http://pm1.narvii.com/6230/f9754d663e9ced69a09dda6f30dd60093cddd2ec_00.jpg');">
+                <h2>I have brought peace, freedom, justice, and security to my new empire.</h2>
+                </div>
+                <div class="parallax-container" style="background-image: 
+                url('https://images2.minutemediacdn.com/image/fetch/w_736,h_485,c_fill,g_auto,f_auto/https%3A%2F%2Fdorksideoftheforce.com%2Ffiles%2F2021%2F03%2FREVENGE-OF-THE-SITH-KENOBI003.jpg-850x544.jpg');">
+                <h2>Your new empire?</h2>
+                </div>
+                <div class="parallax-container" style="background-image: 
+                url('http://pm1.narvii.com/6230/f9754d663e9ced69a09dda6f30dd60093cddd2ec_00.jpg');">
+                <h2>Don't make me kill you.</h2>
+                </div>
+                <div class="parallax-container" style="background-image: 
+                url('https://images2.minutemediacdn.com/image/fetch/w_736,h_485,c_fill,g_auto,f_auto/https%3A%2F%2Fdorksideoftheforce.com%2Ffiles%2F2021%2F03%2FREVENGE-OF-THE-SITH-KENOBI003.jpg-850x544.jpg');">
+                <h2>Anakin, my allegiance is to the Republic, to Democracy!</h2>
+                </div>
+                <div class="parallax-container" style="background-image: 
+                url('http://pm1.narvii.com/6230/f9754d663e9ced69a09dda6f30dd60093cddd2ec_00.jpg');">
+                <h2>If you are not with me, then you are my enemy.</h2>
+                </div>
+                <div class="parallax-container" style="background-image: 
+                url('https://images2.minutemediacdn.com/image/fetch/w_736,h_485,c_fill,g_auto,f_auto/https%3A%2F%2Fdorksideoftheforce.com%2Ffiles%2F2021%2F03%2FREVENGE-OF-THE-SITH-KENOBI003.jpg-850x544.jpg');">
+                <h2>Only a Sith deals in absolutes. I will do what I must.</h2>
+                </div>
+                <div class="parallax-container" style="background-image: 
+                url('http://pm1.narvii.com/6230/f9754d663e9ced69a09dda6f30dd60093cddd2ec_00.jpg');">
+                <h2>You will try.</h2>
+                </div>
+                <div class="parallax-container" style="background-image: 
+                url('https://fictionhorizon.com/wp-content/uploads/2022/04/image-asset-1024x576.jpeg');">
+                </div>
+            </section>
+        </div>
+
+        <!-- <span onclick="openNav()">open</span> -->
+        <script>
+            const navbar = document.getElementById("mySidenav");
+
+            /* Set the width of the side navigation to 250px */
+            function openNav() {
+                navbar.style.width = "350px";
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+                navbar.style.width = "0px";
+            }
+
+            document.addEventListener('keydown', function(e) {
+                if (e.shiftKey) {
+                    if (navbar.style.width === "0px")
+                        openNav();
+                    else
+                        closeNav();
+                }
+            })
+        </script>
+    </body>
+</html>
+<!-- Made by yours truly 😉 ~Raymond -->
+<!-- https://github.com/Raymond-exe/raymond-exe.github.io/ -->
