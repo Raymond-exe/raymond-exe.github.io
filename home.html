@@ -4,8 +4,7 @@
         <meta charset="UTF=8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:b|Lato">
         <link rel="stylesheet" type="text/css" href="main.css"/>
         <title>Home</title>
         <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/597/597874.png">
@@ -13,33 +12,59 @@
     <body style="background-color:rgb(40, 40, 40);">
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About Me</a>
-            <a href="#">Experience</a>
-            <a href="#">Education</a>
-            <a href="#">Skills & Hobbies</a>
+            <a id="logo" href="#hostname">Raymond Wong</a>
+            <a href="#whoami">About Me</a>
+            <a href="#history">Experience</a>
+            <a href="#hwinfo">Education</a>
+            <a href="#ps">Skills & Hobbies</a>
             <a href="/r.html" target="_blank">Resume</a>
-            <a href="#">Contact</a>
+            <a href="#ping">Contact Info</a>
+            <a id="bottom" href="mailto:raymondwong.exe@gmail.com">Send an Email</a>
         </div>
-            
-        <!-- Use any element to open the sidenav -->
-        <span onclick="openNav()">open</span>
+
+        <div id="parallax-effect">
+            <section>
+                <div class="parallax-one">
+                <h2>SOUTHERN CALIFORNIA</h2>
+                </div>
+            </section>
+
+            <section>
+              <div class="parallax-two">
+                <h2>NEW YORK</h2>
+              </div>
+            </section>
+
+            <section>
+              <div class="parallax-three">
+                <h2>ENCHANTED FOREST</h2>
+              </div>
+            </section>
+
+            <section>
+                <div class="parallax-one">
+                <h2>SOUTHERN CALIFORNIA</h2>
+                </div>
+            </section>
+        </div>
+
+        <!-- <span onclick="openNav()">open</span> -->
         <script>
             const navbar = document.getElementById("mySidenav");
 
             /* Set the width of the side navigation to 250px */
             function openNav() {
-                navbar.style.width = "250px";
+                navbar.style.width = "350px";
             }
-            
+
             /* Set the width of the side navigation to 0 */
             function closeNav() {
                 navbar.style.width = "0px";
             }
 
-
             document.addEventListener('keydown', function(e) {
                 if (e.shiftKey) {
-                    if (navbar.style.width === "0px") 
+                    if (navbar.style.width === "0px")
                         openNav();
                     else
                         closeNav();
