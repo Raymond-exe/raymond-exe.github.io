@@ -1,0 +1,44 @@
+
+.fade-in-text {
+    font-family: Helvetica, sans-serif;
+    font-size: 100px;
+    animation: fadeIn 5s;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        scale: 0.9;
+    }
+    5% {
+        opacity: 0;
+        scale: 0.975;
+    }
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+@keyframes onHover {
+    0% { scale: 1; }
+    100% {
+        scale: 2;
+    }
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+}:hover {
+    color: rgb(59, 150, 255);
+}
+strong{
+    font-style: italic;
+    text-align: center;
+}:hover {
+    animation: onHover 1s;
+    animation-direction: alternate;
+}
