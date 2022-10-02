@@ -39,6 +39,20 @@
 
 /* Above code is for "Sorry" page */
 
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 80px;
+}
+
+h2 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 40px;
+}
+
 /* Thank GOD for w3schools */
 
 /* The side navigation menu */
@@ -111,12 +125,26 @@
     left: 0;
 } /* TODO this :( */
 
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
 
+.card-container div {
+    width: 100%;
+    padding: 5px;
+    padding-top: 5%;
+}
 
 /* PARALLAX EFFECT */
+
+#parallax-effect {
+    height: 100%;
+}
+
 #parallax-effect .parallax-container {
-    padding-top: 400px;
-    padding-bottom: 400px;
+    height: 100%;
+    padding-top: 5%;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -141,7 +169,6 @@
   #parallax-effect .block {padding: 30px; width:420px;}
   #parallax-effect h2 {font-size:30px;}
   #parallax-effect .block {padding: 30px;}
-  #parallax-effect .parallax-one, #parallax-effect .parallax-two, #parallax-effect .parallax-three {padding-top:100px; padding-bottom:100px;}
 }
 @media screen and (max-width: 479px) {
   #parallax-effect .block {padding: 30px 15px; width:290px;}
