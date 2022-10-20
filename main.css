@@ -65,7 +65,7 @@ h3 {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index: 10; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
     background-color: rgb(30, 30, 30); /* Background */
@@ -102,6 +102,28 @@ h3 {
 
 .sidenav .closebtn:hover {
     color: rgb(255, 75, 75);
+}
+
+.sidenavOpener {
+    display: block;
+    width: 32px;
+    padding: 10px 0;
+    margin: 0;
+    float: none;
+    cursor: pointer;
+
+    position: fixed;
+    top: "0px";
+    left: "0px";
+    z-index: 5;
+}
+
+.sidenavOpener div {
+    display: block;
+    height: 5px;
+    margin: 6px 0px 0px 0px;
+    background: #FFFFFF;
+    border-radius: 60px;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */

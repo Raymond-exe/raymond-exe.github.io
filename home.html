@@ -23,6 +23,10 @@
             <a id="bottom" href="mailto:raymondwong.exe@gmail.com">Send an Email</a>
         </div>
 
+        <div class="sidenavOpener" onclick="openNav()">
+            <div></div> <div></div> <div></div>
+        </div>
+
         <div id="parallax-effect">
             <section style="height:100%">
                 <div class="parallax-container" id="hostname" style="background-image:
@@ -66,12 +70,6 @@
                 url('/images/steven-universe.jpg'); padding-bottom:10%;">
                     <h2>Education</h2>
                     <div class="card-container">
-                        <div style="width:10%">hello</div>
-                        <div style="width:37.5%;">
-                            <img style="width:100%" src="/images/pictureframe.png">
-                            <h3>California Polytechnic State University, Pomona</h3>
-                        </div>
-                        <div style="width:10%">hello</div>
                     </div>
                 </div>
                 <div class="parallax-container" id="ps" style="background-image:
@@ -85,9 +83,6 @@
                 <div class="parallax-container" id="ping" style="background-image:
                 url('/images/S-T-A-Y.jpg');">
                     <h2>Contact Information</h2>
-                </div>
-                <div class="parallax-container" style="background-image:
-                url('https://fictionhorizon.com/wp-content/uploads/2022/04/image-asset-1024x576.jpeg');">
                 </div>
             </section>
         </div>
@@ -112,6 +107,15 @@
                         openNav();
                     else
                         closeNav();
+                }
+            });
+
+            document.addEventListener('mousedown', (event) => {
+                if (event.button === 0) {
+                    const element = document.elementFromPoint(event.x, event.y);
+                    if (element.id !== 'mySidenav') {
+                        navbar.style.width = "0px";
+                    }
                 }
             })
         </script>
