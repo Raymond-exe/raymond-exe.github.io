@@ -37,6 +37,19 @@
     color: rgb(59, 150, 255);
 }
 
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer p {
+    font-family: 'Lato', sans-serif;
+    color: rgb(240, 240, 240);
+}
+
 /* Above code is for "Sorry" page */
 
 html {
