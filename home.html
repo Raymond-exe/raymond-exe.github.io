@@ -6,122 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:b|Lato">
         <link rel="stylesheet" type="text/css" href="main.css"/>
-        <title>Home</title>
+        <title>𝙍𝙞𝙘𝙝𝙞𝙚 𝙍𝙖𝙮𝙢𝙤𝙣𝙙 𝙒𝙤𝙣𝙜</title>
         <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/597/597874.png">
     </head>
     <body style="background-color:black; height: 100%;">
-        <div id="mySidenav" class="sidenav" style="width: 0px">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a id="logo" href="#hostname">Raymond Wong</a>
-            <p></p> <!-- Spacer -->
-            <a href="#whoami">About Me</a>
-            <a href="#history">Experience</a>
-            <a href="#hwinfo">Education</a>
-            <a href="#ps">Skills & Hobbies</a>
-            <a href="/r.html" target="_blank">Resume</a>
-            <a href="#ping">Contact Info</a>
-            <a id="bottom" href="mailto:raymondwong.exe@gmail.com">Send an Email</a>
-        </div>
-
-        <div class="sidenavOpener" onclick="openNav()">
-            <div></div> <div></div> <div></div>
-        </div>
-
-        <div id="parallax-effect">
-            <section style="height:100%">
-                <div class="parallax-container" id="hostname" style="background-image:url('/images/nightwalker.jpeg');">
-                    <img src="/images/full_icon.png" style="width: 20%;">
-                    <h1>Raymond Wong</h1>
-                    <h2>Computer Engineering</h2>
-                </div>
-                <div class="parallax-container" id="whoami" style="background-image:url('/images//soarin.jpeg');">
-                    <h2>About Me</h2>
-                    <p>Raised in southern California, I've had an interest in working with computers since I started middle school. Motivated by my own curiosity and driven to create something new, I am a quick learner who enjoys working in a team as much as I enjoy working on my own.</p>
-                    <h2>What Drives Me?</h2>
-                </div>
-                <div class="parallax-container" id="history" style="background-image:url('/images/stairway.jpg');">
-                    <h2>Experience</h2>
-                    <div class="row">
-                        <div class="column">
-                            <div class="content">
-                                <img src="/images/academic-decommitment.jpeg" style="width:100%;">
-                                <h3>CPP UAV Laboratory</h3>
-                                <p>- Overseen by Cal Poly Pomona Dr. Subodh Bhandari and funded by Lockheed-Martin.</p>
-                                <p>- Designed an image recognition system utilizing a TensorFlow Lite machine learning model to classify images in real-time.</p>
-                                <!-- <p>- Worked in coordination with other subsystem teams to integrate the above image recognition system into our UAV.</p> -->
-                                <p>- The team's current goal is to have two competition-ready UAVs in time to compete in the AUVSI-SUAS competition in June 2023.</p>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="content">
-                                <img src="/images/academic-decommitment.jpeg" style="width:100%;">
-                                <h3>ImagineFun LLC</h3>
-                                <p>- Worked heavily with Java, Javascript, & Typescript.</p>
-                                <p>- Collaborated in a team of other developers to complete weekly “sprints” of tasks.</p>
-                                <p>- Currently the lead developer working on automated 3D model rendering & image compositing.</p>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="content">
-                                <img src="/images/academic-decommitment.jpeg" style="width:100%;">
-                                <h3>Galaxy Martial Arts</h3>
-                                <p>- Worked under the direction of Master J. Safa to help instruct, organize, and run classes.</p>
-                                <p>- Worked with students as young as 7 years to help develop listening skills & obedience.</p>
-                                <p>- Resigned in April of 2020 over concerns related to the then-growing coronavirus pandemic.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="parallax-container" id="hwinfo" style="background-image:url('/images/steven-universe.jpg'); padding-bottom:10%;">
-                    <h2>Education</h2>
-                    <div class="card-container">
-                    </div>
-                </div>
-                <div class="parallax-container" id="ps" style="background-image:url('/images/0-8-4.jpeg');">
-                    <h2>Skills & Hobbies</h2>
-                </div>
-                <div class="parallax-container" style="background-image:url('/images/hotel-california.jpg');">
-                    <h2>Resume</h2>
-                </div>
-                <div class="parallax-container" id="ping" style="background-image:url('/images/S-T-A-Y.jpg');">
-                    <h2>Contact Information</h2>
-                </div>
-            </section>
-        </div>
-
-        <!-- <span onclick="openNav()">open</span> -->
-        <script>
-            const navbar = document.getElementById("mySidenav");
-
-            /* Set the width of the side navigation to 250px */
-            function openNav() {
-                navbar.style.width = "350px";
-            }
-
-            /* Set the width of the side navigation to 0 */
-            function closeNav() {
-                navbar.style.width = "0px";
-            }
-
-            document.addEventListener('keydown', function(e) {
-                if (e.shiftKey) {
-                    if (navbar.style.width === "0px")
-                        openNav();
-                    else
-                        closeNav();
-                }
-            });
-
-            document.addEventListener('mousedown', (event) => {
-                if (event.button === 0) {
-                    const element = document.elementFromPoint(event.x, event.y);
-                    if (element.id !== 'mySidenav') {
-                        navbar.style.width = "0px";
-                    }
-                }
-            })
-        </script>
     </body>
 </html>
+
 <!-- Made by yours truly 😉 ~Raymond -->
 <!-- https://github.com/Raymond-exe/raymond-exe.github.io/ -->
