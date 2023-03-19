@@ -54,8 +54,20 @@ footer p {
 
 /* Above code is for "Sorry" page */
 
+#cover-image {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -5;
+    width: 180vh;
+    height: 100vh;
+    opacity: 0.7;
+}
+
 html {
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 h1 {
@@ -71,4 +83,47 @@ h2 {
 h3 {
     font-family: 'Lato', sans-serif;
     font-size: 30px;
+}
+
+#container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    color: white;
+    font-size: 2.25rem;
+    margin-top: auto;
+    transition: height 0.4s, width 0.4s;
+    -webkit-transition: height 0.4s, width 0.4s;
+}
+
+.box:hover {
+    height: 40%;
+    width: 150%;
+}
+
+.thumbnail {
+    position: absolute;
+    z-index: -0.9;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 75vh;
+    height: 40vh;
+    opacity: 0.5;
+    transition: .4s ease;
+}
+
+.box:hover .thumbnail {
+    opacity: 0.8;
 }
