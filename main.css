@@ -67,12 +67,8 @@ footer p {
 }
 
 @keyframes cover-fadeIn {
-    0% {
-        opacity: 0.0;
-    }
-    100% {
-        opacity: 0.7;
-    }
+    0% { opacity: 0.0; }
+    100% { opacity: 0.7; }
 }
 
 body {
@@ -118,6 +114,22 @@ h3 {
     margin-top: auto;
     transition: height 0.4s, width 0.4s;
     -webkit-transition: height 0.4s, width 0.4s;
+    animation: box-reveal 4s;
+}
+
+@keyframes box-reveal {
+    0% {
+        opacity: 0.0001;
+        height: 5%;
+    }
+    50% {
+        opacity: 0.0001;
+        height: 10%
+    }
+    100% {
+        opacity: 1;
+        height: 20%;
+    }
 }
 
 .box:hover {
