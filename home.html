@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:b|Lato">
         <link rel="stylesheet" type="text/css" href="main.css"/>
+        <script src="./home.js"></script>
         <title>𝙍𝙞𝙘𝙝𝙞𝙚 𝙍𝙖𝙮𝙢𝙤𝙣𝙙 𝙒𝙤𝙣𝙜</title>
         <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/597/597874.png">
     </head>
@@ -21,12 +22,12 @@
                 <img src="./images/hotel-california.jpg" class="thumbnail">
                 <p class="box-title">About me</p>
                 <div class="box-content">Hello world! This is some placeholder text that will eventually be replaced (at least, I hope so).</div>
-                <button class="box-link"><i>Click to Expand</i></button>
-                <!-- TODO logic for buttons -->
+                <button class="box-link" onclick="expandAboutMe()"><i>Click to Expand</i></button>
             </div>
             <div class="box" style="background-color: #57A773;">
                 <img src="./images/steven-universe.jpg" class="thumbnail">
                 <p class="box-title">Experience</p>
+                <button class="box-link" onclick="expandExperience()"><i>Click to Expand</i></button>
             </div>
             <div class="box" style="background-color: #8a867b;">
                 <img src="./images/stairway.jpg" class="thumbnail">
@@ -36,11 +37,13 @@
             </div>
             <div class="box" style="background-color: #E2970B;">
                 <img src="./images/0-8-4.jpeg" class="thumbnail">
-                <p class="box-title">Projects + Hobbies</p>
+                <p class="box-title">Projects</p>
+                <button class="box-link" onclick="expandProjects()"><i>Click to Expand</i></button>
             </div>
             <div class="box" style="background-color: #08B2E3;">
                 <img src="./images/soarin.jpeg" class="thumbnail">
-                <p class="box-title">Contact me</p>
+                <p class="box-title">Hobbies</p>
+                <button class="box-link" onclick="expandHobbies()"><i>Click to Expand</i></button>
             </div>
         </div>
     </body>

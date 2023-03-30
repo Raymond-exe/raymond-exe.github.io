@@ -189,6 +189,7 @@ h3 {
     transform: translateX(-50%);
     left: 50%;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .box-link:hover {
@@ -206,7 +207,7 @@ h3 {
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     width: 75vh;
-    height: 40vh;
+    height: 40.1vh;
     opacity: 0.5;
     transition: .4s ease;
 }
