@@ -208,8 +208,8 @@ h3 {
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
-    width: 75vh;
     height: 40.1vh;
+    width: auto;
     opacity: 0.5;
     transition: .4s ease;
 }
