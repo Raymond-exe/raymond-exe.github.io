@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="height:100%;">
+<html lang="en">
     <head>
         <meta charset="UTF=8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +11,12 @@
         <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/597/597874.png">
     </head>
     <body>
+        <div id="tint"></div>
         <div id="overlay">
-            <!-- WIP: Pop-ups for each sub-section -->
+            <div id="aboutme" class="popup"></div>
+            <div id="experience" class="popup"></div>
+            <div id="projects" class="popup"></div>
+            <div id="hobbies" class="popup"></div>
         </div>
         <div id="nav-bar">
             <div class="bg"></div>
@@ -32,12 +36,12 @@
                 <img src="./images/hotel-california.jpg" class="thumbnail">
                 <p class="box-title">About me</p>
                 <div class="box-content">Hello world! This is some placeholder text that will eventually be replaced (at least, I hope so).</div>
-                <button class="box-link" onclick="expandAboutMe()"><i>Click to Expand</i></button>
+                <button class="box-link" onclick="expandSection('aboutme')"><i>Click to Expand</i></button>
             </div>
             <div class="box" style="background-color: #57A773;">
                 <img src="./images/building-9.jpg" class="thumbnail">
                 <p class="box-title">Experience</p>
-                <button class="box-link" onclick="expandExperience()"><i>Click to Expand</i></button>
+                <button class="box-link" onclick="expandSection('experience')"><i>Click to Expand</i></button>
             </div>
             <div class="box" style="background-color: #8a867b;">
                 <img src="./images/stairway.jpg" class="thumbnail">
@@ -48,12 +52,12 @@
             <div class="box" style="background-color: #E2970B;">
                 <img src="./images/0-8-4.jpeg" class="thumbnail">
                 <p class="box-title">Projects</p>
-                <button class="box-link" onclick="expandProjects()"><i>Click to Expand</i></button>
+                <button class="box-link" onclick="expandSection('projects')"><i>Click to Expand</i></button>
             </div>
             <div class="box" style="background-color: #08B2E3;">
                 <img src="./images/soarin.jpeg" class="thumbnail">
                 <p class="box-title">Hobbies</p>
-                <button class="box-link" onclick="expandHobbies()"><i>Click to Expand</i></button>
+                <button class="box-link" onclick="expandSection('hobbies')"><i>Click to Expand</i></button>
             </div>
         </div>
     </body>

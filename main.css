@@ -25,9 +25,7 @@
 }
 @keyframes onHover {
     0% { scale: 1; }
-    100% {
-        scale: 2;
-    }
+    100% { scale: 2; }
 }
 .inlineLink {
     color: white;
@@ -219,16 +217,17 @@ h3 {
 }
 
 .cover-icon {
-    z-index: 20;
+    z-index: 5;
     width: 20vh;
     height: 20vh;
-    top: 10%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%)
 }
 
 #nav-bar {
     position: fixed;
+    overflow: hidden;
     top: 0;
     left: 0;
     right: 0;
@@ -259,4 +258,48 @@ h3 {
     color: white;
     font-size: 150%;
     letter-spacing: 0.1em;
+
+    background: rgba(255, 255, 255, 0)
+}
+
+#nav-bar .contact-info:hover {
+    background: rgba(255, 255, 255, 0.10)
+}
+
+#overlay {
+    position: fixed;
+    z-index: -10;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#tint {
+    position: fixed;
+    z-index: 5;
+    top: 0; left: 0; bottom: 0; right: 0;
+    pointer-events: none;
+    transition: all 0.5 ease;
+    color: rgba(0, 0, 0, 0);
+}
+
+#overlay:hover #tint {
+    /* TODO */
+}
+
+.popup {
+    position: fixed;
+    z-index: inherit;
+    top: 50%;
+    bottom: 10%;
+    right: 10%;
+    transform: translateY(-50%);
+    height: 0%;
+    width: 80%;
+
+    background-color: white;
+    overflow: hidden;
+    transition: all 0.75s ease-in-out;
+}
+
+.popup.expanded {
+    height: 80%;
 }
