@@ -5,24 +5,17 @@ async function expandSection(sectionId) {
     if (!element.classList.contains("expanded"))
         element.classList.add("expanded");
 
-    document.getElementById("overlay").style.zIndex = 10;
+    document.getElementById("overlay").style.pointerEvents = 'all';
     document.getElementById("tint").classList.add("shaded");
 }
+
 async function hideSection(sectionId) {
     const element = document.getElementById(sectionId);
     while (element.classList.contains("expanded"))
         element.classList.remove("expanded");
 
-    document.getElementById("overlay").style.zIndex = -10;
+    document.getElementById("overlay").style.pointerEvents = 'none';
     document.getElementById("tint").classList.remove("shaded");
-}
-
-async function screenTint(darken = true) {
-    const element = document.getElementById("tint");
-
-    document.getElementById("overlay").style.zIndex = darken ? 10 : -10;
-
-    // TODO
 }
 
 function lerp (a, b, alpha){

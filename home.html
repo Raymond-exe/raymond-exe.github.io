@@ -11,16 +11,24 @@
         <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/597/597874.png">
     </head>
     <body>
-        <div id="tint"></div>
         <div id="overlay">
-            <div id="aboutme" class="popup"></div>
-            <div id="experience" class="popup"></div>
-            <div id="projects" class="popup"></div>
-            <div id="hobbies" class="popup"></div>
+            <div id="aboutme" class="popup">
+                <button class="exit" onclick="hideSection('aboutme')">×</button>
+            </div>
+            <div id="experience" class="popup">
+                <button class="exit" onclick="hideSection('experience')">×</button>
+            </div>
+            <div id="projects" class="popup">
+                <button class="exit" onclick="hideSection('projects')">×</button>
+            </div>
+            <div id="hobbies" class="popup">
+                <button class="exit" onclick="hideSection('hobbies')">×</button>
+            </div>
+            <div id="tint"></div>
         </div>
         <div id="nav-bar">
             <div class="bg"></div>
-            <img src="./images/full_icon.png" style="height:50%;">
+            <img src="./images/full_icon.png" style="position:absolute; height:50%; transform:translate(50%,50%);">
             <div class="contact-info">
                 <p>CONTACT INFO</p>
             </div>
