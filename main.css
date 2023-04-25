@@ -92,6 +92,10 @@ h3 {
     font-size: 30px;
 }
 
+img {
+    pointer-events: none;
+}
+
 #box-container {
     position: fixed;
     left: 0;
@@ -235,6 +239,7 @@ h3 {
     height: 10vh;
     z-index: 2;
     animation: nav-bar-reveal 4s;
+    text-align: right;
 }
 
 @keyframes nav-bar-reveal {
@@ -262,24 +267,65 @@ h3 {
     z-index: -1;
 }
 
-#nav-bar .contact-info {
+#nav-bar .contact-btn {
     position: absolute;
     top: 50%;
     right: 0;
     padding: 1em;
     transform: translateY(-50%);
-    text-align: right;
-    width: auto;
+    width: fit-content;
     font-family: 'Lato', sans-serif;
     color: white;
     font-size: 150%;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
+    cursor: pointer;
 
-    background: rgba(255, 255, 255, 0)
+    background: rgba(255, 255, 255, 0);
+    transition: all 0.25s;
+}
+
+#nav-bar .contact-btn:hover {
+    background: rgba(255, 255, 255, 0.10);
+    transition: all 0.1s;
+}
+
+#nav-bar .contact-btn:active {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+#nav-bar .contact-info {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    padding: 0;
+    transform: translateY(-50%);
+    text-align: right;
+    overflow: hidden;
+    width: 0;
+    height: 10vh;
+    background: rgba(255, 255, 255, 0.1);
+
+    transition: all 0.25s;
 }
 
 #nav-bar .contact-info:hover {
-    background: rgba(255, 255, 255, 0.10)
+    width: 10vh;
+    padding: 1vh;
+}
+
+#nav-bar .social-media {
+    position: absolute;
+    width: 5vh;
+    height: 5vh;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.75;
+    transition: all 0.2s;
+    padding: 2vh;
+}
+
+#nav-bar .social-media:hover {
+    opacity: 1;
 }
 
 #overlay {
