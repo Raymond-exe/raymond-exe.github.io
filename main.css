@@ -267,50 +267,38 @@ img {
     z-index: -1;
 }
 
-#nav-bar .contact-btn {
+#contact-btn {
     position: absolute;
     top: 50%;
     right: 0;
-    padding: 1em;
+    padding: 0.5em;
     transform: translateY(-50%);
     width: fit-content;
     font-family: 'Lato', sans-serif;
     color: white;
     font-size: 150%;
     letter-spacing: 0.15em;
-    cursor: pointer;
+    cursor: default;
 
     background: rgba(255, 255, 255, 0);
-    transition: all 0.25s;
+    transition: all 0.5s;
 }
 
-#nav-bar .contact-btn:hover {
+#contact-btn:hover {
     background: rgba(255, 255, 255, 0.10);
-    transition: all 0.1s;
+    right: 30vh;
 }
 
-#nav-bar .contact-btn:active {
-    background: rgba(255, 255, 255, 0.25);
-}
-
-#nav-bar .contact-info {
+#contact-info {
     position: absolute;
     top: 50%;
-    right: 0;
+    left: 100%;
     padding: 0;
     transform: translateY(-50%);
     text-align: right;
-    overflow: hidden;
-    width: 0;
+    width: 30vh;
     height: 10vh;
     background: rgba(255, 255, 255, 0.1);
-
-    transition: all 0.25s;
-}
-
-#nav-bar .contact-info:hover {
-    width: 10vh;
-    padding: 1vh;
 }
 
 #nav-bar .social-media {
@@ -320,7 +308,7 @@ img {
     top: 50%;
     transform: translate(-50%, -50%);
     opacity: 0.75;
-    transition: all 0.2s;
+    transition: all 0.25s;
     padding: 2vh;
 }
 
