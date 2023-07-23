@@ -16,7 +16,7 @@
                 <button class="exit" onclick="hideSection('aboutme')">×</button>
                 <div class="content">
                     <h2>About Me!</h2>
-                    <div class="subsection-content-container">
+                    <div class="dropdown-container">
                         <p class="category-content">Hello! My name is Richie, although I typically go by Raymond. I've been studying Computer Engineering at the California Polytechnic State University, Pomona since 2020.</p>
                     </div>
                 </div>
@@ -25,11 +25,18 @@
                 <button class="exit" onclick="hideSection('experience')">×</button>
                 <div class="content">
                     <h2>Professional Experience</h2>
-                    <div class="section-content-container">
+                    <div class="dropdown-container">
+                        <!-- CPP -->
+                        <button class="subsection-button" title="Click to expand" onclick="toggleSection('exp-cpp', true)">California State Polytechnic University, Pomona</i></button>
+                        <div class="subsection" id="exp-cpp">
+                            Aw yeah CPP.
+                        </div> <!-- TODO: make the "relevant skills" a nicer format -->
+                        <!-- IF -->
                         <button class="subsection-button" title="Click to expand" onclick="toggleSection('exp-imaginefun', true)">ImagineFun - <i>Photopass Development Lead</i></button>
                         <div class="subsection" id="exp-imaginefun">
                             As part of the development team for the <a href="http://imaginefun.net">ImagineFun</a> server project, my primary responsibility was designing, implementing, and maintaining the server-side automated 3D rendering pipeline, dubbed <i>Photopass</i>. If you're interested, an early Java-based version of <i>Photopass</i> is available <a href="TODO: URL">here</a>. Beyond <i>Photopass</i>, I worked in a small development team to complete a number of tasks each week, ranging from small bug fixes to larger feature releases for the server. Relevant skills: Java, JavaScript, TypeScript, and Node.js.
-                        </div> <!-- TODO: make the "relevant skills" a nicer format -->
+                        </div>
+                        <!-- JPL -->
                         <button class="subsection-button" title="Click to expand" onclick="toggleSection('exp-jpl', true)">Jet Propulsion Laboratory - <i>Summer Intern</i></button>
                         <div class="subsection" id="exp-jpl">
                             The role of my Summer 2023 internship at NASA's Jet Propulsion Laboratory was the <b>development of systems functionality modeling software</b> for use by systems engineers in the process of designing spacecraft and robotics at JPL.
@@ -41,12 +48,29 @@
                 <button class="exit" onclick="hideSection('projects')">×</button>
                 <div class="content">
                     <h2>My Projects</h2>
+                    <div class="projects-container">
+                        <div class="project-card">
+                            Project 1
+                        </div>
+                        <div class="project-card">
+                            Project 2
+                        </div>
+                        <div class="project-card">
+                            Project 3
+                        </div>
+                        <div class="project-card">
+                            Project 4
+                        </div>
+                        <div class="project-card">
+                            Project 5
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="hobbies" class="popup">
                 <button class="exit" onclick="hideSection('hobbies')">×</button>
                 <div class="content">
-                    <h2>My Hobbies</h2>
+                    <h2>My Hobbies & Extracurriculars</h2>
                 </div>
             </div>
             <div id="tint"></div>

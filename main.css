@@ -344,13 +344,14 @@ img {
     bottom: 10%;
     right: 10%;
     transform: translateY(-50%);
-    height: 0%;
+    height: 30%;
     width: 80%;
     border-radius: 1vw;
 
     background-color: rgba(0, 0, 0, .45);
     /* backdrop-filter: blur(0.6vw); */ /* TODO fix for low-spec devices */
     overflow: hidden;
+    opacity: 0;
     transition: all 0.5s ease-in-out;
 }
 
@@ -391,9 +392,10 @@ img {
 
 .popup.expanded {
     height: 80%;
+    opacity: 1;
 }
 
-.section-content-container {
+.dropdown-container {
     position: absolute;
     top: 15%;
     left: 5%;
@@ -401,6 +403,12 @@ img {
     bottom: 5%;
     overflow: auto;
 }
+
+.dropdown-container > * {
+    margin: 0.5% 0;
+    color-scheme: dark;
+}
+
 
 /* Areas within sections shown/hidden using button */
 .subsection {
@@ -434,9 +442,39 @@ img {
 
 .subsection-button:hover {
     background-color: rgba(0, 0, 0, 0.55);
-    transition: all 0.25s;
 }
 
-.section-content-container > * {
-    margin: 0.5% 0;
+.projects-container {
+    position: absolute;
+    display: grid;
+    gap: 2em; /* TODO find a good value for this */
+    grid-auto-flow: column;
+    grid-auto-columns: 25%;
+
+    top: 15%;
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+
+    scroll-snap-type: inline mandatory;
+}
+
+.project-card {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    transition: all 0.25s;
+    border-radius: 1em;
+
+    scroll-snap-align: start;
+    /* scroll-padding-inline: 1em; */
+}
+
+.project-card:hover {
+    background-color: rgba(0, 0, 0, 0.55);
 }
