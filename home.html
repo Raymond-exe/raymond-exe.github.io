@@ -16,8 +16,9 @@
                 <button class="exit" onclick="hideSection('aboutme')">×</button>
                 <div class="content">
                     <h2>About Me!</h2>
-                    <div class="dropdown-container">
-                        <p class="category-content">Hello! My name is Richie, although I typically go by Raymond. I've been studying Computer Engineering at the California Polytechnic State University, Pomona since 2020.</p>
+                    <div class="dropdown-container" class="display:flexbox;">
+                        <p style="display:inline; width:50vw; float:left;">Hello! My name is Richie, although I typically go by Raymond. I've been studying Computer Engineering at the California Polytechnic State University, Pomona since 2020.</p>
+                        <img src="./images/portrait.jpg" style="width:20vw; display:inline; float:right;">
                     </div>
                 </div>
             </div>
@@ -73,22 +74,24 @@
                     <h2>My Hobbies & Extracurriculars</h2>
                     <div class="hobbies-container">
                         <div>
-                            Hobby 1
+                            3D Printing
                         </div>
                         <div>
-                            Hobby 2
+                            <!-- TODO change -->
+                            Electronics
                         </div>
                         <div>
-                            Hobby 3
+                            Photography
                         </div>
                         <div>
-                            Hobby 4
+                            <!-- TODO change -->
+                            Software
                         </div>
                         <div>
-                            Hobby 5
+                            LEGO Mini-Set Design
                         </div>
                         <div>
-                            Hobby 6
+                            Computer Games
                         </div>
                     </div>
                 </div>
@@ -123,12 +126,13 @@
             <div class="box" style="background-color: #ED474A;">
                 <img src="./images/hotel-california.jpg" class="thumbnail">
                 <p class="box-title">About me</p>
-                <div class="box-content">Hello world! This is some placeholder text that will eventually be replaced (at least, I hope so).</div>
+                <div class="box-content">Graduating from <b>Cal Poly Pomona</b> in <b>2025</b>, I'm a quick learner who enjoys working in a team as much as I enjoy working alone.</div>
                 <button class="box-link" onclick="expandSection('aboutme')"><i>Click to Expand</i></button>
             </div>
             <div class="box" style="background-color: #57A773;">
                 <img src="./images/building-9.jpg" class="thumbnail">
                 <p class="box-title">Experience</p>
+                <div class="box-content">From Minecraft to NASA <...></div>
                 <button class="box-link" onclick="expandSection('experience')"><i>Click to Expand</i></button>
             </div>
             <div class="box" style="background-color: #8a867b;">
@@ -140,11 +144,13 @@
             <div class="box" style="background-color: #E2970B;">
                 <img src="./images/0-8-4.jpeg" class="thumbnail">
                 <p class="box-title">Projects</p>
+                <div class="box-content">The stars are calling and we must go.</div>
                 <button class="box-link" onclick="expandSection('projects')"><i>Click to Expand</i></button>
             </div>
             <div class="box" style="background-color: #08B2E3;">
                 <img src="./images/soarin.jpeg" class="thumbnail">
                 <p class="box-title">Hobbies</p>
+                <div class="box-content">Learn more about what I spend my freetime doing.</div>
                 <button class="box-link" onclick="expandSection('hobbies')"><i>Click to Expand</i></button>
             </div>
         </div>
