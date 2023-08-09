@@ -163,12 +163,11 @@ img {
     position: absolute;
     width: 20vw;
     height: 50%;
-    top: 55%;
     left: 50%;
     font-size: 2vmin;
-    transform: translateX(-50%) translateY(-50%) scale(0.5);
+    transform: translateX(-50%) translateY(75%) scale(0.5);
     text-align: center;
-    text-shadow: 0px 0px 25px black;
+    text-shadow: 1px 1px 8px black;
     z-index: 1;
     opacity: 0;
     transition: all 0.6s;
@@ -176,7 +175,7 @@ img {
 
 .box:hover .box-content {
     display: block;
-    transform: translateX(-50%) translateY(-50%) scale(1);
+    transform: translateX(-50%) translateY(75%) scale(1);
     opacity: 1;
 }
 
@@ -338,7 +337,7 @@ img {
     color: rgba(0, 0, 0, 1);
 }
 
-.popup {
+#overlay > div {
     position: fixed;
     z-index: inherit;
     top: 50%;
@@ -356,12 +355,12 @@ img {
     transition: all 0.5s ease-in-out;
 }
 
-.popup .content {
+#overlay > div .content {
     color: rgb(240, 240, 240);
     padding: 5%;
 }
 
-.popup .exit {
+#overlay > div .exit {
     top: 1vw;
     right: 1vw;
     width: 4vw;
@@ -383,7 +382,7 @@ img {
     font-size: 4vw;
 }
 
-.popup .exit:hover {
+#overlay > div .exit:hover {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -391,7 +390,7 @@ img {
     color: red;
 }
 
-.popup.expanded {
+#overlay > div.expanded {
     height: 80%;
     opacity: 1;
 }
@@ -466,7 +465,7 @@ img {
     scroll-snap-type: inline mandatory;
 }
 
-.project-card {
+.projects-container > div {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.35);
     transition: all 0.25s;
@@ -476,7 +475,7 @@ img {
     /* scroll-padding-inline: 1em; */
 }
 
-.project-card:hover {
+.projects-container > div:hover {
     background-color: rgba(0, 0, 0, 0.55);
 }
 
