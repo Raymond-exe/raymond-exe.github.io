@@ -10,7 +10,7 @@
         <title>𝙍𝙞𝙘𝙝𝙞𝙚 𝙍𝙖𝙮𝙢𝙤𝙣𝙙 𝙒𝙤𝙣𝙜</title>
         <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/597/597874.png">
     </head>
-    <body>
+    <body onload="checkUrl();">
         <div id="overlay">
             <div id="aboutme">
                 <button class="exit" onclick="hideSection('aboutme')">×</button>
@@ -124,13 +124,13 @@
                 <img src="./images/hotel-california.jpg" class="thumbnail">
                 <p class="box-title">About me</p>
                 <div class="box-content">Graduating from <b>Cal Poly Pomona</b> in <b>2025</b>, I'm a quick learner who enjoys working in a team as much as I enjoy working alone.</div>
-                <button class="box-link" onclick="expandSection('aboutme')"><i>Click to Expand</i></button>
+                <a class="box-link" href="#aboutme"><i>Click to Expand</i></a>
             </div>
             <div class="box" style="background-color: #57A773;">
                 <img src="./images/building-9.jpg" class="thumbnail">
                 <p class="box-title">Experience</p>
                 <div class="box-content">From Minecraft to NASA, I've got a software-centric history or writing<br>both <b>front-end and back-end code</b><br>for a variety of applications.</div>
-                <button class="box-link" onclick="expandSection('experience')"><i>Click to Expand</i></button>
+                <a class="box-link" href="#experience"><i>Click to Expand</i></a>
             </div>
             <div class="box" style="background-color: #8a867b;">
                 <img src="./images/stairway.jpg" class="thumbnail">
@@ -142,13 +142,13 @@
                 <img src="./images/0-8-4.jpeg" class="thumbnail">
                 <p class="box-title">Projects</p>
                 <div class="box-content">Personal projects designed to<br><b>challenge myself</b>, push my talents,<br>and explore what I can create from <b>combining different skills</b>.</div>
-                <button class="box-link" onclick="expandSection('projects')"><i>Click to Expand</i></button>
+                <a class="box-link" href="#projects"><i>Click to Expand</i></a>
             </div>
             <div class="box" style="background-color: #08B2E3;">
                 <img src="./images/soarin.jpeg" class="thumbnail">
                 <p class="box-title">Hobbies</p>
                 <div class="box-content">Talents which complement or are unrelated to my career plans.</div>
-                <button class="box-link" onclick="expandSection('hobbies')"><i>Click to Expand</i></button>
+                <a class="box-link" href="#hobbies"><i>Click to Expand</i></a>
             </div>
         </div>
     </body>
