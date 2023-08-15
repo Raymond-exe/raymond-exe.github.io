@@ -123,15 +123,15 @@ img {
 @keyframes box-reveal {
     0% {
         opacity: 0.0001;
-        height: 5%;
+        transform: translateY(100%);
     }
     50% {
         opacity: 0.0001;
-        height: 10%
+        transform: translateY(60%);
     }
     100% {
         opacity: 1;
-        height: 20%;
+        transform: translateY(0%);
     }
 }
 
@@ -211,7 +211,7 @@ img {
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
-    height: 40.1vh;
+    height: 100%;
     width: auto;
     opacity: 0.5;
     transition: .4s ease;
@@ -453,6 +453,7 @@ img {
     grid-auto-columns: 25%;
 
     flex-grow: 1;
+    min-height: 50%;
 
     padding-top: 2%;
     padding-bottom: 2%;
@@ -471,6 +472,14 @@ img {
 
     scroll-snap-align: start;
     /* scroll-padding-inline: 1em; */
+}
+
+.projects-container > div > img {
+    /* TODO semi-transparent image */
+}
+
+.projects-container > div > p {
+    /* TODO description */
 }
 
 .projects-container > div:hover {
