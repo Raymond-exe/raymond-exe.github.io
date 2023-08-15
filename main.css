@@ -344,6 +344,7 @@ img {
     bottom: 10%;
     right: 10%;
     transform: translateY(-50%);
+    display: flex;
     height: 0%;
     width: 80%;
     border-radius: 1vw;
@@ -445,19 +446,16 @@ img {
 }
 
 .projects-container {
-    position: absolute;
+    position: relative;
     display: grid;
-    gap: 2em; /* TODO find a good value for this */
+    gap: 2em;
     grid-auto-flow: column;
     grid-auto-columns: 25%;
 
-    top: 15%;
-    left: 5%;
-    right: 5%;
-    bottom: 5%;
+    flex-grow: 1;
 
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 
     overflow-x: auto;
     overscroll-behavior-inline: contain;
