@@ -40,7 +40,7 @@ async function hideSection(sectionId, isSubsection = false) {
     // removes the id from the URL
     const url = window.location.href;
     if (url.includes('#')) {
-        console.log(url.substring(url.lastIndexOf('/'), url.lastIndexOf('#') ));
+        // console.log(url.substring(url.lastIndexOf('/'), url.lastIndexOf('#') ));
         window.history.pushState("", "", url.substring(url.lastIndexOf('/'), url.lastIndexOf('#')));
     }
 }
