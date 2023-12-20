@@ -17,7 +17,18 @@
                 <div class="content">
                     <h2>About Me</h2>
                     <div class="dropdown-container" class="display:flexbox;">
-                        <p style="display:inline; width:50vw; float:left;">Hello! My name is Richie, although I typically go by Raymond. I've been studying Computer Engineering at the California Polytechnic State University, Pomona since 2020.</p>
+                        <p style="display:inline; width:50vw; float:left;">
+                            Hello! My name is Richie, although I typically go by Raymond. I'm a 4th year Computer Engineering undergraduate looking forward to seeing what I can do with FPGAs.
+                            <br><br>
+                            I've been studying Computer Engineering at the Cal Poly Pomona since 2021, when I changed majors from Computer Science. TODO: more info about CPP here.
+                            <br><br>
+                            TODO: Skills & expertise. // If you're still interested in my skills, feel free to look through my <a href="#projects" onclick="hideSection('aboutme')">projects</a> and <a href="#experience" onclick="hideSection('aboutme')">experience</a> sections for more information.
+                            <br><br>
+                            TODO: Unique Selling Proposition - Highlight any unique skills, experiences, or perspectives.
+                            <br><br>
+                            TODO: Passion and Motivation: Share your passion for your work and what motivates you professionally.
+                            <br><br>
+                            TODO: Future goals & call to action - Briefly mention your future career goals and aspirations. Add an invitation to connect, inquire about opportunities, or learn more about your work.</p>
                         <img src="./images/portrait.jpg" style="width:20vw; display:inline; float:right;">
                     </div>
                 </div>
@@ -35,7 +46,7 @@
                         <!-- IF -->
                         <button class="subsection-button" title="Click to expand" onclick="toggleSection('exp-imaginefun', true)">ImagineFun - <i>Photopass Development Lead</i></button>
                         <div class="subsection" id="exp-imaginefun">
-                            As part of the development team for the <a href="http://imaginefun.net">ImagineFun</a> server project, my primary responsibility was designing, implementing, and maintaining the server-side automated 3D rendering pipeline, dubbed <i>Photopass</i>. If you're interested, an early Java-based version of <i>Photopass</i> is available <a href="TODO: URL">here</a>. Beyond <i>Photopass</i>, I worked in a small development team to complete a number of tasks each week, ranging from small bug fixes to larger feature releases for the server. Relevant skills: Java, JavaScript, TypeScript, and Node.js.
+                            I was brought onto <a href="http://imaginefun.net">ImagineFun</a>'s development team to implement our server-side automated 3D rendering pipeline, dubbed <i>Photopass</i>. If you're interested, an early Java-based version of <i>Photopass</i> is available <a href="https://github.com/Raymond-exe/MC-Player-Renderer">here</a>. Since then I've moved onto maintaining our existing ride systems and developing new rides to be released. Relevant skills: Java, JavaScript, TypeScript, and Node.js.
                         </div>
                         <!-- JPL -->
                         <button class="subsection-button" title="Click to expand" onclick="toggleSection('exp-jpl', true)">Jet Propulsion Laboratory - <i>Summer Intern</i></button>
@@ -52,19 +63,19 @@
                     <p>I'm always striving to improve my skills, thus all my projects below are built upon lessons learned from previous projects. Each project differs by either applying familiar concepts in more challenging ways or introducing a concept I haven't yet experimented with.<br><br>Projects preceded by another project marks that there were lessons carried over from the development of the peceding project.</p>
                     <div class="projects-container">
                         <div>
-                            <h3>"Mechy" Micro-sized RC</h3>
-                            <img src="./images/portrait.JPG" class="thumbnail"/>
-                            <p><em>Mechy</em> is my attempt to make a remote-controllable device as small as possible. It's build around a Raspberry Pi Pico W (the W model is used for its bluetooth capability) mounted onto a custom PCB. The PCB is designed to provide power to the Pico and connect GPIO pins to control the motor direction via two H-Bridge circuits, one for each motor.</p>
-                        </div>
-                        <div>
                             <h3>"Waveform" VALORANT Replica</h3>
                             <img src="./images/portrait.JPG" class="thumbnail"/>
-                            <p>The <em>Waveform</em> is a replica of the Zedd-collaboration knife skin featured in Riot's tactical shooter VALORANT.</p>
+                            <p>The <em>Waveform</em> is a replica of the Zedd-collaboration knife skin featured in Riot's tactical shooter VALORANT. My version is a simple, battery-operated LED light stick toggled via a single switch.</p>
                         </div>
                         <div>
                             <h3>"Turtleback" Electric Longboard</h3>
                             <img src="./images/portrait.JPG" class="thumbnail"/>
                             <p>The <em>Turtleback</em> is a personal motorized longboard, custom-built from aluminum 2040 beams and controlled </p>
+                        </div>
+                        <div>
+                            <h3>"Mechy" Micro-sized RC</h3>
+                            <img src="./images/portrait.JPG" class="thumbnail"/>
+                            <p><em>Mechy (ver. III)</em> is my attempt to make a remote-controllable device as small as possible. It's build around a Raspberry Pi Pico W (used for its bluetooth capability) mounted onto a self-designed motor shield. The outer shell is 3D printed and the total weight is around 50 grams.</p>
                         </div>
                         <div>
                             <h3>FPGA-Powered Record Player</h3>
