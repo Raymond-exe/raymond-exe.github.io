@@ -53,7 +53,3 @@ async function toggleSection(sectionId, isSubsection = false) {
         expandSection(sectionId, isSubsection);
     }
 }
-
-function lerp (a, b, alpha) {
-    return a*(1-alpha) + b*alpha;
-}
