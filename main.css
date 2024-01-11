@@ -350,7 +350,7 @@ img {
     width: 80%;
     border-radius: 1vw;
 
-    background-color: rgba(0, 0, 0, .45);
+    background-color: rgba(0, 0, 0, .75);
     /* backdrop-filter: blur(0.6vw); */ /* TODO fix for low-spec devices */
     overflow: hidden;
     opacity: 0;
