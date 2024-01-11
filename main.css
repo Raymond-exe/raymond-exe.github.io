@@ -360,6 +360,7 @@ img {
 #overlay > div .content {
     color: rgb(240, 240, 240);
     padding: 5%;
+    width: 100%;
 }
 
 #overlay > div .exit {
@@ -540,22 +541,16 @@ img {
 }
 
 .hobbies-container {
-    position: absolute;
+    position: relative;
     display: grid;
     gap: 2em; /* TODO find a good value for this */
-    /* grid-auto-flow: row;
-    grid-auto-rows: 40%; */
+    grid-auto-flow: row;
+    grid-auto-rows: 40%;
     grid-template-columns: 47.5% 47.5%;
     justify-content: space-evenly;
 
-    padding: 10%;
-    /* top: 15%;
-    left: 5%;
-    right: 5%;
-    bottom: 5%;
-
-    padding-left: 1%;
-    padding-right: 1%; */
+    width: 100%;
+    height: 100%;
 
     overflow-y: auto;
     overscroll-behavior-inline: contain;
