@@ -570,6 +570,7 @@ img {
     /* scroll-padding-inline: 1em; */
 
     z-index: 0;
+    overflow: hidden;
 }
 
 .hobbies-container > div > .thumbnail {
