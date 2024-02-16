@@ -1,0 +1,132 @@
+
+#body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 40px;
+    color: white;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 30px;
+    color: white;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    color: rgb(240, 240, 240);
+}
+
+.centered {
+    text-align: center;
+}
+
+#portfolio-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: fit-content;
+    margin: 5em;
+    /* background-color: red; */ /* debugging only */
+
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+
+    transition: all 0.5s;
+}
+
+#portfolio-container.hidden {
+    left: -100%;
+}
+
+.project-link {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    border: none;
+    background: none;
+    background-color: black;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project-link .project-title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* transform: translateX(-50%); */
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.project-link .project-status-tags {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.project-link .thumbnail {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: .4s ease;
+}
+
+.project-link:hover .thumbnail {
+    opacity: 0.4;
+}
+
+
+/* PROJECT VIEWPORT */
+
+#project-viewer {
+    position: absolute;
+    padding: 5em;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    transition: all 0.5s;
+}
+
+#project-viewer.hidden {
+    left: 100%;
+}
+
+#close-project {
+    position: absolute;
+    top: 35px;
+    left: 55px;
+    color: rgba(255, 255, 255, 0.5);
+
+    font-size: 25px;
+    
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#close-project:hover {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 30px;
+}
