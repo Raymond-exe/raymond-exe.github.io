@@ -1,11 +1,15 @@
 # Conway's *Game of Life* on FPGA
-> November 2023 - December 2023
+
+> Contributors: Gerin Fajardo, Kevin Foyet, Tyler Marts, and Raymond Wong <br>
+> November 2023 － December 2023 <br>
 
 ## Project Overview:
 
-The objective of this project is to implement Mathematician’s John Horton Conway’s Game of Life simulation in Verilog, run it on an FPGA, and display the grid of cells via VGA. The development board used to run this project is the Nexys A7 FPGA board.
+The objective of this project is to implement Mathematician’s John Horton Conway’s *Game of Life* simulation in Verilog, run it on an FPGA, and display the grid of cells via VGA. The development board used to run this project is the **Nexys A7 FPGA board**.
 
-### Project Goals & Criteria:
+For more information on the Game of Life, see [Wikipedia](https://en.wikipedia.org/wiki/The_Game_of_Life).
+
+### Goals & Criteria:
 - The next state of the simulation must be a result of the current state of the simulation, and be consistent with the rules outlined by Conway.
 - The simulation should have a user-controllable speed to determine how much time each generation should wait before progressing.
 - The simulation speed should be controlled by an 8-bit value inputed from switches on the board.
@@ -17,7 +21,14 @@ The objective of this project is to implement Mathematician’s John Horton Conw
 - The Nexys board should display the 8-bit speed value on the left 3 seven-segment-display digits.
 - The Nexys board should display the current generation count on the right 4 seven-segment-display digits.
 
-### Diagrams and Images
+### Images and Media
+
+Click [here](https://www.youtube.com/watch?v=CcwDj1lyKrI) to view a video demonstration of this project.
+
+<img src="https://github.com/Raymond-exe/Conway.v/assets/42707243/05eb05ea-bf4d-4c42-b5f0-8466407c0190" width=400>
+<img src="https://github.com/Raymond-exe/Conway.v/assets/42707243/cc5fa935-eb8a-4adc-9eb4-0fd7a96c14f7" width=600>
+
+<br>
 
 ### Technologies and Tools Used:
 - Digilent Nexys A7 FPGA Development Board
@@ -31,15 +42,9 @@ The objective of this project is to implement Mathematician’s John Horton Conw
 - Richie Raymond Wong
 
 ### Roles and Responsibilities:
-- [Role 1]: [Assigned Team Member(s)]
-- [Role 2]: [Assigned Team Member(s)]
+- Team Lead: Gerin F.
+- Verilog Implementation: Raymond Wong
 - [Role 3]: [Assigned Team Member(s)]
-- ...
-
-### Risks and Challenges:
-- [Risk/Challenge 1]
-- [Risk/Challenge 2]
-- [Risk/Challenge 3]
 - ...
 
 ## Outcome
@@ -49,7 +54,6 @@ The objective of this project is to implement Mathematician’s John Horton Conw
 - [Video Demonstration](https://www.youtube.com/watch?v=CcwDj1lyKrI)
 - [Final Project Report](https://docs.google.com/document/d/1esijIz1XCN74vlpnBnkL7jEymoO07kjb9qlBPdcqF9o/)
 - [Slide Presentation](https://docs.google.com/presentation/d/1LQ7xOMkXpIEDJPGi3g7aL3DAkkkGK73WHjV46hEZqLs/)
-- ...
 
 ### References:
 - ["Conway’s Game of Life" *Wikipedia*](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
