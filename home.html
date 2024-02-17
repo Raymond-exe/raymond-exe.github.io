@@ -1,43 +1,229 @@
 <!DOCTYPE html>
-<html lang="en" style="height:100%;">
+<html lang="en">
     <head>
         <meta charset="UTF=8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:b|Lato">
-        <link rel="stylesheet" type="text/css" href="main.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+        <script src="./home.js"></script>
         <title>𝙍𝙞𝙘𝙝𝙞𝙚 𝙍𝙖𝙮𝙢𝙤𝙣𝙙 𝙒𝙤𝙣𝙜</title>
         <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/597/597874.png">
     </head>
-    <body>
-        <div>
+    <body onload="checkUrl();">
+        <div id="overlay">
+            <div id="aboutme">
+                <button class="exit" onclick="hideSection('aboutme')">×</button>
+                <div class="content">
+                    <h2>About Me</h2>
+                    <div class="dropdown-container" class="display:flexbox;">
+                        <p style="display:inline; width:50vw; float:left;">
+                            <b>Hello! My name is Richie, although I typically go by Raymond.</b> I'm an undergraduate Computer Engineering student at the California State Polytechnic University, Pomona.
+                            <br><br>
+                            <b>I'm a quick learner and a challenger-seeker,</b> who has experience in Verilog, Python, Java, and JS/TS among other languages. While I've worked with FPGAs, microcontrollers, and even in software, I'm looking to work more with HDL languages and FPGAs in the future. If you're still interested in my skills, feel free to look through my <a href="#projects" onclick="hideSection('aboutme')">projects</a> and <a href="#experience" onclick="hideSection('aboutme')">experience</a> for more information.
+                            <br><br>
+                            <b>I'm motivated by the idea of pushing what I'm capable of,</b> whether it's in a project I'm pursuing or a game I'm trying something new in. These self-challenges can range from physical scaling constraints to time constraints, or can even affect how I implement the project entirely. If I'm confident I can achieve a task in a certain manner, I begin looking for ways I can improve how the task is achieved.
+                            <br><br>
+                            <b>I hope to eventually work on the cutting-edge of the aerospace industry,</b> where I can use my skills to help push human innovation. While I do hope to work on cutting-edge technology in time, &lt...&gt
+                            <!-- TODO elaborate on exploratory projects (working on bomber vs museum analogy)-->
+                        </p>
+                        <img src="./images/placeholder.png" style="width:20vw; display:inline; float:right;">
+                    </div>
+                </div>
+            </div>
+            <div id="experience">
+                <button class="exit" onclick="hideSection('experience')">×</button>
+                <div class="content">
+                    <h2>Professional Experience</h2>
+                    <div class="dropdown-container">
+                        <!-- CPP -->
+                        <button class="subsection-button" title="Click to expand" onclick="toggleSection('exp-cpp', true)">California State Polytechnic University, Pomona</i></button>
+                        <div class="subsection" id="exp-cpp">
+                            Aw yeah CPP.
+                        </div> <!-- TODO: make the "relevant skills" a nicer format -->
+                        <!-- IF -->
+                        <button class="subsection-button" title="Click to expand" onclick="toggleSection('exp-imaginefun', true)">ImagineFun - <i>Photopass Development Lead</i></button>
+                        <div class="subsection" id="exp-imaginefun">
+                            I was brought onto <a href="http://imaginefun.net">ImagineFun</a>'s development team to implement our server-side automated 3D rendering pipeline, dubbed <i>Photopass</i>. If you're interested, an early Java-based version of <i>Photopass</i> is available <a href="https://github.com/Raymond-exe/MC-Player-Renderer">here</a>. Since then I've moved onto maintaining our existing ride systems and developing new rides to be released. Relevant skills: Java, JavaScript, TypeScript, and Node.js.
+                        </div>
+                        <!-- JPL -->
+                        <button class="subsection-button" title="Click to expand" onclick="toggleSection('exp-jpl', true)">Jet Propulsion Laboratory - <i>Summer Intern</i></button>
+                        <div class="subsection" id="exp-jpl">
+                            The role of my Summer 2023 internship at NASA's Jet Propulsion Laboratory was the <b>development of systems functionality modeling software</b> for use by systems engineers in the process of designing spacecraft and robotics at JPL.
+                            <br>
+                            Learn more about OML Vision on <a href="https://github.com/opencaesar/oml-vision">GitHub</a> and <a href="https://www.opencaesar.io/projects/2023-05-29-OML-Vision.html">openCAESAR</a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="projects">
+                <button class="exit" onclick="hideSection('projects')">×</button>
+                <div class="content" style="display:flex; flex-direction:column;">
+                    <h2>My Projects</h2>
+                    <p>I'm always striving to improve my skills, thus all my projects below are built upon lessons learned from previous projects. Each project differs by either applying familiar concepts in more challenging ways or introducing a concept I haven't yet experimented with.<br><br>Projects preceded by another project marks that there were lessons carried over from the development of the peceding project.</p>
+                    <div class="projects-container">
+                        <!-- <div>
+                            <img src="./images/placeholder.png" class="thumbnail"/>
+                            <span></span>
+                            <h3>"Waveform" VALORANT Replica</h3>
+                            <img src="https://img.shields.io/badge/Completed_2022-green" class="project-status">
+                            <p>The <em>Waveform</em> is a replica of the Zedd-collaboration knife skin featured in Riot's tactical shooter VALORANT. My version is a simple, battery-operated LED light stick toggled via a single switch.</p>
+                        </div> -->
+                        <div>
+                            <img src="./images/game-of-life.jpg" class="thumbnail"/>
+                            <span></span>
+                            <h3>Conway's <em>Game of Life</em> in Verilog</h3>
+                            <img src="https://img.shields.io/badge/Assignment-blue" class="project-status">
+                            <img src="https://img.shields.io/badge/Completed_2023-green" class="project-status">
+                            <p>
+                                A Verilog implementation of <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's <em>Game of Life</em></a> run on a Nexys A7 development board, using its I/O for grid control.
+                                <br>
+                                <br>
+                                <b>Links:</b>
+                                <br>
+                                - <a href="https://github.com/Raymond-exe/Conway.v">GitHub repo</a>
+                                <br>
+                                - <a href="https://www.youtube.com/watch?v=CcwDj1lyKrI">Demo video</a>
+                                <br>
+                                - <a href="https://docs.google.com/document/d/1esijIz1XCN74vlpnBnkL7jEymoO07kjb9qlBPdcqF9o">Project report</a>
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./images/placeholder.png" class="thumbnail"/>
+                            <span></span>
+                            <h3>FIFO stack Verilog demo</h3>
+                            <img src="https://img.shields.io/badge/Assignment-blue" class="project-status">
+                            <img src="https://img.shields.io/badge/Completed_2023-green" class="project-status">
+                            <p>
+                                (ECE 3300 Lab 9) A small first-in-first-out buffer demonstration implemented on the Digilent's Nexys A7 dev board. The buffer contains 8 slots which can carry 4 bits each (or one hex digit), and is displayed on the 8 seven-segment-display digits provided on the Nexys A7.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./images/placeholder.png" class="thumbnail"/>
+                            <span></span>
+                            <h3>FPGA-based Digital Alarm Clock</h3>
+                            <img src="https://img.shields.io/badge/In_Progress-yellow" class="project-status">
+                            <p>
+                                A simple alarm clock implemented on a Nexys A7.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./images/placeholder.png" class="thumbnail"/>
+                            <span></span>
+                            <h3>"Turtleback" Electric Longboard</h3>
+                            <img src="https://img.shields.io/badge/In_Progress-yellow" class="project-status">
+                            <p>The <em>Turtleback</em> is a personal motorized longboard, with a custom-built chasis and driven by an Arduino Uno. It operates on a 24V battery and has an estimated battery life of 1+ hours.</p>
+                        </div>
+                        <div>
+                            <img src="./images/placeholder.png" class="thumbnail"/>
+                            <span></span>
+                            <h3>"Mechy" Micro-sized RC</h3>
+                            <img src="https://img.shields.io/badge/Planned 2024-red" class="project-status">
+                            <p><em>Mechy (ver. III)</em> is a miniaturized remote-controlled device, built around a Raspberry Pi Pico W and a custom PCB motor shield.</p> <!-- The outer shell is 3D printed and the total weight is around 50 grams. -->
+                        </div>
+                        <div>
+                            <img src="./images/placeholder.png" class="thumbnail"/>
+                            <span></span>
+                            <h3>FPGA-Powered Record Player</h3>
+                            <img src="https://img.shields.io/badge/Planned 2024-red" class="project-status">
+                            <!-- <p>Work in progress</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="hobbies">
+                <button class="exit" onclick="hideSection('hobbies')">×</button>
+                <div class="content">
+                    <h2>My Hobbies & Extracurriculars</h2>
+                    <div class="hobbies-container">
+                        <div>
+                            <h3>3D Printing</h3>
+                            <img src="./images/3d_print.jpg" class="thumbnail">
+                            <p>In my free time...</p>
+                        </div>
+                        <div>
+                            <h3>Photography</h3>
+                            <img src="./images/raspi_camera.jpg" class="thumbnail">
+                            <p>
+                                Every photograph shown on my portfolio was captured by me!
+                                <br><br>
+                                I rely mostly on a Canon SX-510, but I don't mind using a smartphone camera if it means capturing a photo before it's gone.
+                            </p>
+                        </div>
+                        <!-- TODO: get an image to use for rock climbing lol -->
+                        <!-- <div>
+                            <h3>Rock Climbing</h3>
+                            <img src="./images/placeholder.png" class="thumbnail">
+                            <p>Between classes,</p>
+                        </div> -->
+                        <div>
+                            <h3>Sandbox & Story Games</h3>
+                            <img src="./images/ksp.png" class="thumbnail">
+                            <p>
+                                I enjoy a mix of narrative and challenge-based games, such as <b>Fallout</b>, <b>Portal 1 & 2</b>, and <b>Kerbal Space Program</b> ("KSP")!
+                                <br><br>
+                                This screenshot is an image of a KSP mission to place a handful of relay sattelites in low orbit as a demonstration of my CS-10 <em>Rosau</em>-class space shuttle's payload capabilities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tint"></div>
+        </div>
+        <div id="nav-bar">
+            <div class="bg"></div>
+            <img src="./images/full_icon.png" style="position:absolute; height:50%; transform:translate(50%,50%);">
+            <div id="contact-btn">
+                <p>◄ CONTACT ME</p>
+                <div id="contact-info">
+                    <a class="social-media" title="LinkedIn" style="left:20%" target=”_blank” href="https://www.linkedin.com/in/raymond-exe/">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" fill="white"/></svg>
+                    </a>
+                    <a class="social-media" title="GitHub" style="left:50%" target=”_blank” href="https://github.com/raymond-exe/">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" fill="white"/></svg>
+                    </a>
+                    <a class="social-media" title="Email" style="left:80%" target=”_blank” href="mailto:raymondwong.exe@gmail.com">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Email</title><path d="M15.61 12c0 1.99-1.62 3.61-3.61 3.61-1.99 0-3.61-1.62-3.61-3.61 0-1.99 1.62-3.61 3.61-3.61 1.99 0 3.61 1.62 3.61 3.61M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12c2.424 0 4.761-.722 6.76-2.087l.034-.024-1.617-1.879-.027.017A9.494 9.494 0 0 1 12 21.54c-5.26 0-9.54-4.28-9.54-9.54 0-5.26 4.28-9.54 9.54-9.54 5.26 0 9.54 4.28 9.54 9.54a9.63 9.63 0 0 1-.225 2.05c-.301 1.239-1.169 1.618-1.82 1.568-.654-.053-1.42-.52-1.426-1.661V12A6.076 6.076 0 0 0 12 5.93 6.076 6.076 0 0 0 5.93 12 6.076 6.076 0 0 0 12 18.07a6.02 6.02 0 0 0 4.3-1.792 3.9 3.9 0 0 0 3.32 1.805c.874 0 1.74-.292 2.437-.821.719-.547 1.256-1.336 1.553-2.285.047-.154.135-.504.135-.507l.002-.013c.175-.76.253-1.52.253-2.457 0-6.617-5.383-12-12-12" fill="white"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div> <!-- "Middle" textbox + background -->
             <img class="fade-in-text cover-icon" src="./images/cpp.png">
-            <h1 class="fade-in-text" style="color:rgb(240, 240, 240); font-size:7vw; font-family:'Playfair Display', sans-serif;">Raymond Wong<br><br></h1>
-            <p  class="fade-in-text" style="color:rgb(240, 240, 240); font-size:3vw; font-family: 'Lato', sans-serif;"><br><br>Computer Engineering Undergraduate</p>
+            <h1 class="fade-in-text" style="color:rgb(240, 240, 240); font-size:7vw; font-family:'Playfair Display', sans-serif;">Raymond Wong<br></h1>
+            <p  class="fade-in-text" style="color:rgb(240, 240, 240); font-size:3vw; font-family: 'Lato', sans-serif;"><br><br><br><br><br>Computer Engineering Undergraduate</p>
             <img src="./images/steven-universe.jpg" id="cover-image">
         </div>
         <div id="box-container">
             <div class="box" style="background-color: #ED474A;">
                 <img src="./images/hotel-california.jpg" class="thumbnail">
                 <p class="box-title">About me</p>
-                <div class="box-content">Hello world! This is some placeholder text that will eventually be replaced (at least, I hope so).</div>
+                <div class="box-content">Graduating from <b>Cal Poly Pomona</b> in <b>2025</b>, I'm a quick learner who enjoys working in a team as much as I enjoy working alone.</div>
+                <a class="box-link" href="#aboutme"><i>Click to Expand</i></a>
             </div>
             <div class="box" style="background-color: #57A773;">
-                <img src="./images/steven-universe.jpg" class="thumbnail">
+                <img src="./images/jpl.jpeg" class="thumbnail">
                 <p class="box-title">Experience</p>
+                <div class="box-content">From Minecraft to NASA, I've got a software-centric history or writing<br>both <b>front-end and back-end code</b><br>for a variety of applications.</div>
+                <a class="box-link" href="#experience"><i>Click to Expand</i></a>
             </div>
-            <div class="box" style="background-color: #8a867b;">
-                <img src="./images/stairway.jpg" class="thumbnail">
+            <div class="box" style="background-color: #d0d0d0;">
+                <img src="./images/building-9.png" class="thumbnail">
                 <p class="box-title">Resume</p>
                 <img class="box-content" style="width:auto; height:45%; image-rendering:pixelated;" src="./images/resume_qr.png">
+                <a href="./r.html" class="box-link"><i>Click to view</i></a>
             </div>
             <div class="box" style="background-color: #E2970B;">
                 <img src="./images/0-8-4.jpeg" class="thumbnail">
-                <p class="box-title">Projects + Hobbies</p>
+                <p class="box-title">Projects</p>
+                <div class="box-content">Personal projects designed to<br><b>challenge myself</b>, push my talents,<br>and explore what I can create from <b>combining different skills</b>.</div>
+                <a class="box-link" href="#projects"><i>Click to Expand</i></a>
             </div>
             <div class="box" style="background-color: #08B2E3;">
                 <img src="./images/soarin.jpeg" class="thumbnail">
-                <p class="box-title">Contact me</p>
+                <p class="box-title">Hobbies</p>
+                <div class="box-content">Talents which complement or are unrelated to my career plans.</div>
+                <a class="box-link" href="#hobbies"><i>Click to Expand</i></a>
             </div>
         </div>
     </body>
