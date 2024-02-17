@@ -21,6 +21,8 @@ h2 {
 h3 {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
+    color: white;
+    margin: 0;
 }
 
 p {
@@ -63,8 +65,18 @@ p {
     cursor: pointer;
 }
 
-.project-link .project-title {
-    position: absolute;
+.project-info {
+    opacity: 0;
+    z-index: 10;
+    transition: 0.5s;
+}
+
+.project-link:hover .project-info {
+    opacity: 1;
+}
+
+.project-title {
+    position: relative;
     left: 50%;
     top: 50%;
     /* transform: translateX(-50%); */
@@ -72,9 +84,10 @@ p {
     color: white;
 }
 
-.project-link .project-status-tags {
-    position: absolute;
+.project-status-tags {
+    position: relative;
     left: 50%;
+    margin: 0;
     transform: translateX(-50%);
 }
 
@@ -92,6 +105,15 @@ p {
 
 .project-link:hover .thumbnail {
     opacity: 0.4;
+}
+
+.project-link > div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: fit-content;
 }
 
 
@@ -129,4 +151,10 @@ p {
 #close-project:hover {
     color: rgba(255, 255, 255, 0.9);
     font-size: 30px;
+}
+
+#markdown-renderer {
+    position: absolute;
+    width: 80%;
+    color: white;
 }
