@@ -2,6 +2,7 @@
 
 > Contributors: Gerin Fajardo, Kevin Foyet, Tyler Marts, and Raymond Wong <br>
 > November 2023 － December 2023 <br>
+> ECE 3300.02 － Digital Circuit Design with Verilog
 
 ## Project Overview:
 
