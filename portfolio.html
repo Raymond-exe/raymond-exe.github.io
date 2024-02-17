@@ -82,9 +82,17 @@
         </button>
     </div>
     <div id="project-viewer" class="hidden">
-        <button id="close-project" onclick="hideProjectViewer()">≪ BACK</button>
+        <div id="close-project" onclick="hideProjectViewer()">≪ BACK</div>
         <md-block id="markdown-renderer" src/>
     </div>
+
+    <!-- Button to toggle dark mode -->
+    <div class="toggle-switch">
+        <label class="switch-label">
+          <input type="checkbox" class="checkbox" onclick="toggleDarkMode()">
+          <span class="slider"></span>
+        </label>
+      </div>
 </body>
 
 </html>

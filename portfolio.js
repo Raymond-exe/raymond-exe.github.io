@@ -2,6 +2,11 @@
 // Used to remember where the user scrolled on the main portfolio page
 let resetScroll = 0;
 
+function toggleDarkMode() {
+    const element = document.body;
+    element.classList.toggle("dark-mode");
+}
+
 function showProjectViewer(project) {
     // hide main portfolio view
     const portfolio = document.getElementById('portfolio-container');
