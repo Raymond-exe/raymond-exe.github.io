@@ -4,6 +4,8 @@
 > November 2023 － December 2023 <br>
 > ECE 3300.02 － Digital Circuit Design with Verilog
 
+**Project status:** Complete
+
 ## Project Overview:
 
 The objective of this project is to implement Mathematician’s John Horton Conway’s *Game of Life* simulation in Verilog, run it on an FPGA, and display the grid of cells via VGA. The development board used to run this project is the **Nexys A7 FPGA board**.
