@@ -3,7 +3,7 @@
 
 *Mechy* Ver. III is my first PCB design project. The goal is to create a remote-controllable device capable of driving itself around, while also making it as small as possible.
 
-**Project status:** In-progress
+**Project status:** In-progress, test-ready by early March 2024
 
 ## Background
 ### Why call the project "Mechy"?
@@ -16,9 +16,6 @@ Version III is a nearly complete revision of the project. The motors, the wiring
 
 ### Circuit information
 The Mechy motor shield is a 2-sided PCB, with one side ("side A") dedicated to mounting the Pico or Pico W. The back side ("side B") contains two H-bridge circuits for driving two separate motors, which may be soldered to the left and right points of the board. A 5V battery is required to power the circuit, and can be connected +5V and GND pins next to the power switch at the bottom of the board. For upkeep purposes, an intermediary charging board is recommended.
-
-## Project Status
-This project is currently in the assembly stage and should be test-ready around early March 2024.
 
 ## Gallery
 
