@@ -4,6 +4,8 @@
 > November 2023 － December 2023 <br>
 > ECE 3300.02 － Digital Circuit Design with Verilog
 
+A verilog implementation of Conway's *Game of Life* on the Nexys A7. You can view the full project repository [here](https://github.com/Raymond-exe/Conway.v).
+
 **Project status:** Complete
 
 ## Project Overview:
@@ -42,16 +44,12 @@ Click [here](https://www.youtube.com/watch?v=CcwDj1lyKrI) to view a video demons
 - Gerin Fajardo
 - Kevin Foyet
 - Tyler Marts
-- Richie Raymond Wong
+- Richie (Raymond) Wong
 
 ### Roles and Responsibilities:
-- Team Lead: Gerin F.
+- Team Lead: Gerin Fajardo
 - Verilog Implementation: Raymond Wong
-- [Role 3]: [Assigned Team Member(s)]
-- ...
-
-## Outcome
-[Describe project outcome]
+- Testing & Documentation: Kevin Foyet &Tyler Marts
 
 ### Project Deliverables:
 - [Video Demonstration](https://www.youtube.com/watch?v=CcwDj1lyKrI)
