@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # "Mechy" - A mini motor shield for the Raspberry Pi Pico
 <a href="../images/mechy_top.png" target="_blank"><img src="../images/mechy_top.png" height="200px"></a>
 
@@ -23,3 +24,7 @@ The Mechy motor shield is a 2-sided PCB, with one side ("side A") dedicated to m
 <a href="../images/mechy_top.png" target="_blank"><img src="../images/mechy_top.png" height="200px"></a>
 <a href="../images/mechy_bottom.png" target="_blank"><img src="../images/mechy_bottom.png" height="200px"></a>
 <a href="../images/mechy_schem.png" target="_blank"><img src="../images/mechy_schem.png" height="200px"></a>
+=======
+# This project has not started yet...
+### Stay tuned for updates!
+>>>>>>> 62dd9fef27e412e9c4ad0f72667fcd6eb7f8bc18
