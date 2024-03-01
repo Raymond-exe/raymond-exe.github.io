@@ -1,4 +1,4 @@
-# FPGA-Alarm-Clock
+# FPGA Alarm Clock
 A Verilog-based digital alarm clock implemented on a Nexys A7 FPGA board. You can view the full project repository [here](https://github.com/Raymond-exe/FPGA-Alarm-Clock).
 
 **Project status:** Nearly complete!
