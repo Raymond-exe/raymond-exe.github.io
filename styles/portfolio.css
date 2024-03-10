@@ -1,4 +1,4 @@
-body {
+body, html {
     position: relative;
     background-color: white;
     color: black;
@@ -57,7 +57,7 @@ p {
 }
 
 #portfolio-container.hidden {
-    left: -100%;
+    /* left: -100%; */
     scale: 0%;
 }
 
@@ -142,7 +142,7 @@ p {
 }
 
 #project-viewer.hidden {
-    left: 100%;
+    /* left: 100%; */
     scale: 0%;
 }
 
