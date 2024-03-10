@@ -58,6 +58,7 @@ p {
 
 #portfolio-container.hidden {
     left: -100%;
+    scale: 0%;
 }
 
 .project-link {
@@ -85,9 +86,10 @@ p {
 .project-title {
     position: relative;
     left: 50%;
-    top: 50%;
+    top: 0;
     /* transform: translateX(-50%); */
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     color: white;
 }
 
@@ -96,13 +98,15 @@ p {
     left: 50%;
     margin: 0;
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
 }
 
 .project-link .thumbnail {
-    position: relative;
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -119,6 +123,7 @@ p {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     width: 100%;
     height: fit-content;
 }
