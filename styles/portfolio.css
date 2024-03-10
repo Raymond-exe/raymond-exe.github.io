@@ -138,6 +138,7 @@ p {
 
 #project-viewer.hidden {
     left: 100%;
+    scale: 0%;
 }
 
 #markdown-renderer {
