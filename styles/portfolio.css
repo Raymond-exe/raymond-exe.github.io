@@ -131,7 +131,7 @@ p {
     padding: 5em;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
 
     transition: all 0.5s;
 }
