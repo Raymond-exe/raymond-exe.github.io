@@ -1,6 +1,8 @@
 body {
+    position: relative;
     background-color: white;
     color: black;
+    width: device-width;
     overflow-x: hidden;
     transition: all 0.25s;
 }
