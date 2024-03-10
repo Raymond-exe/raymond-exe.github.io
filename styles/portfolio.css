@@ -11,6 +11,9 @@ body {
     color: white;
 }
 
+a { transition: all 0.5s }
+.dark-mode a { color: aqua }
+
 h1 {
     font-family: 'Playfair Display', sans-serif;
     font-size: 40px;
