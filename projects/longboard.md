@@ -1,5 +1,7 @@
 # Electric Longboard
 
+<a href="../images/longboard.jpg" target="_blank"><img src="../images/longboard.jpg"></a>
+
 A custom electric longboard created from scratch.
 
 *More information to follow, this overview is not yet complete.

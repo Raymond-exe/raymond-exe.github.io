@@ -1,5 +1,5 @@
 # "Mechy" - A mini motor shield for the Raspberry Pi Pico
-<a href="../images/mechy_top.png" target="_blank"><img src="../images/mechy_top.png"></a>
+<a href="../images/mechy_prototype.gif" target="_blank"><img src="../images/mechy_prototype.gif"></a>
 
 *Mechy* Ver. III is my first PCB design project. The goal is to create a remote-controllable device capable of driving itself around, while also making it as small as possible.
 

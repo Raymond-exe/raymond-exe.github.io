@@ -1,5 +1,9 @@
 # Conway's *Game of Life* on FPGA
 
+<a href="https://www.youtube.com/watch?v=CcwDj1lyKrI" target="_blank">
+    <img src="https://github.com/Raymond-exe/Conway.v/assets/42707243/cc5fa935-eb8a-4adc-9eb4-0fd7a96c14f7">
+</a>
+
 > Contributors: Gerin Fajardo, Kevin Foyet, Tyler Marts, and Raymond Wong <br>
 > November 2023 － December 2023 <br>
 > ECE 3300.02 － Digital Circuit Design with Verilog

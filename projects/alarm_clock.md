@@ -1,10 +1,11 @@
 # FPGA Alarm Clock
+
+<a href="../images/alarm_clk_demo.gif" target="_blank"><img src="../images/alarm_clk_demo.gif"></a>
+
 A Verilog-based digital alarm clock implemented on a Nexys A7 FPGA board. You can view the full project repository [here](https://github.com/Raymond-exe/FPGA-Alarm-Clock).
 
 **Project status:** Nearly complete!
 
-<a href="../images/alarm_clk.jpeg" target="_blank"><img src="../images/alarm_clk.jpeg"></a>
-<a href="../images/alarm_clk_demo.gif" target="_blank"><img src="../images/alarm_clk_demo.gif"></a>
 
 ## Input/Outputs
 The following inputs are used to edit the current time, set an alarm, etc. The use of each input will vary depending on the current state of the device (with the exception of EN and RST).
@@ -22,6 +23,8 @@ The following outputs of the Nexys A7 are used to express the clock's current st
 - The 4 right-most LEDs ("alarm match" LEDs)
 - Red RGB LED #1 ("Edit Mode" LED)
 - Red RGB LED #2 ("AM/PM" LED)
+
+<a href="../images/alarm_clk.jpeg" target="_blank"><img src="../images/alarm_clk.jpeg"></a>
 
 ## Device States
 There are several states the alarm clock can occupy:
