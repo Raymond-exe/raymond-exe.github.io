@@ -5,6 +5,8 @@ let resetScroll = 0;
 function toggleDarkMode() {
     const element = document.body;
     element.classList.toggle("dark-mode");
+    const html = document.getElementById("html");
+    html.classList.toggle("dark-mode");
 }
 
 function showProjectViewer(project) {

@@ -1,8 +1,8 @@
-body {
+body, html {
     position: relative;
     background-color: white;
     color: black;
-    width: device-width;
+    width: 100vw;
     overflow-x: hidden;
     transition: all 0.25s;
 }
@@ -57,7 +57,8 @@ p {
 }
 
 #portfolio-container.hidden {
-    left: -100%;
+    /* left: -100%; */
+    scale: 0%;
 }
 
 .project-link {
@@ -85,9 +86,10 @@ p {
 .project-title {
     position: relative;
     left: 50%;
-    top: 50%;
+    top: 0;
     /* transform: translateX(-50%); */
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     color: white;
 }
 
@@ -96,13 +98,15 @@ p {
     left: 50%;
     margin: 0;
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
 }
 
 .project-link .thumbnail {
-    position: relative;
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -119,6 +123,7 @@ p {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     width: 100%;
     height: fit-content;
 }
@@ -131,13 +136,14 @@ p {
     padding: 5em;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
+    width: auto;
 
     transition: all 0.5s;
 }
 
 #project-viewer.hidden {
-    left: 100%;
+    /* left: 100%; */
     scale: 0%;
 }
 
@@ -230,4 +236,20 @@ p {
     background-color: var(--dark);
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+
+/* Markdown images patch for mobile devices */
+@media screen and (orientation:portrait) {
+    #markdown-renderer {
+        left: 10vw;
+        width: 80vw;
+    }
+    #markdown-renderer img {
+        width: 75vw;
+    }
+}
+@media screen and (orientation:landscape) {
+      #markdown-renderer img {
+          height: 200px
+      }
 }

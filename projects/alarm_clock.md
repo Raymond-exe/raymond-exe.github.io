@@ -3,8 +3,8 @@ A Verilog-based digital alarm clock implemented on a Nexys A7 FPGA board. You ca
 
 **Project status:** Nearly complete!
 
-<a href="../images/alarm_clk.jpeg" target="_blank"><img src="../images/alarm_clk.jpeg" height="200px"></a>
-<a href="../images/alarm_clk_demo.gif" target="_blank"><img src="../images/alarm_clk_demo.gif" height="200px"></a>
+<a href="../images/alarm_clk.jpeg" target="_blank"><img src="../images/alarm_clk.jpeg"></a>
+<a href="../images/alarm_clk_demo.gif" target="_blank"><img src="../images/alarm_clk_demo.gif"></a>
 
 ## Input/Outputs
 The following inputs are used to edit the current time, set an alarm, etc. The use of each input will vary depending on the current state of the device (with the exception of EN and RST).
