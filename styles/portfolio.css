@@ -1,4 +1,4 @@
-body, html {
+body {
     position: relative;
     background-color: white;
     color: black;
@@ -136,7 +136,8 @@ p {
     padding: 5em;
     top: 0;
     left: 0;
-    width: 100vw;
+    right: 0;
+    width: auto;
 
     transition: all 0.5s;
 }
