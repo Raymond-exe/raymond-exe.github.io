@@ -237,3 +237,19 @@ p {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+
+/* Markdown images patch for mobile devices */
+@media screen and (orientation:portrait) {
+    #markdown-renderer {
+        left: 10vw;
+        width: 80vw;
+    }
+    #markdown-renderer img {
+        width: 75vw;
+    }
+}
+@media screen and (orientation:landscape) {
+      #markdown-renderer img {
+          height: 200px
+      }
+}

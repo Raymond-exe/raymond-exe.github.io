@@ -38,6 +38,6 @@ In the future, I hope to replace the Arduino Uno with an ESP32 in the same form 
 Switching to the ESP32 presents the opportunity to transmit system diagnostics for debugging and health monitoring. I'm specifically interested in the air temperature and air moisture content inside of the electrionics bay, although the voltage and amperage drawn by the motor are also points of interest I'd like to add. A [DHT22](https://www.adafruit.com/product/385) will likely be used for measuring the air metrics, and a simple high-amperage resistor can be used to measure the current.
 
 ## Gallery
-<a href="../images/longboard.jpg" target="_blank"><img src="../images/longboard.jpg" height="200px"></a>
-<a href="../images/longboard_components.jpg" target="_blank"><img src="../images/longboard_components.jpg" height="200px"></a>
-<a href="../images/longboard_electrical.jpg" target="_blank"><img src="../images/longboard_electrical.jpg" height="200px"></a>
+<a href="../images/longboard.jpg" target="_blank"><img src="../images/longboard.jpg"></a>
+<a href="../images/longboard_components.jpg" target="_blank"><img src="../images/longboard_components.jpg"></a>
+<a href="../images/longboard_electrical.jpg" target="_blank"><img src="../images/longboard_electrical.jpg"></a>
