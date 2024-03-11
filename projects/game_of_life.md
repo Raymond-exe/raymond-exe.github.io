@@ -30,8 +30,12 @@ For more information on the Game of Life, see [Wikipedia](https://en.wikipedia.o
 
 Click [here](https://www.youtube.com/watch?v=CcwDj1lyKrI) to view a video demonstration of this project.
 
-<img src="https://github.com/Raymond-exe/Conway.v/assets/42707243/05eb05ea-bf4d-4c42-b5f0-8466407c0190" width=400>
-<img src="https://github.com/Raymond-exe/Conway.v/assets/42707243/cc5fa935-eb8a-4adc-9eb4-0fd7a96c14f7" width=600>
+<a href="https://github.com/Raymond-exe/Conway.v/assets/42707243/05eb05ea-bf4d-4c42-b5f0-8466407c0190" target="_blank">
+    <img src="https://github.com/Raymond-exe/Conway.v/assets/42707243/05eb05ea-bf4d-4c42-b5f0-8466407c0190" height="200px">
+</a>
+<a href="https://www.youtube.com/watch?v=CcwDj1lyKrI" target="_blank">
+    <img src="https://github.com/Raymond-exe/Conway.v/assets/42707243/cc5fa935-eb8a-4adc-9eb4-0fd7a96c14f7" height="200px">
+</a>
 
 <br>
 
