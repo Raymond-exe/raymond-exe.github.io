@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      @font-face {
+          font-family: "SerifGothicHeavy";
+          src: url("./fonts/SerifGothicHeavy.otf");
+      }
+
+      body {
+        background-color: black;
+      }
+      div {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+      p {
+        position: relative;
+        color: white;
+        font-family: "SerifGothicHeavy";
+        text-align: center;
+        font-size: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+        letter-spacing: 0.2em;
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p id="timer">NEXT RIDE RELEASE</p>
+    </div>
+    <script>
+      const release = '=ADM6ADM6MTMgQjMwIDIsQDI5FWT';
+      const countDownDate = new Date(atob(release.split('').reverse().join(''))).getTime();
+
+      const timerElement = document.getElementById('timer');
+
+      setTimeout(() => setInterval(() => {
+        const now = new Date().getTime();
+        const remaining = countDownDate - now;
+
+        const days = Math.floor(remaining / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((remaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((remaining % (1000 * 60)) / 1000);
+
+        if (remaining > 0) {
+          timerElement.innerHTML = days + 'D ' + hours + 'H ' + minutes + 'M ' + seconds + 'S';
+        } else {
+          timerElement.innerHTML = '';
+        }
+      }, 1000), 2000);
+    </script>
+  </body>
+</html>
