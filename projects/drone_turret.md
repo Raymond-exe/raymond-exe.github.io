@@ -44,6 +44,13 @@ The objective of this project is to create a fully-autonomous turret which can d
     - 2x Servos controlling physical toggle switches
 
 
+## Findings & Conclusion:
+This project is generally considered a success within the team, however with plenty of room for improvement in both our software and hardware. The most obvious places improvements can be made are in how the firing is controlled (ideally, MOSFETs should be used instead of using servos to short a toggle switch) and re-training the YOLO object detection model to have a more accurate confidence.
+<br>
+However, there are also numerous points of concern that were identified early-on as potential hurdles which were ultimately achieved, contributing to the status of this project’s success. Things such as whether or not the Raspberry Pi would be able to run a YOLO object detection model at a usable frequency and if the Pi would be able to manage both the object detection and rotate the turret at the same time. Despite the initial challenges of narrowing down what hardware we would be able to get the software running on, our choice of the Raspberry Pi 5 proved to have enough resources unlike previous devices that were considered, namely the Raspberry Pi Zero. While the object recognition is not perfect, the resulting product works well enough as a proof of concept that can be refined at a later time.
+
+
+
 ### Images and Media
 
 Click [here](https://www.youtube.com/watch?v=BIZtcLPPDtI) to view a video demonstration of this project.
