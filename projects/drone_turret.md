@@ -75,6 +75,8 @@ Click [here](https://www.youtube.com/watch?v=BIZtcLPPDtI) to view a video demons
     <img src="../images/turret_turnaround.gif">
 </a>
 
+<br>
+
 
 ## Team Members:
 - Kevin Foyet
