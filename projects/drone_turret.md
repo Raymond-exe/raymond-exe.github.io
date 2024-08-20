@@ -1,5 +1,7 @@
 # Autonomous Drone-Targeting Dart Turret 
 
+<br>
+
 <a href="https://www.youtube.com/watch?v=BIZtcLPPDtI" target="_blank">
     <img src="../images/turret_thumbnail.jpg">
 </a>
@@ -8,48 +10,54 @@
 > April 2024 － May 2024 <br>
 > ECE 4300.01 － Computer Architecture
 
-A fully-autonomous turret which can detect and fire one (or more) darts at a nearby drone. You can view the full project repository [here](https://docs.google.com/document/d/1pOIFu9WY_gL9sg0sMV9PNh2P3P-iyiJVVvix_5ne5tk).
+A fully-autonomous turret which can detect and fire darts at a nearby drone. You can view the full project report [here](https://docs.google.com/document/d/1pOIFu9WY_gL9sg0sMV9PNh2P3P-iyiJVVvix_5ne5tk).
 
 **Project status:** Complete
 
+
 ## Project Overview:
 
-// TODO state objective
+The objective of this project is to create a fully-autonomous turret which can detect when a drone is nearby and fire one (or more) darts at it. The detection and firing control is to be managed by an on-board computer and should be able to target a drone without user interference. Since this project emphasizes the electrical systems and software, mechanical design is not a focus and thus will not be as heavily covered in this project report. 
+
+
+<a href="../images/turret_turnaround.gif" target="_blank">
+    <img src="../images/turret_turnaround.gif">
+</a>
+
 
 ### Goals & Criteria:
-- The next state of the simulation must be a result of the current state of the simulation, and be consistent with the rules outlined by Conway.
-- The simulation should have a user-controllable speed to determine how much time each generation should wait before progressing.
-- The simulation speed should be controlled by an 8-bit value inputed from switches on the board.
-- The simulation grid should contain a cursor. The presence of this cursor will not directly affect the next generation, but will allow a user to select a specific grid cell and toggle it on or off.
-- The cursor should be controlled by 5 buttons found on the Nexys A7 board.
-- The borders of the grid should allow for wrap-around logic that connect one edge to the opposing edge when generating the next generation or moving the cursor past one edge.
-- The Nexys board should contain switches to pause and reset the simulation.
-- The Nexys board should contain a switch to enable/disable the wrap-around logic applied to the grid borders.
-- The Nexys board should display the 8-bit speed value on the left 3 seven-segment-display digits.
-- The Nexys board should display the current generation count on the right 4 seven-segment-display digits.
-
-### Images and Media
-
-Click [here](https://www.youtube.com/watch?v=BIZtcLPPDtI) to view a video demonstration of this project.
-
-<a href="https://github.com/Raymond-exe/Conway.v/assets/42707243/05eb05ea-bf4d-4c42-b5f0-8466407c0190" target="_blank">
-    <img src="https://github.com/Raymond-exe/Conway.v/assets/42707243/05eb05ea-bf4d-4c42-b5f0-8466407c0190">
-</a>
-<a href="https://www.youtube.com/watch?v=CcwDj1lyKrI" target="_blank">
-    <img src="https://github.com/Raymond-exe/Conway.v/assets/42707243/cc5fa935-eb8a-4adc-9eb4-0fd7a96c14f7">
-</a>
-
-<br>
+- The turret should have an on-board computer capable of running an object detection and classification algorithm (henceforth referred to as the on-board computer).
+- The on-board computer should be connected to a forward-facing camera to use as a video input source for the object detection algorithm.
+- The on-board computer should have control over when the turret is fired.
+- The on-board computer should have control over servo motors which dictate the pitch and yaw of the assembly as a whole.
+- The assembly should have at least 180 degrees of freedom along its yaw and 45 degrees of freedom along its pitch.
+- As an extension of the previous two goals, the on-board computer should be able to target an object with some degree of accuracy.
 
 ### Hardware Used:
 - Raspberry Pi 5 (8 GB)
-- Electronically-controlled dart gun ("Automatic Tommy 20")
+- Standard Raspberry Pi camera module (shown above)
+- Electronically-controlled dart gun ("Automatic Tommy 20", pictured below)
 - PCA9685 Servo Driver
 - 4x Servo Motors
     - Pitch Servo
     - Yaw Servo
     - 2x Servos controlling physical toggle switches
-- Standard Raspberry Pi camera module
+
+
+### Images and Media
+
+Click [here](https://www.youtube.com/watch?v=BIZtcLPPDtI) to view a video demonstration of this project.
+
+<a href="../images/tommygun.jpg" target="_blank">
+    <img src="../images/tommygun.jpg">
+</a>
+
+<a href="../images/turret_targetlock.gif" target="_blank">
+    <img src="../images/turret_targetlock.gif">
+</a>
+<a href="../images/turret_slowmo.gif" target="_blank">
+    <img src="../images/turret_slowmo.gif">
+</a>
 
 
 ## Team Members:
@@ -61,13 +69,16 @@ Click [here](https://www.youtube.com/watch?v=BIZtcLPPDtI) to view a video demons
 
 
 ### Roles and Responsibilities:
-- Team Lead: Raymond Wong
+- Team Lead & Software: Raymond Wong
 - YOLOv8 Implementation: Kevin Foyet
 - Testing & Documentation: David Nuckolls
+- Hardware Research: Jason Molina
+
 
 ### Project Deliverables:
 - [Video Demonstration](https://www.youtube.com/watch?v=BIZtcLPPDtI)
 - [Final Project Report](https://docs.google.com/document/d/1pOIFu9WY_gL9sg0sMV9PNh2P3P-iyiJVVvix_5ne5tk/)
+
 
 ### References:
 - ["YOLOv8 Docs" *Ultralytics*](https://docs.ultralytics.com/models/yolov8/)
