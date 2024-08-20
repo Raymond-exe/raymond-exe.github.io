@@ -3,7 +3,7 @@
 
 *Mechy* Ver. III is my first PCB design project. The goal is to create a remote-controllable device capable of driving itself around, while also making it as small as possible.
 
-**Project status:** Prototype in assembly
+**Project status:** Project On Hold
 
 ## Background
 ### Why call the project "Mechy"?
