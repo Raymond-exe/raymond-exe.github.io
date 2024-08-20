@@ -1,12 +1,14 @@
 
+const getBody = () => document.getElementById('body');
+
 // Used to remember where the user scrolled on the main portfolio page
 let resetScroll = 0;
 
 function toggleDarkMode() {
     const element = document.body;
-    element.classList.toggle("dark-mode");
-    const html = document.getElementById("html");
-    html.classList.toggle("dark-mode");
+    element.classList.toggle('dark-mode');
+    const html = document.getElementById('html');
+    html.classList.toggle('dark-mode');
 }
 
 function showProjectViewer(project) {
@@ -23,7 +25,7 @@ function showProjectViewer(project) {
     markdown.src = `./projects/${project}.md`;
 
     // Scroll to top of page
-    resetScroll = document.children[0].scrollTop;
+    resetScroll = getBody().scrollTop;
     setScroll();
 }
 
@@ -43,8 +45,8 @@ function hideProjectViewer() {
 function setScroll(height = 0) {
     try {
         // throw new Error(''); // TODO figure out smooth scrolling
-        window.scrollTo({top: height, behavior: 'smooth'})
+        getBody().scrollTo({top: height, behavior: 'smooth'})
     } catch (e) {
-        window.scrollTo(0, height);
+        getBody().scrollTo(0, height);
     }
 }

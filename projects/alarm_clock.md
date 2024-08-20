@@ -1,4 +1,4 @@
-# FPGA Alarm Clock
+# FPGA Digital Alarm Clock
 
 <a href="../images/alarm_clk_demo.gif" target="_blank"><img src="../images/alarm_clk_demo.gif"></a>
 
