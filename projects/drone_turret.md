@@ -51,12 +51,21 @@ Click [here](https://www.youtube.com/watch?v=BIZtcLPPDtI) to view a video demons
 <a href="../images/tommygun.jpg" target="_blank">
     <img src="../images/tommygun.jpg">
 </a>
+<a href="../images/turret_motors.jpg" target="_blank">
+    <img src="../images/turret_motors.jpg">
+</a>
+<a href="../images/turret_hardware.jpg" target="_blank">
+    <img src="../images/turret_hardware.jpg">
+</a>
 
 <a href="../images/turret_targetlock.gif" target="_blank">
     <img src="../images/turret_targetlock.gif">
 </a>
 <a href="../images/turret_slowmo.gif" target="_blank">
     <img src="../images/turret_slowmo.gif">
+</a>
+<a href="../images/turret_turnaround.gif" target="_blank">
+    <img src="../images/turret_turnaround.gif">
 </a>
 
 
