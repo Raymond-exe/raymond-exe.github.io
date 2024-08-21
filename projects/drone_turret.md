@@ -1,5 +1,11 @@
 # Autonomous Drone-Targeting Dart Turret 
 
+<div>
+    <img src="https://img.shields.io/badge/Raspberry_Pi_5-e00053">
+    <img src="https://img.shields.io/badge/Class_Assignment-blue">
+    <img src="https://img.shields.io/badge/Completed_2024-green">
+</div>
+
 <br>
 
 <iframe width="450" height="300" src="https://www.youtube.com/embed/BIZtcLPPDtI"></iframe>

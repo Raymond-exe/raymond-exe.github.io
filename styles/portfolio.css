@@ -163,6 +163,10 @@ p {
     width: 80%;
 }
 
+#markdown-renderer > div > img {
+    height: 20px;
+}
+
 #close-project {
     position: absolute;
     top: 35px;

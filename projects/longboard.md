@@ -1,5 +1,10 @@
 # Electric Longboard
 
+<div>
+    <img src="https://img.shields.io/badge/Arduino_Uno-008385">
+    <img src="https://img.shields.io/badge/In_Progress-yellow">
+</div>
+
 <a href="../images/longboard.jpg" target="_blank"><img src="../images/longboard.jpg"></a>
 
 A custom electric longboard created from scratch.

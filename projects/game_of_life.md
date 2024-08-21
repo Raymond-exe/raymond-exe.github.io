@@ -1,5 +1,11 @@
 # Conway's *Game of Life* on FPGA
 
+<div>
+    <img src="https://img.shields.io/badge/Nexys_A7-3d902a">
+    <img src="https://img.shields.io/badge/Assignment-blue">
+    <img src="https://img.shields.io/badge/Completed_2023-green">
+</div>
+
 <br>
 
 <iframe width="450" height="300" src="https://www.youtube.com/embed/CcwDj1lyKrI"></iframe>
