@@ -2,9 +2,7 @@
 
 <br>
 
-<a href="https://www.youtube.com/watch?v=CcwDj1lyKrI" target="_blank">
-    <img src="https://github.com/Raymond-exe/Conway.v/assets/42707243/cc5fa935-eb8a-4adc-9eb4-0fd7a96c14f7">
-</a>
+<iframe width="450" height="300" src="https://www.youtube.com/embed/CcwDj1lyKrI"></iframe>
 
 > Contributors: Gerin Fajardo, Kevin Foyet, Tyler Marts, and Raymond Wong <br>
 > November 2023 － December 2023 <br>
@@ -45,7 +43,7 @@ Click [here](https://www.youtube.com/watch?v=CcwDj1lyKrI) to view a video demons
 <a href="https://github.com/Raymond-exe/Conway.v/assets/42707243/05eb05ea-bf4d-4c42-b5f0-8466407c0190" target="_blank">
     <img src="https://github.com/Raymond-exe/Conway.v/assets/42707243/05eb05ea-bf4d-4c42-b5f0-8466407c0190">
 </a>
-<a href="https://www.youtube.com/watch?v=CcwDj1lyKrI" target="_blank">
+<a href="https://github.com/Raymond-exe/Conway.v/assets/42707243/cc5fa935-eb8a-4adc-9eb4-0fd7a96c14f7" target="_blank">
     <img src="https://github.com/Raymond-exe/Conway.v/assets/42707243/cc5fa935-eb8a-4adc-9eb4-0fd7a96c14f7">
 </a>
 <a href="../images/game-of-life_flyers.gif" target="_blank">

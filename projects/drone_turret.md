@@ -2,9 +2,7 @@
 
 <br>
 
-<a href="https://www.youtube.com/watch?v=BIZtcLPPDtI" target="_blank">
-    <img src="../images/turret_thumbnail.jpg">
-</a>
+<iframe width="450" height="300" src="https://www.youtube.com/embed/BIZtcLPPDtI"></iframe>
 
 > Contributors: Kevin Foyet, Jason Molina, David Nuckolls, Rob Ranit, and Raymond Wong <br>
 > April 2024 － May 2024 <br>
@@ -20,8 +18,8 @@ A fully-autonomous turret which can detect and fire darts at a nearby drone. You
 The objective of this project is to create a fully-autonomous turret which can detect when a drone is nearby and fire one (or more) darts at it. The detection and firing control is to be managed by an on-board computer and should be able to target a drone without user interference. Since this project emphasizes the electrical systems and software, mechanical design is not a focus and thus will not be as heavily covered in this project report. 
 
 
-<a href="../images/turret_turnaround.gif" target="_blank">
-    <img src="../images/turret_turnaround.gif">
+<a href="../images/turret/turnaround.gif" target="_blank">
+    <img src="../images/turret/turnaround.gif">
 </a>
 
 
@@ -53,26 +51,28 @@ However, there are also numerous points of concern that were identified early-on
 
 ### Images and Media
 
-Click [here](https://www.youtube.com/watch?v=BIZtcLPPDtI) to view a video demonstration of this project.
-
-<a href="../images/tommygun.jpg" target="_blank">
-    <img src="../images/tommygun.jpg">
+<a href="../images/turret/thumbnail.jpg" target="_blank">
+    <img src="../images/turret/thumbnail.jpg">
 </a>
-<a href="../images/turret_motors.jpg" target="_blank">
-    <img src="../images/turret_motors.jpg">
+<a href="../images/turret/motors.jpg" target="_blank">
+    <img src="../images/turret/motors.jpg">
 </a>
-<a href="../images/turret_hardware.jpg" target="_blank">
-    <img src="../images/turret_hardware.jpg">
+<a href="../images/turret/hardware.jpg" target="_blank">
+    <img src="../images/turret/hardware.jpg">
 </a>
 
-<a href="../images/turret_targetlock.gif" target="_blank">
-    <img src="../images/turret_targetlock.gif">
+<a href="../images/turret/targetlock.gif" target="_blank">
+    <img src="../images/turret/targetlock.gif">
 </a>
-<a href="../images/turret_slowmo.gif" target="_blank">
-    <img src="../images/turret_slowmo.gif">
+<a href="../images/turret/slowmo.gif" target="_blank">
+    <img src="../images/turret/slowmo.gif">
 </a>
-<a href="../images/turret_turnaround.gif" target="_blank">
-    <img src="../images/turret_turnaround.gif">
+<a href="../images/turret/turnaround.gif" target="_blank">
+    <img src="../images/turret/turnaround.gif">
+</a>
+
+<a href="../images/turret/tommygun.jpg" target="_blank">
+    <img src="../images/turret/tommygun.jpg">
 </a>
 
 <br>
