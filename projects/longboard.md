@@ -46,5 +46,5 @@ Switching to the ESP32 presents the opportunity to transmit system diagnostics f
 
 ## Gallery
 <a href="../images/longboard/longboard.jpg" target="_blank"><img src="../images/longboard/longboard.jpg"></a>
-<a href="../images/longboard_components.jpg" target="_blank"><img src="../images/longboard_components.jpg"></a>
-<a href="../images/longboard_electrical.jpg" target="_blank"><img src="../images/longboard_electrical.jpg"></a>
+<a href="../images/longboard/components.jpg" target="_blank"><img src="../images/longboard/components.jpg"></a>
+<a href="../images/longboard/electrical.jpg" target="_blank"><img src="../images/longboard/electrical.jpg"></a>
