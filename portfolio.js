@@ -50,3 +50,12 @@ function setScroll(height = 0) {
         getBody().scrollTo(0, height);
     }
 }
+
+addEventListener("load", () => {
+    const element = document.getElementById('instruction');
+    if (element && window.innerHeight > window.innerWidth) {
+        const text = element.textContent.replace('Click', 'Tap');
+        element.textContent = text;
+    }
+    console.log(element.textContent);
+});
