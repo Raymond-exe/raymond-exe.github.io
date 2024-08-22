@@ -170,6 +170,12 @@ p {
     height: auto;
 }
 
+/* youtube embeds */
+#markdown-renderer > iframe {
+    width: min(450px, 80vw);
+    height: min(300px, 50vw);
+}
+
 #close-project {
     position: absolute;
     top: 35px;

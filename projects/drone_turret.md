@@ -8,7 +8,7 @@
 
 <br>
 
-<iframe width="450" height="300" src="https://www.youtube.com/embed/BIZtcLPPDtI"></iframe>
+<iframe src="https://www.youtube.com/embed/BIZtcLPPDtI"></iframe>
 
 > Contributors: Kevin Foyet, Jason Molina, David Nuckolls, Rob Ranit, and Raymond Wong <br>
 > April 2024 － May 2024 <br>

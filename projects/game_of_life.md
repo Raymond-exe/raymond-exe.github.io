@@ -8,7 +8,7 @@
 
 <br>
 
-<iframe width="450" height="300" src="https://www.youtube.com/embed/CcwDj1lyKrI"></iframe>
+<iframe src="https://www.youtube.com/embed/CcwDj1lyKrI"></iframe>
 
 > Contributors: Gerin Fajardo, Kevin Foyet, Tyler Marts, and Raymond Wong <br>
 > November 2023 － December 2023 <br>
