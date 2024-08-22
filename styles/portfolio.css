@@ -165,7 +165,7 @@ p {
 }
 
 #markdown-renderer > div > img {
-    display: block;
+    display: inline;
     max-height: 20px;
     width: auto;
     height: auto;
