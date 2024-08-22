@@ -164,7 +164,10 @@ p {
 }
 
 #markdown-renderer > div > img {
-    height: 20px;
+    display: block;
+    max-height: 20px;
+    width: auto;
+    height: auto;
 }
 
 #close-project {
