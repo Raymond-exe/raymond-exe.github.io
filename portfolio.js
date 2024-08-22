@@ -52,10 +52,17 @@ function setScroll(height = 0) {
 }
 
 addEventListener("load", () => {
+    // update instruction to say "Tap" if display is vertical
     const element = document.getElementById('instruction');
     if (element && window.innerHeight > window.innerWidth) {
         const text = element.textContent.replace('Click', 'Tap');
         element.textContent = text;
     }
     console.log(element.textContent);
+
+    // show body when it's finished loading
+    const body = document.getElementById('body');
+    if (body) {
+        body.classList.remove('hidden');
+    }
 });
