@@ -24,8 +24,8 @@ The objective of this project is to implement Mathematician’s John Horton Conw
 
 For more information on the Game of Life, see [Wikipedia](https://en.wikipedia.org/wiki/The_Game_of_Life).
 
-<a href="../images/game-of-life_flyers.gif" target="_blank">
-    <img src="../images/game-of-life_flyers.gif">
+<a href="../images/game-of-life/flyers.gif" target="_blank">
+    <img src="../images/game-of-life/flyers.gif">
 </a>
 
 <br>
@@ -52,8 +52,11 @@ Click [here](https://www.youtube.com/watch?v=CcwDj1lyKrI) to view a video demons
 <a href="https://github.com/Raymond-exe/Conway.v/assets/42707243/cc5fa935-eb8a-4adc-9eb4-0fd7a96c14f7" target="_blank">
     <img src="https://github.com/Raymond-exe/Conway.v/assets/42707243/cc5fa935-eb8a-4adc-9eb4-0fd7a96c14f7">
 </a>
-<a href="../images/game-of-life_flyers.gif" target="_blank">
-    <img src="../images/game-of-life_flyers.gif">
+<a href="../images/game-of-life/ezpz.jpg" target="_blank">
+    <img src="../images/game-of-life/ezpz.jpg">
+</a>
+<a href="../images/game-of-life/flyers.gif" target="_blank">
+    <img src="../images/game-of-life/flyers.gif">
 </a>
 
 <br>

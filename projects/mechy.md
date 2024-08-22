@@ -5,7 +5,7 @@
     <img src="https://img.shields.io/badge/In_Progress-yellow">
 </div>
 
-<a href="../images/mechy_prototype.gif" target="_blank"><img src="../images/mechy_prototype.gif"></a>
+<a href="../images/mechy/prototype.gif" target="_blank"><img src="../images/mechy/prototype.gif"></a>
 
 *Mechy* Ver. III is my first PCB design project. The goal is to create a remote-controllable device capable of driving itself around, while also making it as small as possible.
 
@@ -26,6 +26,6 @@ The Mechy motor shield is a 2-sided PCB, with one side ("side A") dedicated to m
 ## Gallery
 
 
-<a href="../images/mechy_top.png" target="_blank"><img src="../images/mechy_top.png"></a>
-<a href="../images/mechy_bottom.png" target="_blank"><img src="../images/mechy_bottom.png"></a>
-<a href="../images/mechy_schem.png" target="_blank"><img src="../images/mechy_schem.png"></a>
+<a href="../images/mechy/top_render.png" target="_blank"><img src="../images/mechy/top_render.png"></a>
+<a href="../images/mechy/bottom_render.png" target="_blank"><img src="../images/mechy/bottom_render.png"></a>
+<a href="../images/mechy/schematic.png" target="_blank"><img src="../images/mechy/schematic.png"></a>
