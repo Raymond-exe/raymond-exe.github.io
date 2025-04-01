@@ -1,9 +1,20 @@
 <!-- Internal Disclaimer: I am writing after waking up from anesthesia. -->
 
-# Capstone Project VR-analogous Camera Control System for FPV Pilots
+# Capstone: VR-analogous Camera Control System for FPV Pilots
+
+
+<div>
+    <img src="https://img.shields.io/badge/ESP32-black">
+    <img src="https://img.shields.io/badge/RSCA_2025_Winner-darkgreen">
+    <img src="https://img.shields.io/badge/Completed_2025-green">
+</div>
+
+<br>
+
 <iframe src="https://www.youtube.com/embed/KP6AFJprnVQ"></iframe>
 
-> Submitted as my Engaged Learning Experience for the Kellogg Honor College, Cal Poly Pomona. <br>
+> *Submitted as my Engaged Learning Experience for the Kellogg Honor College, Cal Poly Pomona.* <br>
+***Selected as a winner** at CPP's 2025 Student Research, Scholarship & Creative Activities Conference ([RSCA](https://www.cpp.edu/cppsrc/current-conference/index.shtml)).*
 
 
 ## Abstract
@@ -30,6 +41,16 @@ To address this, a simple 2-axis gimbal was constructed out of servo motors and 
 
 ----------
 
+## System Diagrams
+<a href="../images/capstone/system-diagram-1.png" target="_blank">
+    <img src="../images/capstone/system-diagram-1.png">
+</a>
+<a href="../images/capstone/system-diagram-2.png" target="_blank">
+    <img src="../images/capstone/system-diagram-2.png">
+</a>
+
+----------
+
 ## Research Findings
 
 The rotation control software, collecting rotation data from the three headset-mounted IMUs, failed to (on average) gain any increase in accuracy from the triple-redundant IMUs when compared to using a single IMU. Rigorous testing of the accuracy of the system was conducted and revealed an accuracy ±5° along the pitch axis and ±3° along the roll axis in ideal, low-acceleration conditions after factoring an average latency of 100 milliseconds. In less-than-ideal conditions, the accuracy decreases to ±10° along the pitch axis but remains at ±3° along the roll axis. In even poorer conditions, accuracy further degrades to ±17° along the pitch axis and ±8° along the roll axis. Conditions are determined by the magnitude and quantity of rapid angular impulses, or rapid changes in angular acceleration. While exact figures were not recorded, greater angular impulse routinely resulted in a greater angular error between the IMU-calculated angle and the visually measured angle. In spite of this, the rotation control system was able to successfully communicate and transmit the headset's orientation to the on-board camera gimbal controller. The gimbal controller would then mirror the orientation of the headset and rotate the camera to match the pilot's viewing angle.
@@ -39,8 +60,15 @@ The camera gimbal software also includes multiple safeguards, specifically for a
 ## Slideshow Presentation
 <iframe src="https://docs.google.com/presentation/d/1hSID1Xj82OG5c93E1Hq8MMiwoe57s5Jl8a1LDsr6gXY/embed"> </iframe>
 
+----------
 
-
+## System Diagrams
+<a href="../images/capstone/system-diagram-1.png" target="_blank">
+    <img src="../images/capstone/system-diagram-1.png">
+</a>
+<a href="../images/capstone/system-diagram-2.png" target="_blank">
+    <img src="../images/capstone/system-diagram-2.png">
+</a>
 
 ## Gallery
 <!-- ![liftoff.gif](../images/capstone/liftoff.gif) -->
