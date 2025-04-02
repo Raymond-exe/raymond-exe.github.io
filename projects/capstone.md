@@ -1,6 +1,6 @@
 <!-- Internal Disclaimer: I am writing after waking up from anesthesia. -->
 
-# Capstone: VR-analogous Camera Control System for FPV Pilots
+# Capstone Project: VR-analogous Camera Control System for FPV Pilots
 
 
 <div>
@@ -155,18 +155,18 @@ Currently, only the code for the [Triple-IMU Headset](https://github.com/Raymond
 - [*Student Innovation Idea Labs*](https://www.cpp.edu/siil/) & [*Library Maker Studio*](https://www.cpp.edu/makerstudio/)
 - [*Research, Scholarship & Creative Activities Conference*](https://www.cpp.edu/cppsrc/current-conference/)
 
-<div style="height: 100px;">
+<div>
     <a href="https://www.cpp.edu/honorscollege/" target="_blank">
-        <img src="../images/capstone/logos/khc.png" style="height: 100px;">
+        <img src="../images/capstone/logos/khc.png">
     </a>
     <a href="https://www.linkedin.com/feed/hashtag/?keywords=reconfigurable_space_computing_lab" target="_blank">
-        <img src="../images/capstone/logos/rscl.png" style="height: 100px;">
+        <img src="../images/capstone/logos/rscl.png">
     </a>
     <a href="https://www.cpp.edu/siil/" target="_blank">
-        <img src="../images/capstone/logos/siil.png" style="height: 100px;">
+        <img src="../images/capstone/logos/siil.png">
     </a>
     <a href="https://www.cpp.edu/cppsrc/current-conference/" target="_blank">
-        <img src="../images/capstone/logos/rsca.png" style="height: 100px;">
+        <img src="../images/capstone/logos/rsca.png">
     </a>
 </div>
 
