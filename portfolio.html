@@ -21,78 +21,73 @@
             <br>
             <h3 style="font-weight:100;" id="instruction" class="centered">Click on a project below to view more information</h3>
         </div>
-
-        <button class="project-link" onclick="showProjectViewer('capstone')">
-            <div class="project-info">
-                <h2 class="project-title">Capstone Project - VR-analogous Camera Control System for FPV Pilots</h2>
-                <div class="project-status-tags">
-                    <img src="https://img.shields.io/badge/ESP32-black">
-                    <img src="https://img.shields.io/badge/RSCA_2025_Winner-darkgreen">
-                    <img src="https://img.shields.io/badge/Completed_2025-green">
-                    <!-- <img src="https://img.shields.io/badge/Work_in_progress-yellow"> -->
+        <div id="projects-grid">
+            <button class="project-link" onclick="showProjectViewer('capstone')">
+                <div class="project-info">
+                    <h2 class="project-title">Capstone Project: <br> Camera Control System for FPV Pilots</h2>
+                    <div class="project-status-tags">
+                        <img src="https://img.shields.io/badge/ESP32-black">
+                        <img src="https://img.shields.io/badge/RSCA_2025_Winner-darkgreen">
+                        <img src="https://img.shields.io/badge/Completed_2025-green">
+                        <!-- <img src="https://img.shields.io/badge/Work_in_progress-yellow"> -->
+                    </div>
                 </div>
-            </div>
-            <img src="./images/capstone/calibration.gif" class="thumbnail">
-        </button>
-
-        <button class="project-link" onclick="showProjectViewer('drone_turret')">
-            <div class="project-info">
-                <h2 class="project-title">Autonomous Drone-Targeting Dart Turret</h2>
-                <div class="project-status-tags">
-                    <img src="https://img.shields.io/badge/Raspberry_Pi_5-e00053">
-                    <img src="https://img.shields.io/badge/Class_Assignment-blue">
-                    <img src="https://img.shields.io/badge/Completed_2024-green">
+                <img src="./images/capstone/calibration.gif" class="thumbnail">
+            </button>
+            <button class="project-link" onclick="showProjectViewer('drone_turret')">
+                <div class="project-info">
+                    <h2 class="project-title">Autonomous Drone-Targeting Dart Turret</h2>
+                    <div class="project-status-tags">
+                        <img src="https://img.shields.io/badge/Raspberry_Pi_5-e00053">
+                        <img src="https://img.shields.io/badge/Class_Assignment-blue">
+                        <img src="https://img.shields.io/badge/Completed_2024-green">
+                    </div>
                 </div>
-            </div>
-            <img src="./images/turret/thumbnail.jpg" class="thumbnail">
-        </button>
-
-        <button class="project-link" onclick="showProjectViewer('alarm_clock')">
-            <div class="project-info">
-                <h2 class="project-title">FPGA Digital Alarm Clock</h2>
-                <div class="project-status-tags">
-                    <img src="https://img.shields.io/badge/Nexys_A7-3d902a">
-                    <img src="https://img.shields.io/badge/Completed_2024-green">
+                <img src="./images/turret/thumbnail.jpg" class="thumbnail">
+            </button>
+            <button class="project-link" onclick="showProjectViewer('alarm_clock')">
+                <div class="project-info">
+                    <h2 class="project-title">FPGA Digital Alarm Clock</h2>
+                    <div class="project-status-tags">
+                        <img src="https://img.shields.io/badge/Nexys_A7-3d902a">
+                        <img src="https://img.shields.io/badge/Completed_2024-green">
+                    </div>
                 </div>
-            </div>
-            <img src="./images/clock/alarm_clk.jpeg" class="thumbnail">
-        </button>
-
-        <button class="project-link" onclick="showProjectViewer('longboard')">
-            <div class="project-info">
-                <h2 class="project-title">Electric Longboard</h2>
-                <div class="project-status-tags">
-                    <img src="https://img.shields.io/badge/Arduino_Uno-008385">
-                    <img src="https://img.shields.io/badge/Completed_2024-green">
+                <img src="./images/clock/alarm_clk.jpeg" class="thumbnail">
+            </button>
+            <button class="project-link" onclick="showProjectViewer('longboard')">
+                <div class="project-info">
+                    <h2 class="project-title">Electric Longboard</h2>
+                    <div class="project-status-tags">
+                        <img src="https://img.shields.io/badge/Arduino_Uno-008385">
+                        <img src="https://img.shields.io/badge/Completed_2024-green">
+                    </div>
                 </div>
-            </div>
-            <img src="./images/longboard/longboard.jpg" class="thumbnail">
-        </button>
-
-        <button class="project-link" onclick="showProjectViewer('game_of_life')">
-            <div class="project-info">
-                <h2 class="project-title">Conway's <em>Game of Life</em> in Verilog</h2>
-                <div class="project-status-tags">
-                    <img src="https://img.shields.io/badge/Nexys_A7-3d902a">
-                    <img src="https://img.shields.io/badge/Class_Assignment-blue">
-                    <img src="https://img.shields.io/badge/Completed_2023-green">
+                <img src="./images/longboard/longboard.jpg" class="thumbnail">
+            </button>
+            <button class="project-link" onclick="showProjectViewer('game_of_life')">
+                <div class="project-info">
+                    <h2 class="project-title">Conway's <em>Game of Life</em> in Verilog</h2>
+                    <div class="project-status-tags">
+                        <img src="https://img.shields.io/badge/Nexys_A7-3d902a">
+                        <img src="https://img.shields.io/badge/Class_Assignment-blue">
+                        <img src="https://img.shields.io/badge/Completed_2023-green">
+                    </div>
                 </div>
-            </div>
-            <img src="https://github.com/Raymond-exe/Conway.v/assets/42707243/cc5fa935-eb8a-4adc-9eb4-0fd7a96c14f7" class="thumbnail">
-        </button>
-
-        <button class="project-link" onclick="showProjectViewer('mechy')">
-            <div class="project-info">
-                <h2 class="project-title">"Mechy" Raspberry Pi Pico Motor Shield</h2>
-                <div class="project-status-tags">
-                    <img src="https://img.shields.io/badge/Raspberry_Pi_Pico-e00053">
-                    <img src="https://img.shields.io/badge/On_Hold-orange">
-                    <!-- <img src="https://img.shields.io/badge/In_Progress-yellow"> -->
+                <img src="https://github.com/Raymond-exe/Conway.v/assets/42707243/cc5fa935-eb8a-4adc-9eb4-0fd7a96c14f7" class="thumbnail">
+            </button>
+            <button class="project-link" onclick="showProjectViewer('mechy')">
+                <div class="project-info">
+                    <h2 class="project-title">"Mechy" Raspberry Pi Pico Motor Shield</h2>
+                    <div class="project-status-tags">
+                        <img src="https://img.shields.io/badge/Raspberry_Pi_Pico-e00053">
+                        <img src="https://img.shields.io/badge/On_Hold-orange">
+                        <!-- <img src="https://img.shields.io/badge/In_Progress-yellow"> -->
+                    </div>
                 </div>
-            </div>
-            <img src="./images/mechy/bottom_render.png" class="thumbnail">
-        </button>
-
+                <img src="./images/mechy/bottom_render.png" class="thumbnail">
+            </button>
+        </div>
     </div>
     <div id="project-viewer" class="hidden">
         <div id="close-project" onclick="hideProjectViewer()">≪ BACK</div>

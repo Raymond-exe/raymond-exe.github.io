@@ -38,6 +38,12 @@ function hideProjectViewer() {
     const portfolio = document.getElementById('portfolio-container');
     portfolio.classList.remove('hidden');
 
+    setTimeout(() => {
+        // clear project shown on markdown renderer
+        const markdown = document.getElementById('markdown-renderer');
+        markdown.src = '';
+    }, 500);
+
     // Restore original scroll
     setScroll(resetScroll);
 }

@@ -71,6 +71,19 @@ p {
     transition: all 0.5s;
 }
 
+#projects-grid {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: fit-content;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Creates a responsive grid */
+    gap: 2em; /* Adjust the gap between grid items */
+    
+    transition: all 0.5s;
+}
+
 #portfolio-container.hidden {
     left: -100%;
     opacity: 0;
@@ -78,7 +91,7 @@ p {
 
 .project-link {
     position: relative;
-    width: 100%;
+    width: auto;
     height: 300px;
     padding: 0;
     border: none;
