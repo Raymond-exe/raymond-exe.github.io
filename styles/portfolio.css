@@ -78,7 +78,7 @@ p {
     height: fit-content;
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Creates a responsive grid */
+    grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr)); /* Creates a responsive grid */
     gap: 2em; /* Adjust the gap between grid items */
     
     transition: all 0.5s;
