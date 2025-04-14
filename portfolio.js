@@ -22,7 +22,7 @@ function showProjectViewer(project) {
 
     // specify project to show on markdown renderer
     const markdown = document.getElementById('markdown-renderer');
-    markdown.src = `./projects/${project}.md`;
+    markdown.src = project;
 
     // Scroll to top of page
     resetScroll = getBody().scrollTop;
@@ -57,18 +57,66 @@ function setScroll(height = 0) {
     }
 }
 
-addEventListener("load", () => {
-    // update instruction to say "Tap" if display is vertical
-    const element = document.getElementById('instruction');
-    if (element && window.innerHeight > window.innerWidth) {
-        const text = element.textContent.replace('Click', 'Tap');
-        element.textContent = text;
-    }
-    console.log(element.textContent);
+async function loadProjects(callback = () => {}) {
+    const response = await fetch('./projects/projects.json');
+    const projects = await response.json();
+    const grid = document.getElementById('projects-grid');
 
-    // show body when it's finished loading
-    const body = document.getElementById('body');
-    if (body) {
-        body.classList.remove('hidden');
+    projects.forEach(project => {
+        const button = document.createElement('button');
+        button.classList.add('project-link');
+        button.onclick = () => showProjectViewer(project.file);
+
+        const projectTitle = document.createElement('h2');
+        projectTitle.classList.add('project-title');
+        projectTitle.innerText = project.title;
+
+        const statusTags = document.createElement('div');
+        statusTags.classList.add('project-status-tags');
+        project.tags.forEach(tag => {
+            const image = document.createElement('img');
+            image.src = `https://img.shields.io/badge/${tag}`;
+            statusTags.appendChild(image);
+        });
+
+        const projectInfo = document.createElement('div');
+        projectInfo.classList.add('project-info');
+        projectInfo.appendChild(projectTitle);
+        projectInfo.appendChild(statusTags);
+
+        const thumbnail = document.createElement('img');
+        thumbnail.classList.add('thumbnail');
+        thumbnail.src = project.thumbnail;
+        thumbnail.onload = onLoad;
+
+        button.appendChild(projectInfo);
+        button.appendChild(thumbnail);
+
+        grid.appendChild(button);
+    });
+
+    let loaded = 0;
+    function onLoad(){
+        loaded++;
+        if(loaded == projects.length){
+            callback()
+        }
     }
+}
+
+addEventListener("load", () => {
+    loadProjects(() => {
+        // update instruction to say "Tap" if display is vertical
+        const element = document.getElementById('instruction');
+        if (element && window.innerHeight > window.innerWidth) {
+            const text = element.textContent.replace('Click', 'Tap');
+            element.textContent = text;
+        }
+
+        // show body when it's finished loading
+        const body = document.getElementById('body');
+        if (body) {
+            body.classList.remove('hidden');
+        }
+    });
 });

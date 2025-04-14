@@ -129,6 +129,10 @@ p {
     -webkit-transform: translateX(-50%);
 }
 
+.project-status-tags > img {
+    padding: 0.2em;
+}
+
 .project-link .thumbnail {
     position: absolute;
     left: 50%;

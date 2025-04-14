@@ -1,0 +1,59 @@
+[
+    {
+        "title": "Capstone Project: \n Camera Control System for FPV Pilots",
+        "file": "./projects/capstone.md",
+        "thumbnail": "./images/capstone/calibration.gif",
+        "tags": [
+            "ESP32-black",
+            "RSCA_2025_Winner-darkgreen",
+            "Completed_2025-green"
+        ]
+    },
+    {
+        "title": "Autonomous Drone-Targeting Dart Turret",
+        "file": "./projects/drone_turret.md",
+        "thumbnail": "./images/turret/thumbnail.jpg",
+        "tags": [
+            "Raspberry_Pi_5-e00053",
+            "Class_Assignment-blue",
+            "Completed_2024-green"
+        ]
+    },
+    {
+        "title": "FPGA Digital Alarm Clock",
+        "file": "./projects/alarm_clock.md",
+        "thumbnail": "./images/clock/alarm_clk.jpeg",
+        "tags": [
+            "Nexys_A7-3d902a",
+            "Completed_2024-green"
+        ]
+    },
+    {
+        "title": "Electric Longboard",
+        "file": "./projects/longboard.md",
+        "thumbnail": "./images/longboard/longboard.jpg",
+        "tags": [
+            "Arduino_Uno-008385",
+            "Completed_2024-green"
+        ]
+    },
+    {
+        "title": "Conway's Game of Life in Verilog",
+        "file": "./projects/game_of_life.md",
+        "thumbnail": "https://github.com/Raymond-exe/Conway.v/assets/42707243/cc5fa935-eb8a-4adc-9eb4-0fd7a96c14f7",
+        "tags": [
+            "Nexys_A7-3d902a",
+            "Class_Assignment-blue",
+            "Completed_2023-green"
+        ]
+    },
+    {
+        "title": "\"Mechy\" Raspberry Pi Pico Motor Shield",
+        "file": "./projects/mechy.md",
+        "thumbnail": "./images/mechy/bottom_render.png",
+        "tags": [
+            "Raspberry_Pi_5-e00053",
+            "On_Hold-orange"
+        ]
+    }
+]
