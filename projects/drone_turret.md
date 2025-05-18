@@ -2,7 +2,7 @@
 
 <div>
     <img src="https://img.shields.io/badge/Raspberry_Pi_5-e00053">
-    <img src="https://img.shields.io/badge/Class_Assignment-blue">
+    <img src="https://img.shields.io/badge/Class_Project-blue">
     <img src="https://img.shields.io/badge/Completed_2024-green">
 </div>
 

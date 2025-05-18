@@ -2,7 +2,7 @@
 
 <div>
     <img src="https://img.shields.io/badge/Nexys_A7-3d902a">
-    <img src="https://img.shields.io/badge/Class_Assignment-blue">
+    <img src="https://img.shields.io/badge/Class_Project-blue">
     <img src="https://img.shields.io/badge/Completed_2024-green">
 </div>
 
