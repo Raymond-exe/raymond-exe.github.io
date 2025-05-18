@@ -10,6 +10,16 @@
         ]
     },
     {
+        "title": "Attitude Indicator Demonstration on an FPGA",
+        "file": "./projects/attitude_indicator.md",
+        "thumbnail": "./images/attitude-indicator/thumbnail.jpg",
+        "tags": [
+            "Nexys_A7-3d902a",
+            "Class_Assignment-blue",
+            "Completed_2024-green"
+        ]
+    },
+    {
         "title": "Autonomous Drone-Targeting Dart Turret",
         "file": "./projects/drone_turret.md",
         "thumbnail": "./images/turret/thumbnail.jpg",
