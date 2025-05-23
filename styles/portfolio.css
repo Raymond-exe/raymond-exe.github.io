@@ -10,6 +10,17 @@ body, html {
 }
 
 body.hidden {
+    background-image: url('../images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px 100px; /* half of actual gif res */
+}
+
+body:not(.hidden) {
+  background-image: none;
+}
+
+body.hidden * {
     opacity: 0.001;
 }
 
