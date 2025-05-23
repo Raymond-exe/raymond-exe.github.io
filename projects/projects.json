@@ -10,7 +10,7 @@
         ]
     },
     {
-        "title": "Attitude Indicator Demonstration on an FPGA",
+        "title": "Attitude Indicator Demonstration",
         "file": "./projects/attitude_indicator.md",
         "thumbnail": "./images/attitude-indicator/thumbnail.jpg",
         "tags": [
