@@ -3,6 +3,7 @@ const getBody = () => document.getElementById('body');
 
 // Used to remember where the user scrolled on the main portfolio page
 let resetScroll = 0;
+let projectTitles = {};
 
 function toggleDarkMode() {
     const element = document.body;
@@ -11,7 +12,7 @@ function toggleDarkMode() {
     html.classList.toggle('dark-mode');
 }
 
-function showProjectViewer(project) {
+function showProjectViewer(project, title = '') {
     // hide main portfolio view
     const portfolio = document.getElementById('portfolio-container');
     portfolio.classList.add('hidden');
@@ -23,6 +24,13 @@ function showProjectViewer(project) {
     // specify project to show on markdown renderer
     const markdown = document.getElementById('markdown-renderer');
     markdown.src = project;
+
+    // add hash for linking specific projects
+    const filename = project.split('/').pop().split('.')[0];
+    history.replaceState(null, '', `${window.location.pathname}${window.location.search}#${filename}`);
+
+    // update title
+    setTabTitle(title);
 
     // Scroll to top of page
     resetScroll = getBody().scrollTop;
@@ -37,6 +45,12 @@ function hideProjectViewer() {
     // show main portfolio view
     const portfolio = document.getElementById('portfolio-container');
     portfolio.classList.remove('hidden');
+
+    // reset hash in URL
+    history.replaceState(null, '', `${window.location.pathname}${window.location.search}`);
+
+    // reset tab title
+    setTabTitle();
 
     setTimeout(() => {
         // clear project shown on markdown renderer
@@ -63,9 +77,11 @@ async function loadProjects(callback = () => {}) {
     const grid = document.getElementById('projects-grid');
 
     projects.forEach(project => {
+        projectTitles[project.file] = project.title;
+
         const button = document.createElement('button');
         button.classList.add('project-link');
-        button.onclick = () => showProjectViewer(project.file);
+        button.onclick = () => showProjectViewer(project.file, project.title);
 
         const projectTitle = document.createElement('h2');
         projectTitle.classList.add('project-title');
@@ -104,8 +120,18 @@ async function loadProjects(callback = () => {}) {
     }
 }
 
+function setTabTitle(title = '𝘗𝘰𝘳𝘵𝘧𝘰𝘭𝘪𝘰') {
+    document.title = `𝘙. 𝘞𝘰𝘯𝘨 - ${title}`;
+}
+
 addEventListener("load", () => {
     loadProjects(() => {
+        // detect hash if present
+        const hash = window.location.hash.substring(1);
+        if (`./projects/${hash}.md` in projectTitles) {
+            showProjectViewer(`./projects/${hash}.md`, projectTitles[`./projects/${hash}.md`]);
+        }
+
         // update instruction to say "Tap" if display is vertical
         const element = document.getElementById('instruction');
         if (element && window.innerHeight > window.innerWidth) {
