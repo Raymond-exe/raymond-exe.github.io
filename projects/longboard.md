@@ -9,7 +9,7 @@
 
 A custom electric longboard created from scratch. Built around an Arduino Uno and motor shield, the electrical system is designed to run on 24 volts and is controlled from a small R/C transmitter.
 
-**Project status:** Complete, awaiting [possible upgrades](#future-opportunities)
+**Project status:** Complete, awaiting possible upgrades
 
 ## Project Overview
 
