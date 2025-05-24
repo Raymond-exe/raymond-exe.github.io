@@ -20,6 +20,9 @@ ECE 4301 final project. Transmitting an AES-128 encrypted JPG stream over Espres
 
 **Project status:** Complete
 
+## Slideshow Presentation
+<iframe src="https://docs.google.com/presentation/d/1inJd1SBS8Le8-MSJO36JaHmavx3KHoCaNt_0PNubrFs/embed"> </iframe>
+
 ## Project Overview
 The objective of this project is to design a system to transmit a secure video stream from one device to another, while limiting the hardware used to microcontrollers in the interest of keeping the system "lightweight". To achieve this, AES-128 encryption was run on ESP32s capturing and transmitting images, for other ESP32s to receive and decrypt. The Espressif ESP32 microcontroller was selected for its built-in ability to wirelessly transmit packets of information to other devices, with its own protocol for communicating with other ESP32s (ESP-NOW).
 
