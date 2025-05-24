@@ -10,6 +10,16 @@
         ]
     },
     {
+        "title": "Encrypted Video over ESP-NOW (\"EVEN-4301\")",
+        "file": "./projects/even.md",
+        "thumbnail": "./images/even/thumbnail.gif",
+        "tags": [
+            "ESP32-black",
+            "Class_Project-blue",
+            "Completed_2025-green"
+        ]
+    },
+    {
         "title": "Attitude Indicator Demonstration",
         "file": "./projects/attitude_indicator.md",
         "thumbnail": "./images/attitude-indicator/thumbnail.jpg",
