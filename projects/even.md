@@ -14,7 +14,7 @@
 > April 2025 － May 2025  
 > ECE 4301.01 － Cryptographic Algorithms on Reconfigurable Hardware  
 
-Transmitting an AES-128 encrypted video stream over Espressif's ESP-NOW protocol, completely run on ESP32 microcontrollers. You can view the full project repository [here](https://github.com/Raymond-exe/EVEN-4301).
+ECE 4301 final project. Transmitting an AES-128 encrypted video stream over Espressif's ESP-NOW protocol, completely run on ESP32 microcontrollers. You can view the full project repository [here](https://github.com/Raymond-exe/EVEN-4301).
 
 **Project status:** Complete
 
