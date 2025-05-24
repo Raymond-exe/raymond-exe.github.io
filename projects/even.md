@@ -10,8 +10,6 @@
     <img src="../images/even/thumbnail.gif">
 </a>
 
------
-
 > [Cyrus Kwok](https://www.linkedin.com/in/cyrus-kwok-432351213/), [William Masri](https://www.linkedin.com/in/william-masri-797978292/), and [Raymond Wong](https://www.linkedin.com/in/raymond-exe/)  
 > April 2025 － May 2025  
 > ECE 4301.01 － Cryptographic Algorithms on Reconfigurable Hardware  
@@ -19,6 +17,8 @@
 ECE 4301 final project. Transmitting an AES-128 encrypted JPG stream over Espressif's ESP-NOW protocol, completely run on ESP32 microcontrollers. You can view the full project repository [here](https://github.com/Raymond-exe/EVEN-4301).
 
 **Project status:** Complete
+
+-----
 
 ## Slideshow Presentation
 <iframe src="https://docs.google.com/presentation/d/1inJd1SBS8Le8-MSJO36JaHmavx3KHoCaNt_0PNubrFs/embed"> </iframe>
