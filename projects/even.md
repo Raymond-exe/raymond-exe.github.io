@@ -10,7 +10,7 @@
     <img src="../images/even/thumbnail.gif">
 </a>
 
-> [William Masri](https://www.linkedin.com/in/william-masri-797978292/), [Cyrus Kwok](https://www.linkedin.com/in/cyrus-kwok-432351213/), and [Raymond Wong](https://www.linkedin.com/in/raymond-exe/)  
+> [Cyrus Kwok](https://www.linkedin.com/in/cyrus-kwok-432351213/), [William Masri](https://www.linkedin.com/in/william-masri-797978292/), and [Raymond Wong](https://www.linkedin.com/in/raymond-exe/)  
 > April 2025 － May 2025  
 > ECE 4301.01 － Cryptographic Algorithms on Reconfigurable Hardware  
 
