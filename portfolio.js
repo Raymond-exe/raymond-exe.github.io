@@ -64,7 +64,6 @@ function hideProjectViewer() {
 
 function setScroll(height = 0) {
     try {
-        // throw new Error(''); // TODO figure out smooth scrolling
         getBody().scrollTo({top: height, behavior: 'smooth'})
     } catch (e) {
         getBody().scrollTo(0, height);
