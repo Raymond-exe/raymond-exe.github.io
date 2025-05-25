@@ -19,7 +19,7 @@ An attitude indicator implemented on the Nexys A7 FPGA, using hardware optimizat
 **Project status:** Complete
 
 
-## Project Abstract:
+## Project Abstract
 
 The objective of this project is to create a demonstration attitude indicator (or "artificial horizon") using the Nexys A7 FPGA's on-board accelerometer and a VGA-compatible display. Attitude indicators are a common instrument present in all modern aircraft, and provide pilots with crucial information about their aircraft's current 2 or 3-axis rotation at a glance. All attitude indicators work by displaying two colored regions (typically blue and orange) on a ball or circular display, representing the sky (up) and ground (down) respectively. For the purposes of this demonstration, the Nexys-based attitude indicator is only able to rotate in the pitch and roll axes, as there is no way to determine yaw using the Nexys's accelerometer alone. Rendering the attitude indicator onto the VGA display is achieved in layers, with each layer contributing a different element. A keyboard is then used to toggle each render layer for debugging and demonstrations, and controls can be seen below. Each render layer is also described below.
 
@@ -62,7 +62,7 @@ Each layer contains logic to bypass or disable rendering for that layer. The Spr
 | `[F]` | Pixel Buffer | Toggles visibility of the pixel buffer layer. When hidden, only the Artificial Horizon is displayed. Does not clear the pixel buffer itself.
 | `[A]` | Pixel Buffer | Toggles visibility of the arrow indicator for the roll. **Improves render times**.
 
-## Hardware Used:
+## Hardware Used
 - Digilent Nexys A7 FPGA
 - VGA Video Cable & Monitor
 - Keyboard

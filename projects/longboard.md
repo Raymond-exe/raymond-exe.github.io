@@ -13,7 +13,7 @@ A custom electric longboard created from scratch. Built around an Arduino Uno an
 
 ## Project Overview
 
-### Mechanical Components:
+### Mechanical Components
 - '2040' Aluminum beams
 - 1/4" Acrylic Deck
 - Longboard truck
@@ -21,14 +21,14 @@ A custom electric longboard created from scratch. Built around an Arduino Uno an
 - 3D printed undercarriage
 - Aluminum wheel mount
 
-### Electrical Components:
+### Electrical Components
 - Arduino Uno
 - [Cytron 10A Motor Shield-MD10](https://www.cytron.io/p-10amp-7v-30v-dc-motor-driver-shield-for-arduino)
 - Small R/C receiver + Remote
 - 24V -> 5V buck converter
 - Hub wheel motor
 
-### Control System Information:
+### Control System Information
 The control system as a whole is built around the Arduino Uno, which the motor shield is mounted on top of. The R/C receiver and the Uno both run on 5 volts, thus a buck converter is necessary to step the 24V power down to 5V. The 24V battery powers the buck converter and the motor shield, which modulates a PWM signal to scale the 24 volts down to a value between 0 and 24. The PWM signal then powers the main motor, mounted at the back of the board.
 
 The firmware on the Arduino reads the PWM signal from channel 2 of the R/C reciever (connected to the vertical axis for the joystick on the transmitter) and increases or decreases the PWM signal sent to the motor, effectively allowing the rider to control the board's acceleration. The internal friction of the hub motor is high enough for a decrease in the PWM signal to result in the wheel braking, although this is a notable flaw in the efficiency of the hub motor.

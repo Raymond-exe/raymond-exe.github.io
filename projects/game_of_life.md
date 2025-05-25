@@ -18,7 +18,7 @@ A verilog implementation of Conway's *Game of Life* on the Nexys A7. You can vie
 
 **Project status:** Complete
 
-## Project Overview:
+## Project Overview
 
 The objective of this project is to implement Mathematician’s John Horton Conway’s *Game of Life* simulation in Verilog, run it on an FPGA, and display the grid of cells via VGA. The development board used to run this project is the **Nexys A7 FPGA board**.
 
@@ -30,7 +30,7 @@ For more information on the Game of Life, see [Wikipedia](https://en.wikipedia.o
 
 <br>
 
-### Goals & Criteria:
+### Goals & Criteria
 - The next state of the simulation must be a result of the current state of the simulation, and be consistent with the rules outlined by Conway.
 - The simulation should have a user-controllable speed to determine how much time each generation should wait before progressing.
 - The simulation speed should be controlled by an 8-bit value inputed from switches on the board.
@@ -61,28 +61,28 @@ Click [here](https://www.youtube.com/watch?v=CcwDj1lyKrI) to view a video demons
 
 <br>
 
-### Technologies and Tools Used:
+### Technologies and Tools Used
 - Digilent Nexys A7 FPGA Development Board
 - Xilinx Vivado 2018.1
 - VGA-compatible display
 
-## Team Members:
+## Team Members
 - Gerin Fajardo
 - Kevin Foyet
 - Tyler Marts
 - Richie (Raymond) Wong
 
-### Roles and Responsibilities:
+### Roles and Responsibilities
 - Team Lead: Gerin Fajardo
 - Verilog Implementation: Raymond Wong
 - Testing & Documentation: Kevin Foyet &Tyler Marts
 
-### Project Deliverables:
+### Project Deliverables
 - [Video Demonstration](https://www.youtube.com/watch?v=CcwDj1lyKrI)
 - [Final Project Report](https://docs.google.com/document/d/1esijIz1XCN74vlpnBnkL7jEymoO07kjb9qlBPdcqF9o/)
 - [Slide Presentation](https://docs.google.com/presentation/d/1LQ7xOMkXpIEDJPGi3g7aL3DAkkkGK73WHjV46hEZqLs/)
 
-### References:
+### References
 - ["Conway’s Game of Life" *Wikipedia*](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 - ["Binary to BCD and BCD to Binary" *Real Digital*](https://www.realdigital.org/doc/6dae6583570fd816d1d675b93578203d)
 - ["Nexys A7-100T Master Constraints File" *Digilent* on  GitHub](https://github.com/Digilent/digilent-xdc/blob/master/Nexys-A7-100T-Master.xdc)
