@@ -71,7 +71,7 @@ function setScroll(height = 0) {
 }
 
 async function loadProjects(callback = () => {}) {
-    const response = await fetch('./projects/projects.json');
+    const response = await fetch('./projects/config.json');
     const projects = await response.json();
     const grid = document.getElementById('projects-grid');
 

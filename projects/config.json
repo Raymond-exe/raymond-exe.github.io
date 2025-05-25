@@ -21,7 +21,7 @@
     },
     {
         "title": "Attitude Indicator Demonstration",
-        "file": "./projects/attitude_indicator.md",
+        "file": "./projects/attitude-indicator.md",
         "thumbnail": "./images/attitude-indicator/thumbnail.jpg",
         "tags": [
             "Nexys_A7-3d902a",
@@ -31,7 +31,7 @@
     },
     {
         "title": "Autonomous Drone-Targeting Dart Turret",
-        "file": "./projects/drone_turret.md",
+        "file": "./projects/drone-turret.md",
         "thumbnail": "./images/turret/thumbnail.jpg",
         "tags": [
             "Raspberry_Pi_5-e00053",
@@ -41,7 +41,7 @@
     },
     {
         "title": "FPGA Digital Alarm Clock",
-        "file": "./projects/alarm_clock.md",
+        "file": "./projects/alarm-clock.md",
         "thumbnail": "./images/clock/alarm_clk.jpeg",
         "tags": [
             "Nexys_A7-3d902a",
@@ -59,7 +59,7 @@
     },
     {
         "title": "Conway's Game of Life in Verilog",
-        "file": "./projects/game_of_life.md",
+        "file": "./projects/game-of-life.md",
         "thumbnail": "https://github.com/Raymond-exe/Conway.v/assets/42707243/cc5fa935-eb8a-4adc-9eb4-0fd7a96c14f7",
         "tags": [
             "Nexys_A7-3d902a",
