@@ -10,7 +10,7 @@
 
 <iframe src="https://www.youtube.com/embed/EuNLbY52PdY"></iframe>
 
-> Rob Ranit and Raymond Wong <br>
+> [Rob Ranit](https://www.linkedin.com/in/rob-ranit/) and [Raymond Wong](https://www.linkedin.com/in/raymond-exe/) <br>
 > December 2024<br>
 > ECE 4305.01 － Advanced Digital Design Using Verilog HDL
 

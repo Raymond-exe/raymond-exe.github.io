@@ -10,7 +10,7 @@
 
 <iframe src="https://www.youtube.com/embed/CcwDj1lyKrI"></iframe>
 
-> Contributors: Gerin Fajardo, Kevin Foyet, Tyler Marts, and Raymond Wong <br>
+> Contributors: [Gerin Fajardo](https://www.linkedin.com/in/gerin-fajardo-2a066833b/), [Kevin Foyet](https://www.linkedin.com/in/kevin-gautier-foyet-towa/), [Tyler Marts](https://www.linkedin.com/in/tyler-marts-265612208/), and [Raymond Wong](https://www.linkedin.com/in/raymond-exe/) <br>
 > November 2023 － December 2023 <br>
 > ECE 3300.02 － Digital Circuit Design with Verilog
 

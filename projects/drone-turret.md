@@ -10,7 +10,7 @@
 
 <iframe src="https://www.youtube.com/embed/BIZtcLPPDtI"></iframe>
 
-> Contributors: Kevin Foyet, Jason Molina, David Nuckolls, Rob Ranit, and Raymond Wong <br>
+> Contributors: [Kevin Foyet](https://www.linkedin.com/in/kevin-gautier-foyet-towa/), Jason Molina, [David Nuckolls](https://www.linkedin.com/in/david-nuckolls-786611161/), [Rob Ranit](https://www.linkedin.com/in/rob-ranit/), and [Raymond Wong](https://www.linkedin.com/in/raymond-exe/) <br>
 > April 2024 － May 2024 <br>
 > ECE 4300.01 － Computer Architecture
 
