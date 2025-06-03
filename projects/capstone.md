@@ -173,7 +173,7 @@ Currently, only the code for the [Triple-IMU Headset](https://github.com/Raymond
 ----------
 
 ## Gallery
-> A special thank you to [**Ryan Ikeda**](https://www.instagram.com/ryan_ikeda_) and [**Hector Barrera**](https://www.instagram.com/hecbac) for photographing my RSCA presentation.
+> A special thank you to [**Ryan Ikeda**](https://www.instagram.com/r.ikeda.photos/) and [**Hector Barrera**](https://www.instagram.com/hecbac) for photographing my RSCA presentation.
 
 
 <a href="../images/capstone/presentation/image.jpg" target="_blank">
