@@ -5,10 +5,11 @@
     <img src="https://img.shields.io/badge/Completed_2025-green">
 </div>
 
-<a href="../images/astromech/closeup-1.jpg" target="_blank">
-    <img src="../images/astromech/closeup-1.jpg">
+<br>
+
+<a href="../images/astromech/okipullup.gif" target="_blank">
+    <img src="../images/astromech/okipullup.gif">
 </a>
-<!-- TODO: make thumbnail image -->
 
 
 > [Alexia Giselle Eugenio](https://www.linkedin.com/in/alexia-eugenio/) and [Raymond Wong](https://www.linkedin.com/in/raymond-exe/)  
@@ -22,6 +23,7 @@
 
 ## Project Overview
 
+<br>
 
 <a href="../images/astromech/electronics.jpg" target="_blank">
     <img src="../images/astromech/electronics.jpg">
@@ -46,6 +48,8 @@ Chat-GPT was used during the early design process and software planning.
 
 ## 3D-Printed Components
 
+<br>
+
 <a href="../images/astromech/printed-parts.png" target="_blank">
     <img src="../images/astromech/printed-parts.png">
 </a>
@@ -62,6 +66,8 @@ Modifications made to Mr. Baddeley's droid parts:
 
 
 ## Electrical System Hardware
+
+<br>
 
 <a href="../images/astromech/assembly.jpg" target="_blank">
     <img src="../images/astromech/assembly.jpg">

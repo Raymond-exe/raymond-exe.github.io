@@ -2,7 +2,7 @@
     {
         "title": "QT-P1: A Mini\nAudio-Video Astromech Droid",
         "file": "./projects/astromech.md",
-        "thumbnail": "./images/astromech/closeup-1.jpg",
+        "thumbnail": "./images/astromech/okipullup.gif",
         "tags": [
             "Raspberry_Pi_Zero_2_W-e00053",
             "Completed_2025-green"
