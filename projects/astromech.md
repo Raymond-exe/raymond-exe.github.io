@@ -1,4 +1,4 @@
-# QT-P1: Audio-Video Mini Astromech Droid
+# QT-P1: A Mini Audio-Video Astromech Droid
 
 <div>
     <img src="https://img.shields.io/badge/Raspberry_Pi_Zero_2_W-e00053">
