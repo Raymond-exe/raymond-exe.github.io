@@ -52,7 +52,7 @@ Chat-GPT was used during the early design process and software planning.
 
 *Almost* all 3D-printed parts for this project are either modified from or are directly from Mr. Baddeley's BB-R2 mini droid kit, and must be downloaded from his [Patreon page](https://www.patreon.com/c/mrbaddeley).
 
-All modifications made to Mr. Baddeley's droid parts:
+Modifications made to Mr. Baddeley's droid parts:
 - Modeled a hole in the Astromech dome's eye to fit the camera.
 - Modeled 1 front-dome LED hole.
 - Modeled 1 rear-dome LED hole.
@@ -110,7 +110,7 @@ Pulling updates upon each boot allows future features, such as functionality for
 ## Guides
 If you're looking for how to assemble the 3D printed parts from Mr. Baddeley's BB-R2 kit, see the [BB-R2 Mechanical assembly instructions](https://www.printed-droid.com/wp-content/uploads/2020/09/BB-R2-instructions.pdf). Otherwise, feel free to look through the guides available in the [Astromech GitHub repository](https://github.com/Raymond-exe/astromech/blob/master/guides) for further info on the hardware, software, or hotspot configuration.
 
-### Images and Media
+## Images and Media
 <a href="../images/astromech/godsgiftt.jpg" target="_blank">
     <img src="../images/astromech/godsgiftt.jpg">
 </a>
