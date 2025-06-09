@@ -1,2 +1,1 @@
-# Raymond Wong
-Visit the webpage [here](https://raymond-exe.github.io).
+<p align = "center"> 👉 <b>https://raymond-exe.github.io</b></p>
