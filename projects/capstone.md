@@ -16,6 +16,8 @@
 > *Submitted as my Engaged Learning Experience for the Kellogg Honor College, Cal Poly Pomona.* <br>
 ***Selected as a winner** at CPP's 2025 Student Research, Scholarship & Creative Activities Conference ([RSCA](https://www.cpp.edu/cppsrc/current-conference/index.shtml)).*
 
+**Project status:** Complete
+
 ----------
 
 ## Slideshow Presentation

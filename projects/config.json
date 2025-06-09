@@ -1,5 +1,14 @@
 [
     {
+        "title": "QT-P1 Mini Audio-Video Astromech Droid",
+        "file": "./projects/astromech.md",
+        "thumbnail": "./images/astromech/closeup-1.jpg",
+        "tags": [
+            "Raspberry_Pi_Zero_2_W-e00053",
+            "Completed_2025-green"
+        ]
+    },
+    {
         "title": "Capstone Project: \n Camera Control System for FPV Pilots",
         "file": "./projects/capstone.md",
         "thumbnail": "./images/capstone/calibration.gif",
