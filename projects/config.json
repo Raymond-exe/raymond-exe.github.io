@@ -5,6 +5,7 @@
         "thumbnail": "./images/astromech/okipullup.gif",
         "tags": [
             "Raspberry_Pi_Zero_2_W-e00053",
+            "Python-yellow",
             "Completed_2025-green"
         ]
     },
@@ -14,6 +15,7 @@
         "thumbnail": "./images/capstone/calibration.gif",
         "tags": [
             "ESP32-black",
+            "C%2B%2B-00599C",
             "RSCA_2025_Winner-darkgreen",
             "Completed_2025-green"
         ]
@@ -24,6 +26,7 @@
         "thumbnail": "./images/even/thumbnail.gif",
         "tags": [
             "ESP32-black",
+            "C%2B%2B-00599C",
             "Class_Project-blue",
             "Completed_2025-green"
         ]
@@ -34,6 +37,8 @@
         "thumbnail": "./images/attitude-indicator/thumbnail.jpg",
         "tags": [
             "Nexys_A7-3d902a",
+            "C%2B%2B-00599C",
+            "Verilog-darkgreen",
             "Class_Project-blue",
             "Completed_2024-green"
         ]
@@ -44,6 +49,7 @@
         "thumbnail": "./images/turret/thumbnail.jpg",
         "tags": [
             "Raspberry_Pi_5-e00053",
+            "Python-yellow",
             "Class_Project-blue",
             "Completed_2024-green"
         ]
@@ -54,6 +60,7 @@
         "thumbnail": "./images/clock/alarm_clk.jpeg",
         "tags": [
             "Nexys_A7-3d902a",
+            "Verilog-darkgreen",
             "Completed_2024-green"
         ]
     },
@@ -72,6 +79,7 @@
         "thumbnail": "https://github.com/Raymond-exe/Conway.v/assets/42707243/cc5fa935-eb8a-4adc-9eb4-0fd7a96c14f7",
         "tags": [
             "Nexys_A7-3d902a",
+            "Verilog-darkgreen",
             "Class_Project-blue",
             "Completed_2023-green"
         ]
