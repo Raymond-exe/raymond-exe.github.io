@@ -78,6 +78,7 @@
     },
     {
         "title": "\"Mechy\" Raspberry Pi Pico Motor Shield",
+        "hidden": true,
         "file": "./projects/mechy.md",
         "thumbnail": "./images/mechy/bottom_render.png",
         "tags": [

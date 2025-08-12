@@ -75,8 +75,15 @@ async function loadProjects(callback = () => {}) {
     const projects = await response.json();
     const grid = document.getElementById('projects-grid');
 
+    let hiddenProjectCount = 0;
+
     projects.forEach(project => {
         projectTitles[project.file] = project.title;
+
+        if (project.hidden) {
+            hiddenProjectCount++;
+            return;
+        }
 
         const button = document.createElement('button');
         button.classList.add('project-link');
@@ -113,7 +120,7 @@ async function loadProjects(callback = () => {}) {
     let loaded = 0;
     function onLoad(){
         loaded++;
-        if(loaded == projects.length){
+        if (loaded == (projects.length - hiddenProjectCount)) {
             callback()
         }
     }
