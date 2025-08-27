@@ -43,7 +43,9 @@ function cardMovementCallback(card) {
 }
 
 [
-    'ace',
+    // 'ace',
+    'leon',
+    // 'ada',
     'hollow',
     'miku',
     'powerarmor',
