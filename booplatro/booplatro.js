@@ -1,28 +1,51 @@
 
-function createCard(imgsrc) {
-    const container = document.createElement('div');
-    container.classList.add('card-container');
+function createCard(cardConfig) {
+    // create base card
+    const container = createElement('div', false, ['card-container']);
+    const cardElement = createElement('div', container, ['card']);
+    const cardImg = createElement('img', cardElement);
+    cardImg.src = cardConfig.src;
 
-    const cardElement = document.createElement('div');
-    cardElement.classList.add('card');
+    // create card description cardPopup
+    const cardPopup = createElement('div', container, ['outer-desc', 'hidden']);
+    const popupTitle = createElement('h1', cardPopup, ['joker-title']);
+    const popupDescriptionContainer = createElement('div', cardPopup, ['inner-desc']);
+    const popupDescription = createElement('span', popupDescriptionContainer);
 
-    const cardImg = document.createElement('img');
-    cardImg.src = imgsrc;
+    popupTitle.innerHTML = cardConfig.name;
+    popupDescription.innerHTML = cardConfig.description;
 
-    cardElement.appendChild(cardImg);
-    container.appendChild(cardElement);
-
-    // const card = document.querySelector('.card');
+    // create callbacks
     cardElement.addEventListener('mousemove', cardMovementCallback(cardElement));
-    cardElement.addEventListener('mouseleave', () => cardElement.style.transform = 'rotateX(0) rotateY(0) scale(1.0)');
+    cardElement.addEventListener('mouseleave', () => {
+        cardElement.style.transform = 'rotateX(0) rotateY(0) scale(1.0)';
+        if (!cardPopup.classList.contains('hidden')) {
+            cardPopup.classList.add('hidden');
+        }
+    });
 
     return container;
+
+    function createElement(tag, parent = false, classes = []) {
+        const element = document.createElement(tag);
+        classes.forEach(className => element.classList.add(className));
+        if (parent) {
+            parent.appendChild(element);
+        }
+        return element;
+    }
 }
 
 function cardMovementCallback(card) {
     return (e) => {
         // Get the card's size and position relative to the viewport
         const cardRect = card.getBoundingClientRect();
+
+        const container = card.parentNode;
+        const popup = container.getElementsByClassName('outer-desc')[0];
+        if (popup.classList.contains('hidden')) {
+            popup.classList.remove('hidden');
+        }
         
         // Calculate the position of the mouse relative to the card's top-left corner
         const x = e.clientX - cardRect.left; // X coordinate within the card
@@ -45,10 +68,14 @@ function cardMovementCallback(card) {
 async function loadCards() {
     const response = await fetch('./config.json');
     const config = await response.json();
-    console.log(config);
+    const grid = document.getElementById('card-grid');
+
+    if (!grid) {
+        return;
+    }
 
     config.cards.forEach(cardConfig => {
-        document.body.appendChild(createCard(cardConfig.src));
+        grid.appendChild(createCard(cardConfig));
     });
 }
 

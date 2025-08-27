@@ -2,7 +2,7 @@
     "cards": [
         {
             "name": "Amanda",
-            "message": "TODO write a message here",
+            "description": "This will be a birthday message",
             "src": "../images/booplatro/miku.png"
         }
     ]
