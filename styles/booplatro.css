@@ -1,0 +1,56 @@
+/* Resetting the default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body to center the card on the screen */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    overflow: hidden; /* Prevents scrollbars if the card moves out of view */
+}
+
+/* The container for the card, adding perspective for the 3D effect */
+.card-container {
+    perspective: 750px; /* Creates the 3D depth. A higher number results in a shallower effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+
+/* The card styling: size, background, shadow, and 3D transformation */
+.card {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden; /* Ensures the content stays inside the card */
+    transition: all 0.1s ease; /* Smooth transition for transformations */
+    transform-style: preserve-3d; /* Ensures that child elements (image, text) are also part of the 3D effect */
+    cursor: pointer;
+    transform: scale(1);
+    z-index: 0;
+}
+
+.card :hover {
+    z-index: 10;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow around the card */
+
+    image-rendering: pixelated;   /* Standard */
+    image-rendering: crisp-edges; /* Fallback for some browsers */
+    image-rendering: -moz-crisp-edges; /* Firefox */
+}
