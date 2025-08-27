@@ -32,14 +32,14 @@ body {
     height: 200px;
     background: rgba(0, 0, 0, 0);
     overflow: hidden; /* Ensures the content stays inside the card */
-    transition: all 0.1s ease; /* Smooth transition for transformations */
+    transition: all 0.5s cubic-bezier(.05,2.07,.69,.99);
     transform-style: preserve-3d; /* Ensures that child elements (image, text) are also part of the 3D effect */
     cursor: pointer;
     transform: scale(1);
     z-index: 0;
 }
 
-.card :hover {
+.card:hover {
     z-index: 10;
 }
 
