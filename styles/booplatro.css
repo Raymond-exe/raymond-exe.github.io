@@ -32,7 +32,7 @@ body {
     height: 200px;
     background: rgba(0, 0, 0, 0);
     overflow: hidden; /* Ensures the content stays inside the card */
-    transition: all 0.5s cubic-bezier(.05,2.07,.69,.99);
+    transition: all 0.5s cubic-bezier(.05,2.07,.13,.83);
     transform-style: preserve-3d; /* Ensures that child elements (image, text) are also part of the 3D effect */
     cursor: pointer;
     transform: scale(1);

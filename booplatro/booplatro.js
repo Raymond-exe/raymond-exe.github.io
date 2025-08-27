@@ -42,15 +42,14 @@ function cardMovementCallback(card) {
     };
 }
 
-[
-    // 'ace',
-    'leon',
-    // 'ada',
-    'hollow',
-    'miku',
-    'powerarmor',
-    'deathclaw',
-    'vaultboy'
-].forEach(src => {
-    document.body.appendChild(createCard(`./images/booplatro/${src}.png`));
-});
+async function loadCards() {
+    const response = await fetch('./config.json');
+    const config = await response.json();
+    console.log(config);
+
+    config.cards.forEach(cardConfig => {
+        document.body.appendChild(createCard(cardConfig.src));
+    });
+}
+
+loadCards();
