@@ -16,12 +16,6 @@
     overflow: hidden; /* Prevents scrollbars if the card moves out of view */
 }
 
-#card-grid > * {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
 /* The container for the card, adding perspective for the 3D effect */
 .card-container {
     perspective: 750px; /* Creates the 3D depth. A higher number results in a shallower effect */
@@ -29,9 +23,16 @@
     justify-content: center;
     align-items: center;
     padding: 3px;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .card-container .outer-desc {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     opacity: 1;
 }
 
@@ -51,6 +52,10 @@
     cursor: pointer;
     transform: scale(1);
     z-index: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .card:hover {
