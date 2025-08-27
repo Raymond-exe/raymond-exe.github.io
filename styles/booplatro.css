@@ -30,6 +30,7 @@
 }
 
 .card-container .outer-desc {
+    margin-top: 15px; /* TODO tweak this value for spacing */
     margin-left: auto;
     margin-right: auto;
     display: block;
