@@ -5,7 +5,7 @@
     font-family: 'Arial', sans-serif;
     background-color: #35654d;
     display: grid;
-    grid-template-columns: repeat(6, 7vw);
+    grid-template-columns: repeat(6, 12vw);
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full screen height */
@@ -38,8 +38,8 @@
 /* The card styling: size, background, shadow, and 3D transformation */
 .card {
     position: relative;
-    width: 4vw;
-    height: 6vw;
+    width: 8vw;
+    height: 12vw;
     background: rgba(0, 0, 0, 0);
     overflow: hidden; /* Ensures the content stays inside the card */
     transition: all 0.5s cubic-bezier(.31,2.02,.58,1);
