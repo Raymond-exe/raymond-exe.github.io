@@ -1,20 +1,23 @@
+const CARDBACK_SRC = '../images/booplatro/cardback.png';
+
 function createCard(cardConfig) {
     const container = createElement('div', false, ['card-container']);
     const card = createElement('div', container, ['card']);
 
     const cardImg = createElement('img', card, ['card-front']);
-    cardImg.src = cardConfig.src;
+    cardImg.src = CARDBACK_SRC;
+    // cardImg.src = cardConfig.src;
 
     const cardPopup = createElement('div', container, ['outer-desc', 'hidden']);
     const popupTitle = createElement('h1', cardPopup, ['joker-title']);
     const popupDescriptionContainer = createElement('div', cardPopup, ['inner-desc']);
     const popupDescription = createElement('span', popupDescriptionContainer);
 
-    popupTitle.innerHTML = cardConfig.name;
-    popupDescription.innerHTML = cardConfig.description;
+    popupTitle.innerHTML = '???';
+    popupDescription.innerHTML = 'Click to reveal';
 
     // State
-    let flipped = false;
+    let flipped = true;
     let tiltX = 0;
     let tiltY = 0;
 
@@ -48,15 +51,18 @@ function createCard(cardConfig) {
     card.addEventListener('click', () => {
         flipped = !flipped;
         applyTransform(1.15);
-        setTimeout(() => cardImg.src = flipped ? '../images/booplatro/cardback.png' : cardConfig.src, 50);
+        setTimeout(() => {
+            if (flipped) {
+                cardImg.src = CARDBACK_SRC;
+            } else {
+                cardImg.src = cardConfig.src;
+                popupTitle.innerHTML = cardConfig.name;
+                popupDescription.innerHTML = cardConfig.description;
+            }
+        }, 50);
     });
 
-    function applyTransform(scale = 1) {
-        const flipRotation = flipped ? 'rotateY(180deg)' : 'rotateY(0deg)';
-        const tiltRotation = `rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
-        card.style.transform = `${flipRotation} ${tiltRotation} scale(${scale})`;
-    }
-
+    applyTransform();
     return container;
 
     function createElement(tag, parent = false, classes = []) {
@@ -64,6 +70,12 @@ function createCard(cardConfig) {
         classes.forEach(className => element.classList.add(className));
         if (parent) parent.appendChild(element);
         return element;
+    }
+
+    function applyTransform(scale = 1) {
+        const flipRotation = flipped ? 'rotateY(180deg)' : 'rotateY(0deg)';
+        const tiltRotation = `rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+        card.style.transform = `${flipRotation} ${tiltRotation} scale(${scale})`;
     }
 }
 
