@@ -1,12 +1,10 @@
-
 function createCard(cardConfig) {
-    // create base card
     const container = createElement('div', false, ['card-container']);
-    const cardElement = createElement('div', container, ['card']);
-    const cardImg = createElement('img', cardElement);
+    const card = createElement('div', container, ['card']);
+
+    const cardImg = createElement('img', card, ['card-front']);
     cardImg.src = cardConfig.src;
 
-    // create card description cardPopup
     const cardPopup = createElement('div', container, ['outer-desc', 'hidden']);
     const popupTitle = createElement('h1', cardPopup, ['joker-title']);
     const popupDescriptionContainer = createElement('div', cardPopup, ['inner-desc']);
@@ -15,23 +13,56 @@ function createCard(cardConfig) {
     popupTitle.innerHTML = cardConfig.name;
     popupDescription.innerHTML = cardConfig.description;
 
-    // create callbacks
-    cardElement.addEventListener('mousemove', cardMovementCallback(cardElement));
-    cardElement.addEventListener('mouseleave', () => {
-        cardElement.style.transform = 'rotateX(0) rotateY(0) scale(1.0)';
+    // State
+    let flipped = false;
+    let tiltX = 0;
+    let tiltY = 0;
+
+    // Tilt effect
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        tiltX = ((y - centerY) / centerY) * 25 * (flipped ? 1 : -1);
+        tiltY = ((x - centerX) / centerX) * 25;
+
+        applyTransform(1.15);
+        if (cardPopup.classList.contains('hidden')) {
+            cardPopup.classList.remove('hidden');
+        }
+    });
+
+    card.addEventListener('mouseleave', () => {
+        tiltX = 0;
+        tiltY = 0;
+        applyTransform();
         if (!cardPopup.classList.contains('hidden')) {
             cardPopup.classList.add('hidden');
         }
     });
+
+    // Flip on click
+    card.addEventListener('click', () => {
+        flipped = !flipped;
+        applyTransform(1.15);
+        setTimeout(() => cardImg.src = flipped ? '../images/booplatro/cardback.png' : cardConfig.src, 50);
+    });
+
+    function applyTransform(scale = 1) {
+        const flipRotation = flipped ? 'rotateY(180deg)' : 'rotateY(0deg)';
+        const tiltRotation = `rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+        card.style.transform = `${flipRotation} ${tiltRotation} scale(${scale})`;
+    }
 
     return container;
 
     function createElement(tag, parent = false, classes = []) {
         const element = document.createElement(tag);
         classes.forEach(className => element.classList.add(className));
-        if (parent) {
-            parent.appendChild(element);
-        }
+        if (parent) parent.appendChild(element);
         return element;
     }
 }

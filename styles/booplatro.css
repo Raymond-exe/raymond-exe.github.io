@@ -4,7 +4,7 @@
     font-family: 'Arial', sans-serif;
     background-color: #35654d;
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    grid-template-columns: repeat(6, 200px);
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full screen height */
@@ -23,7 +23,7 @@
 }
 
 .card-container .outer-desc {
-    margin-top: 15px; /* TODO tweak this value for spacing */
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -41,12 +41,11 @@
     height: 200px;
     background: rgba(0, 0, 0, 0);
     overflow: hidden; /* Ensures the content stays inside the card */
-    transition: all 0.5s cubic-bezier(.05,2.07,.13,.83);
+    transition: all 0.5s cubic-bezier(.31,2.02,.58,1);
     transform-style: preserve-3d; /* Ensures that child elements (image, text) are also part of the 3D effect */
     cursor: pointer;
     transform: scale(1);
     z-index: 0;
-
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -63,7 +62,18 @@
     transform: scale(1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow around the card */
 
-    image-rendering: pixelated;   /* Standard */
-    image-rendering: crisp-edges; /* Fallback for some browsers */
-    image-rendering: -moz-crisp-edges; /* Firefox */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+}
+
+.card-front {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
 }
