@@ -1,5 +1,6 @@
 const CARDBACK_SRC = '../images/booplatro/cardback.png';
 
+let cardCount = 0;
 function createCard(cardConfig) {
     const container = createElement('div', false, ['card-container']);
     const card = createElement('div', container, ['card']);
@@ -74,6 +75,8 @@ function createCard(cardConfig) {
     });
 
     applyTransform();
+    container.style.zIndex = -cardCount + 100;
+    cardCount++;
     return container;
 
     function createElement(tag, parent = false, classes = []) {

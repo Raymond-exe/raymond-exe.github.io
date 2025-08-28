@@ -23,6 +23,8 @@
     padding: 3px;
 
     display: block;
+
+    pointer-events: none;
 }
 
 .card-container .outer-desc {
@@ -51,6 +53,8 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
+
+    pointer-events: all;
 }
 
 .card img {
@@ -112,6 +116,7 @@
     text-align: center;
     text-shadow: 0 5px 0 #0008;
     pointer-events: none;
+    z-index: 9000;
 }
 
 .outer-desc {
