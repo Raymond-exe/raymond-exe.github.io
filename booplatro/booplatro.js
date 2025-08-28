@@ -1,5 +1,5 @@
 const CARDBACK_SRC = '../images/booplatro/cardback.png';
-const FLIP_SRC = './flip.wav';
+const FLIP_SRC = './audio/flip.wav';
 
 let cardCount = 0;
 function createCard(cardConfig) {
@@ -80,8 +80,13 @@ function createCard(cardConfig) {
         flipAudio.play();
 
         if (cardConfig.name === 'Miku') {
-            audio.volume = 0.0;
-            mikuAudio.volume = 0.2;
+            if (flipped) {
+                audio.volume = 0.0;
+                mikuAudio.volume = 0.2;
+            } else {
+                audio.volume = 0.2;
+                mikuAudio.volume = 0.0;
+            }
         }
 
         flipped = !flipped;
@@ -150,13 +155,15 @@ function setSidebarText(title = '', string = '') {
 }
 
 function showBdayText() {
+    const winAudio = document.getElementById('win-audio');
+    winAudio.play().then(() => winAudio.volume = 2.0);
     const text = document.getElementById('bday-text');
 
     if (text.innerHTML.length > 0) {
         return;
     }
 
-    let delay = 50;
+    let delay = 100;
     let d = 0;
     'Happy Birthday Jake!'.split('').forEach(letter => {
         setTimeout(() => {
@@ -165,6 +172,14 @@ function showBdayText() {
         d += delay;
     })
 }
+
+let ticks = 0;
+setInterval(() => {
+    const text = document.getElementById('bday-text');
+    const scale = 1.25 + Math.sin(ticks / 100) / 5;
+    text.style.transform = `translate(-50%, -50%) scale(${scale}) rotateZ(${Math.sin(ticks / 45)}deg)`;
+    ticks++;
+}, 10);
 
 async function loadCards() {
     const response = await fetch('./config.json');
