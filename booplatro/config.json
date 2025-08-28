@@ -26,7 +26,8 @@
             "name": "Clarisse",
             "description": "HAPPY BIRTHDAYYYYYYYYYYYYYYYYYYYYYY!!!!!!!!!!!!! ",
             "fullmessage": "HAPPY BIRTHDAYYYYYYYYYYYYYYYYYY!!!!!!!!! I so very grateful that you and I are friends! Thank you for all the laughs and wonderful conversations. You are an amazing buhhhddyyyy. I SEND ALL MY LOVE!🤍",
-            "src": "../images/booplatro/clar.png"
+            "src": "../images/booplatro/clar.png",
+            "audio": "./lizard.wav"
         },
         {
             "name": "Raymond",
@@ -62,7 +63,8 @@
         },
         {
             "name": "John Fallout",
-            "description": "Birthday message here",
+            "description": "War doesnt change",
+            "fullmessage": "hi it's me john fallout i need 2000 bottle caps to get into new vegas so i can save the mojave desert",
             "src": "../images/booplatro/powerarmor.png"
         },
         {

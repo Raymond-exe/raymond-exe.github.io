@@ -1,4 +1,5 @@
 const CARDBACK_SRC = '../images/booplatro/cardback.png';
+const FLIP_SRC = './flip.wav';
 
 let cardCount = 0;
 function createCard(cardConfig) {
@@ -33,13 +34,18 @@ function createCard(cardConfig) {
         tiltX = ((y - centerY) / centerY) * 25 * (flipped ? 1 : -1);
         tiltY = ((x - centerX) / centerX) * 25;
 
-        applyTransform(1.15);
+        applyTransform(1.3);
         if (cardPopup.classList.contains('hidden')) {
             cardPopup.classList.remove('hidden');
         }
 
-        if (popupTitle.innerHTML !== '???') {
+        if (popupTitle.innerHTML !== '???' && !flipped) {
             setSidebarText(cardConfig.name, cardConfig.fullmessage);
+        }
+
+        if (cardConfig.name === 'Miku' && !flipped) {
+            audio.volume = 0.0;
+            mikuAudio.volume = 0.2;
         }
     });
 
@@ -51,12 +57,35 @@ function createCard(cardConfig) {
             cardPopup.classList.add('hidden');
         }
         setSidebarText();
+        audio.volume = 0.2;
+        mikuAudio.volume = 0.0;
     });
 
     // Flip on click
     card.addEventListener('click', () => {
+        const flipAudio = document.getElementById('flip-audio');
+        flipAudio.pause();
+        flipAudio.currentTime = 0;
+
+        if (cardConfig.audio) {
+            if (cardConfig.name === 'Clarisse') {
+                flipAudio.src = (Math.random() < 0.2) ? cardConfig.audio : FLIP_SRC;
+            } else {
+                flipAudio.src = cardConfig.audio;
+            }
+        } else {
+            flipAudio.src = FLIP_SRC;
+        }
+
+        flipAudio.play();
+
+        if (cardConfig.name === 'Miku') {
+            audio.volume = 0.0;
+            mikuAudio.volume = 0.2;
+        }
+
         flipped = !flipped;
-        applyTransform(1.15);
+        applyTransform(1.3);
         setTimeout(() => {
             if (flipped) {
                 cardImg.src = CARDBACK_SRC;
@@ -91,35 +120,6 @@ function createCard(cardConfig) {
         const tiltRotation = `rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
         card.style.transform = `${flipRotation} ${tiltRotation} scale(${scale})`;
     }
-}
-
-function cardMovementCallback(card) {
-    return (e) => {
-        // Get the card's size and position relative to the viewport
-        const cardRect = card.getBoundingClientRect();
-
-        const container = card.parentNode;
-        const popup = container.getElementsByClassName('outer-desc')[0];
-        if (popup.classList.contains('hidden')) {
-            popup.classList.remove('hidden');
-        }
-        
-        // Calculate the position of the mouse relative to the card's top-left corner
-        const x = e.clientX - cardRect.left; // X coordinate within the card
-        const y = e.clientY - cardRect.top;  // Y coordinate within the card
-        
-        // Find the center of the card
-        const centerX = cardRect.width / 2;
-        const centerY = cardRect.height / 2;
-        
-        // Calculate the rotation angles based on mouse position
-        // Multiply by 15 for a stronger tilt effect
-        const rotateX = -((y - centerY) / centerY) * 25; // Tilt on the X-axis (up and down)
-        const rotateY = -((centerX - x) / centerX) * 25; // Tilt on the Y-axis (left and right)
-        
-        // Apply the calculated rotation to the card
-        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.15)`;
-    };
 }
 
 function getUnflippedCardCount() {
@@ -186,14 +186,16 @@ loadCards();
 
 // audio stuff
 const audio = document.getElementById('bg-audio');
+const mikuAudio = document.getElementById('bg-audio-miku');
 let isPlaying = false;
 
 function playAudio() {
     if (!isPlaying) {
-        audio.play().then(() => {
-            isPlaying = true;
-            audio.volume = 0.2;
-        });
+        isPlaying = true;
+        mikuAudio.play().then(() => mikuAudio.volume = 0.0)
+        audio.play().then(() => audio.volume = 0.2);
+        mikuAudio.currentTime = 0.2;
+        audio.currentTime = 0.0;
         document.removeEventListener('click', playAudio);
     }
 }
