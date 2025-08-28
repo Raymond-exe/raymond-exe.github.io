@@ -123,3 +123,19 @@ async function loadCards() {
 }
 
 loadCards();
+
+
+
+// audio stuff
+const audio = document.getElementById('bg-audio');
+let isPlaying = false;
+
+function playAudio() {
+    if (!isPlaying) {
+        audio.play().then(() => isPlaying = true);
+        audio.volume = 0.25;
+        document.removeEventListener('click', playAudio);
+    }
+}
+
+document.addEventListener('click', playAudio);

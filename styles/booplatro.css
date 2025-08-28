@@ -1,10 +1,11 @@
 /* Styling the body to center the card on the screen */
 #card-grid {
     padding: 1.5em;
+    margin-left: 23vw;
     font-family: 'Arial', sans-serif;
     background-color: #35654d;
     display: grid;
-    grid-template-columns: repeat(6, 200px);
+    grid-template-columns: repeat(6, 170px);
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full screen height */
@@ -37,8 +38,8 @@
 /* The card styling: size, background, shadow, and 3D transformation */
 .card {
     position: relative;
-    width: 150px;
-    height: 200px;
+    width: 120px;
+    height: 160px;
     background: rgba(0, 0, 0, 0);
     overflow: hidden; /* Ensures the content stays inside the card */
     transition: all 0.5s cubic-bezier(.31,2.02,.58,1);
@@ -76,4 +77,12 @@
 
 .card-back {
     transform: rotateY(180deg);
+}
+
+#banner {
+    position: fixed;
+    top: 0;
+    left: 3vw;
+    height: 100vh;
+    z-index: 9999;
 }
