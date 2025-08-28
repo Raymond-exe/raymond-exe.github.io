@@ -132,8 +132,10 @@ let isPlaying = false;
 
 function playAudio() {
     if (!isPlaying) {
-        audio.play().then(() => isPlaying = true);
-        audio.volume = 0.25;
+        audio.play().then(() => {
+            isPlaying = true;
+            audio.volume = 0.2;
+        });
         document.removeEventListener('click', playAudio);
     }
 }
