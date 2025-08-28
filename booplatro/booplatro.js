@@ -155,13 +155,14 @@ function setSidebarText(title = '', string = '') {
 }
 
 function showBdayText() {
-    const winAudio = document.getElementById('win-audio');
-    winAudio.play().then(() => winAudio.volume = 2.0);
     const text = document.getElementById('bday-text');
 
     if (text.innerHTML.length > 0) {
         return;
     }
+
+    const winAudio = document.getElementById('win-audio');
+    winAudio.play().then(() => winAudio.volume = 2.0);
 
     let delay = 100;
     let d = 0;
