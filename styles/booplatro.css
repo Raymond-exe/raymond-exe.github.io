@@ -84,5 +84,34 @@
     top: 0;
     left: 3vw;
     height: 100vh;
-    z-index: 9999;
+    z-index: 1000;
+}
+
+#sidebar {
+    position: fixed;
+    top: 17vh;
+    left: 5vw;
+    width: 15vw;
+    z-index: 2000;
+    opacity: 0;
+}
+
+#sidebar-content {
+    padding: 5px;
+}
+
+#bday-text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: fit-content;
+    margin-left: 11.5vw;
+    transform: translate(-50%, -50%);
+
+    font-family: "m6x11plus";
+    font-weight: normal !important;
+    font-size: 5em;
+    color: whitesmoke;
+    text-align: center;
+    text-shadow: 0 5px 0 #0008;
 }

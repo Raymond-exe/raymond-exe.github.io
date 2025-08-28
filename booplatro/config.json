@@ -2,57 +2,63 @@
     "cards": [
         {
             "name": "Jake",
-            "description": "Birthday message here",
+            "description": "\"There are residents, and some are evil.\"",
             "src": "../images/booplatro/leon.png"
         },
         {
             "name": "Amanda",
-            "description": "Birthday message here",
+            "description": "Happy Birthday Jakey Bear!! ",
+            "fullmessage": "Happy Birthday Jakey Bear!! I hope you have an amazing day and I can't wait to see what our 22nd year of our lives hold for us and spending many more birthdays with you! <3",
             "src": "../images/booplatro/ada.png"
         },
         {
             "name": "Jane",
-            "description": "Birthday message here",
+            "description": "Happy birthday Jake!!!!!!!!! ",
+            "fullmessage": "Happy birthday Jake!!!!!!!!! You are hands down one of the funniest people I know and I'm so honored to be your friend!!! Even though you got that gooner Zootopia obsession...... but its okay don't even worry! I hope you have the best birthday ever and in honor of you I will look at one animal today! To make your birthday even better lets go ahead and queue some Valorant! 🖤",
             "src": "../images/booplatro/jane.png"
         },
         {
             "name": "The Knight",
-            "description": "Birthday message here",
+            "description": "\"     \"",
             "src": "../images/booplatro/hollow.png"
         },
         {
             "name": "Clarisse",
-            "description": "Birthday message here",
+            "description": "HAPPY BIRTHDAYYYYYYYYYYYYYYYYYYYYYY!!!!!!!!!!!!! ",
+            "fullmessage": "HAPPY BIRTHDAYYYYYYYYYYYYYYYYYY!!!!!!!!! I so very grateful that you and I are friends! Thank you for all the laughs and wonderful conversations. You are an amazing buhhhddyyyy. I SEND ALL MY LOVE!🤍",
             "src": "../images/booplatro/clar.png"
         },
         {
             "name": "Raymond",
-            "description": "Birthday message here",
+            "description": "xXBoopyDoopDayXx",
+            "fullmessage": "Happy Birthday Jake!! I'm lucky to have a friend like you :D Enjoy your special day and I hope your next year in life brings everything you could wish for! -🍜",
             "src": "../images/booplatro/raymond.png"
         },
         {
             "name": "Jesse",
-            "description": "Birthday message here",
+            "description": "HAPPY BIRTHDAY JAKE",
+            "fullmessage": "HAPPY BIRTHDAY JAKE (aka BoopyDoopy, aka Wizzlewozzle, aka Hatsune Miku, aka Amanda's boyfriend) I know we've only known each other for maybe a week at best, but you've already made me laugh more than most people have in months. I explain your humor as stupid, and that is a compliment. Even though I see you less in top lane than I've been in call with you throughout this week, it's been a really fun time and I'm happy to be apart of uncs birthday, so happy birthday!",
             "src": "../images/booplatro/jesse.png"
         },
         {
             "name": "Luca",
-            "description": "Birthday message here",
+            "description": "I hope you have an awesome birthday! ",
+            "fullmessage": "We haven’t known each other long or talked much in the time we have known each other, but the times we’ve hung out have always been super fun! You’re a super cool guy and a really great friend. I hope you have an awesome birthday!",
             "src": "../images/booplatro/luca.png"
         },
         {
             "name": "Waka",
-            "description": "Birthday message here",
+            "description": "Happy Birthday Jake! I hope you have a good one!",
             "src": "../images/booplatro/waka.png"
         },
         {
             "name": "Vault Boy",
-            "description": "Birthday message here",
+            "description": "\"VAULT TEC wishes you a S.P.E.C.I.A.L. birthday!\"",
             "src": "../images/booplatro/vaultboy.png"
         },
         {
             "name": "Deathclaw",
-            "description": "Birthday message here",
+            "description": "rawr XD",
             "src": "../images/booplatro/deathclaw.png"
         },
         {

@@ -14,7 +14,7 @@ function createCard(cardConfig) {
     const popupDescription = createElement('span', popupDescriptionContainer);
 
     popupTitle.innerHTML = '???';
-    popupDescription.innerHTML = 'Click to reveal';
+    popupDescription.innerHTML = '(Click to reveal)';
 
     // State
     let flipped = true;
@@ -36,6 +36,10 @@ function createCard(cardConfig) {
         if (cardPopup.classList.contains('hidden')) {
             cardPopup.classList.remove('hidden');
         }
+
+        if (popupTitle.innerHTML !== '???') {
+            setSidebarText(cardConfig.name, cardConfig.fullmessage);
+        }
     });
 
     card.addEventListener('mouseleave', () => {
@@ -45,6 +49,7 @@ function createCard(cardConfig) {
         if (!cardPopup.classList.contains('hidden')) {
             cardPopup.classList.add('hidden');
         }
+        setSidebarText();
     });
 
     // Flip on click
@@ -59,7 +64,13 @@ function createCard(cardConfig) {
                 popupTitle.innerHTML = cardConfig.name;
                 popupDescription.innerHTML = cardConfig.description;
             }
+
+            if (getUnflippedCardCount() === 0) {
+                showBdayText();
+            }
         }, 50);
+
+        setSidebarText(cardConfig.name, cardConfig.fullmessage);
     });
 
     applyTransform();
@@ -106,6 +117,50 @@ function cardMovementCallback(card) {
         // Apply the calculated rotation to the card
         card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.15)`;
     };
+}
+
+function getUnflippedCardCount() {
+    const grid = document.getElementById('card-grid');
+    const cardImages = grid.getElementsByTagName('img');
+
+    let unflipped = 0;
+    for (let img of cardImages) {
+        if (img.src.indexOf('cardback') >= 0) {
+            unflipped++;
+        }
+    }
+    return unflipped;
+}
+
+function setSidebarText(title = '', string = '') {
+    const sidebar = document.getElementById('sidebar');
+    if (title === '' || string === '') {
+        sidebar.style.opacity = 0;
+        return;
+    }
+    sidebar.style.opacity = 1;
+
+    const sidebarTitle = document.getElementById('sidebar-title');
+    sidebarTitle.innerHTML = title;
+    const content = document.getElementById('sidebar-content');
+    content.innerHTML = string;
+}
+
+function showBdayText() {
+    const text = document.getElementById('bday-text');
+
+    if (text.innerHTML.length > 0) {
+        return;
+    }
+
+    let delay = 50;
+    let d = 0;
+    'Happy Birthday Jake!'.split('').forEach(letter => {
+        setTimeout(() => {
+            text.innerHTML += letter;
+        }, d);
+        d += delay;
+    })
 }
 
 async function loadCards() {
