@@ -1,15 +1,10 @@
-/* Resetting the default margin and padding for all elements */
-/* #card-grid * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
 /* Styling the body to center the card on the screen */
 #card-grid {
+    padding: 1.5em;
     font-family: 'Arial', sans-serif;
     background-color: #35654d;
-    display: flex;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full screen height */
@@ -24,8 +19,6 @@
     align-items: center;
     padding: 3px;
 
-    margin-left: auto;
-    margin-right: auto;
     display: block;
 }
 

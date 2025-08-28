@@ -1,9 +1,64 @@
 {
     "cards": [
         {
+            "name": "Jake",
+            "description": "Birthday message here",
+            "src": "../images/booplatro/leon.png"
+        },
+        {
             "name": "Amanda",
-            "description": "This will be a birthday message",
-            "src": "../images/booplatro/miku.png"
+            "description": "Birthday message here",
+            "src": "../images/booplatro/ada.png"
+        },
+        {
+            "name": "Jane",
+            "description": "Birthday message here",
+            "src": "../images/booplatro/jane.png"
+        },
+        {
+            "name": "Hollow Knight",
+            "description": "Birthday message here",
+            "src": "../images/booplatro/hollow.png"
+        },
+        {
+            "name": "Clarisse",
+            "description": "Birthday message here",
+            "src": "../images/booplatro/clar.png"
+        },
+        {
+            "name": "Raymond",
+            "description": "Birthday message here",
+            "src": "../images/booplatro/raymond.png"
+        },
+        {
+            "name": "Jesse",
+            "description": "Birthday message here",
+            "src": "../images/booplatro/jesse.png"
+        },
+        {
+            "name": "Luca",
+            "description": "Birthday message here",
+            "src": "../images/booplatro/luca.png"
+        },
+        {
+            "name": "Waka",
+            "description": "Birthday message here",
+            "src": "../images/booplatro/waka.png"
+        },
+        {
+            "name": "Vault Boy",
+            "description": "Birthday message here",
+            "src": "../images/booplatro/vaultboy.png"
+        },
+        {
+            "name": "Deathclaw Queen",
+            "description": "Birthday message here",
+            "src": "../images/booplatro/deathclaw.png"
+        },
+        {
+            "name": "John Fallout",
+            "description": "Birthday message here",
+            "src": "../images/booplatro/powerarmor.png"
         }
     ]
 }
