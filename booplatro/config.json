@@ -41,10 +41,9 @@
             "src": "../images/booplatro/jesse.png"
         },
         {
-            "name": "Luca",
-            "description": "I hope you have an awesome birthday! ",
-            "fullmessage": "We haven’t known each other long or talked much in the time we have known each other, but the times we’ve hung out have always been super fun! You’re a super cool guy and a really great friend. I hope you have an awesome birthday!",
-            "src": "../images/booplatro/luca.png"
+            "name": "Miku",
+            "description": "MIKU MIKU BEAAMMMMMMM!!!",
+            "src": "../images/booplatro/miku.png"
         },
         {
             "name": "Waka",
@@ -65,6 +64,24 @@
             "name": "Paladin",
             "description": "Birthday message here",
             "src": "../images/booplatro/powerarmor.png"
+        },
+        {
+            "name": "Eric",
+            "description": "Chicken Jakey, you were submerged into the lakey",
+            "fullmessage": "\"Chicken Jakey, you were submerged into the lakey. You come up and all that appears is your cakey, fresh from the bakery.\"",
+            "src": "../images/booplatro/eric.png"
+        },
+        {
+            "name": "Luca",
+            "description": "I hope you have an awesome birthday! ",
+            "fullmessage": "We haven’t known each other long or talked much in the time we have known each other, but the times we’ve hung out have always been super fun! You’re a super cool guy and a really great friend. I hope you have an awesome birthday!",
+            "src": "../images/booplatro/luca.png"
+        },
+        {
+            "name": "Chris",
+            "description": "Hope you have a wonderful birthday!",
+            "fullmessage": "Hey Jake, Happy Birthday! It's been a privilege getting to know you, and I'm looking forward to sharing more great times together. As always, thank you for your continued patience on the rift, but most importantly thank you for always playing with us. I deeply appreciate how caring and easy-going you are as a person. Hope you have a wonderful birthday!",
+            "src": "../images/booplatro/chris.png"
         }
     ]
 }

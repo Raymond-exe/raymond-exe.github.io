@@ -1,11 +1,13 @@
 /* Styling the body to center the card on the screen */
 #card-grid {
-    padding: 1.5em;
+    padding: 1.5vh;
+    padding-top: 10vh;
     margin-left: 23vw;
     font-family: 'Arial', sans-serif;
     background-color: #35654d;
     display: grid;
-    grid-template-columns: repeat(6, 12vw);
+    grid-template-columns: repeat(5, 14vw);
+    grid-template-rows: repeat(3, 27vh);
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full screen height */
@@ -46,14 +48,9 @@
     transform-style: preserve-3d; /* Ensures that child elements (image, text) are also part of the 3D effect */
     cursor: pointer;
     transform: scale(1);
-    z-index: 0;
     margin-left: auto;
     margin-right: auto;
     display: block;
-}
-
-.card:hover {
-    z-index: 10;
 }
 
 .card img {
@@ -111,7 +108,12 @@
     font-family: "m6x11plus";
     font-weight: normal !important;
     font-size: 5em;
-    color: whitesmoke;
+    color: orange;
     text-align: center;
     text-shadow: 0 5px 0 #0008;
+    pointer-events: none;
+}
+
+.outer-desc {
+    z-index: 100;
 }
