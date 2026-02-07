@@ -4,79 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio v2</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="atkinson-hyperlegible-mono-v2" data-active="home">
   <div class="page-background" aria-hidden="true">
     <div class="background">
-      <div class="tiles">
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-      </div>
-      <div class="line line-1"></div>
-      <div class="line line-2"></div>
-      <div class="line line-3"></div>
+      <div class="tiles"></div>
     </div>
   </div>
 
@@ -126,7 +60,7 @@
 
     <section id="about" class="panel section about">
       <div class="about-grid">
-        <div class="about-image" aria-hidden="true"></div>
+        <img class="about-image" src="https://media.licdn.com/dms/image/v2/D5603AQEKZ5kE91xYWg/profile-displayphoto-shrink_800_800/B56ZaiXajTHgAc-/0/1746480769981?e=1772064000&v=beta&t=1EqF7c5s9MS81KVYUE69TuCeEdiAmu3aFbeGjaR1vc4"/>
         <div class="about-text">
           <h2 class="title-box">About Me</h2>
           <p>
@@ -157,7 +91,7 @@
             </div>
           </div>
         </div>
-        <div class="education-image" aria-hidden="true"></div>
+        <img class="education-image" src="../images/steven-universe.jpg"/>
       </div>
     </section>
 
@@ -295,6 +229,7 @@
   </nav>
 
   <script>
+    // const projectsJson = await fetch('../projects/config.json').json();
     const sectionIds = ["home", "about", "education", "skills", "projects", "contact"];
     const buttons = document.querySelectorAll(".edge-nav a");
     const page = document.body;
@@ -387,7 +322,7 @@
 
     const tileContainer = document.querySelector(".page-background .tiles");
     if (tileContainer) {
-      const step = 25;
+      const step = 50;
       document.documentElement.style.setProperty("--grid-step", `${step}px`);
       document.documentElement.style.setProperty("--tile-size", `${step}px`);
 
@@ -395,7 +330,7 @@
         const rect = tileContainer.getBoundingClientRect();
         const cols = Math.max(1, Math.floor(rect.width / step));
         const rows = Math.max(1, Math.floor(rect.height / step));
-        const targetCount = rows * cols / 30;
+        const targetCount = rows * cols / 20;
 
         while (tileContainer.children.length < targetCount) {
           const tile = document.createElement("div");
@@ -407,14 +342,20 @@
         }
 
         const positions = [];
-        for (let i = 0; i < targetCount; i++) {
-          console.log(i);
-          positions.push(
-            [
-              Math.floor(Math.random() * cols),
-              Math.floor(Math.random() * rows)
-            ]
-          );
+        const used = new Set();
+        const maxSlots = cols * rows;
+        const needed = Math.min(targetCount, maxSlots);
+        let guard = 0;
+
+        while (positions.length < needed && guard < maxSlots * 4) {
+          const c = Math.floor(Math.random() * cols);
+          const r = Math.floor(Math.random() * rows);
+          const key = `${c},${r}`;
+          if (!used.has(key)) {
+            used.add(key);
+            positions.push([c, r]);
+          }
+          guard += 1;
         }
         // for (let r = 0; r < rows; r += 1) {
         //   for (let c = 0; c < cols; c += 1) {

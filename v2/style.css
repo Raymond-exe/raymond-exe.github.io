@@ -7,8 +7,8 @@
   --card-shine-opacity: 0.14;
   --glow-x: 50%;
   --glow-y: 10%;
-  --grid-step: 25px;
-  --tile-size: 25px;
+  --grid-step: 50px;
+  --tile-size: 50px;
 }
 
 * {
@@ -58,7 +58,7 @@ main {
   content: "";
   position: absolute;
   inset: -20%;
-  background-image: radial-gradient(ellipse at var(--glow-x) var(--glow-y), rgba(255, 179, 67, 0.28) 0%, transparent 55%);
+  background-image: radial-gradient(ellipse at var(--glow-x) var(--glow-y), rgba(255, 179, 67, 0.5) 0%, transparent 55%);
   opacity: 0.35;
 }
 
@@ -69,9 +69,10 @@ main {
   opacity: 0.85;
   background-image:
     linear-gradient(to right, rgba(255, 179, 67, 0.08) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 179, 67, 0.08) 1px, transparent 1px);
+    linear-gradient(to bottom, rgba(255, 179, 67, 0.08) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.25) 0 1px, transparent 0.5px);
   background-size: var(--grid-step) var(--grid-step);
-  background-position: 0 0;
+  background-position: 0 0, 0 0, calc(var(--grid-step) / 2 + 0.5px) calc(var(--grid-step) / 2 + 0.5px);
 }
 
 .page-background .tiles {
@@ -83,8 +84,8 @@ main {
 
 .page-background .tile {
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 51px;
+  height: 51px;
   background-color: var(--card-tile-color);
   opacity: 0.65;
   animation: tilePulse 10s infinite ease-in-out;
@@ -203,7 +204,7 @@ main {
 }
 
 .intro .nav {
-  margin-top: 32px;
+  margin-top: 100px;
 }
 
 .nav a {
@@ -274,8 +275,7 @@ main {
 }
 
 .about-image {
-  width: 100%;
-  max-width: 420px;
+  width: min(540px, 90vw);
   aspect-ratio: 1 / 1;
   background: url("../images/placeholder.png") center / cover no-repeat;
   border: 1px solid #1f1f1f;
@@ -323,6 +323,7 @@ main {
   background: #151515;
   border: 1px solid #1f1f1f;
   justify-self: center;
+  object-fit: cover;
 }
 
 .skills-layout {
