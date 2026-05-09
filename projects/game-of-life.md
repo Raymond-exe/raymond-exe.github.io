@@ -1,13 +1,3 @@
-# Conway's *Game of Life* on FPGA
-
-<div>
-    <img src="https://img.shields.io/badge/Nexys_A7-3d902a">
-    <img src="https://img.shields.io/badge/Class_Project-blue">
-    <img src="https://img.shields.io/badge/Completed_2023-green">
-</div>
-
-<br>
-
 <iframe src="https://www.youtube.com/embed/CcwDj1lyKrI"></iframe>
 
 > Contributors: [Gerin Fajardo](https://www.linkedin.com/in/gerin-fajardo-2a066833b/), [Kevin Foyet](https://www.linkedin.com/in/kevin-gautier-foyet-towa/), [Tyler Marts](https://www.linkedin.com/in/tyler-marts-265612208/), and [Raymond Wong](https://www.linkedin.com/in/raymond-exe/) <br>

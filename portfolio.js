@@ -21,6 +21,22 @@ function showProjectViewer(project) {
     const projectViewer = document.getElementById('project-viewer');
     projectViewer.classList.remove('hidden');
 
+    // populate project header
+    const viewerTitle = document.getElementById('project-viewer-title');
+    viewerTitle.innerText = project.title.replaceAll('\n', ' ');
+
+    // populate project tags, below header
+    const viewerTags = document.getElementById('project-viewer-tags');
+    viewerTags.innerHTML = '';
+    if (project.tags && project.tags.length > 0) {
+        project.tags.forEach(tag => {
+            const image = document.createElement('img');
+            image.src = `https://img.shields.io/badge/${tag}`;
+            image.alt = tag;
+            viewerTags.appendChild(image);
+        });
+    }
+
     // specify project to show on markdown renderer
     const markdown = document.getElementById('markdown-renderer');
     markdown.src = project.file;
@@ -41,6 +57,12 @@ function hideProjectViewer() {
     // hide project viewer
     const projectViewer = document.getElementById('project-viewer');
     projectViewer.classList.add('hidden');
+
+     // clear project header & tags
+    const viewerTitle = document.getElementById('project-viewer-title');
+    viewerTitle.innerText = '';
+    const viewerTags = document.getElementById('project-viewer-tags');
+    viewerTags.innerHTML = '';
 
     // show main portfolio view
     const portfolio = document.getElementById('portfolio-container');

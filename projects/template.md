@@ -1,6 +1,3 @@
-# [Project Title Here]
-> Month Year - Month Year
-
 ## Project Overview
 [Provide a brief overview of the project, including its purpose and objectives.]
 

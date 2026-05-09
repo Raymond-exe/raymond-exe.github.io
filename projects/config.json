@@ -1,5 +1,17 @@
 [
     {
+        "title": "Computer Vision-Guided Robotic Manipulator",
+        "hidden": true,
+        "file": "./projects/robotic-arm.md",
+        "thumbnail": "./images/mechy/bottom_render.png",
+        "tags": [
+            "Raspberry_Pi_5-e00053",
+            "Arduino_Nano_BLE-00979D",
+            "Class_Project-blue",
+            "Completed_2025-green"
+        ]
+    },
+    {
         "title": "QT-P1: A Mini\nAudio-Video Astromech Droid",
         "file": "./projects/astromech.md",
         "thumbnail": "./images/astromech/okipullup.gif",
@@ -90,7 +102,7 @@
         "file": "./projects/mechy.md",
         "thumbnail": "./images/mechy/bottom_render.png",
         "tags": [
-            "Raspberry_Pi_5-e00053",
+            "Raspberry_Pi_Pico-e00053",
             "On_Hold-orange"
         ]
     }

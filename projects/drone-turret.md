@@ -1,13 +1,3 @@
-# Autonomous Drone-Targeting Dart Turret 
-
-<div>
-    <img src="https://img.shields.io/badge/Raspberry_Pi_5-e00053">
-    <img src="https://img.shields.io/badge/Class_Project-blue">
-    <img src="https://img.shields.io/badge/Completed_2024-green">
-</div>
-
-<br>
-
 <iframe src="https://www.youtube.com/embed/BIZtcLPPDtI"></iframe>
 
 > Contributors: [Kevin Foyet](https://www.linkedin.com/in/kevin-gautier-foyet-towa/), Jason Molina, [David Nuckolls](https://www.linkedin.com/in/david-nuckolls-786611161/), [Rob Ranit](https://www.linkedin.com/in/rob-ranit/), and [Raymond Wong](https://www.linkedin.com/in/raymond-exe/) <br>

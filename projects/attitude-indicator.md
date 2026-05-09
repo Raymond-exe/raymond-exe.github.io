@@ -1,13 +1,3 @@
-# Attitude Indicator Demonstration on an FPGA
-
-<div>
-    <img src="https://img.shields.io/badge/Nexys_A7-3d902a">
-    <img src="https://img.shields.io/badge/Class_Project-blue">
-    <img src="https://img.shields.io/badge/Completed_2024-green">
-</div>
-
-<br>
-
 <iframe src="https://www.youtube.com/embed/EuNLbY52PdY"></iframe>
 
 > [Rob Ranit](https://www.linkedin.com/in/rob-ranit/) and [Raymond Wong](https://www.linkedin.com/in/raymond-exe/) <br>

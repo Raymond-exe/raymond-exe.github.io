@@ -1,12 +1,3 @@
-# QT-P1: A Mini Audio-Video Astromech Droid
-
-<div>
-    <img src="https://img.shields.io/badge/Raspberry_Pi_Zero_2_W-e00053">
-    <img src="https://img.shields.io/badge/Completed_2025-green">
-</div>
-
-<br>
-
 <a href="../images/astromech/okipullup.gif" target="_blank">
     <img src="../images/astromech/okipullup.gif">
 </a>

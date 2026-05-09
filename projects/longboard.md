@@ -1,10 +1,3 @@
-# Electric Longboard
-
-<div>
-    <img src="https://img.shields.io/badge/Arduino_Uno-008385">
-    <img src="https://img.shields.io/badge/Completed_2024-green">
-</div>
-
 <a href="../images/longboard/longboard.jpg" target="_blank"><img src="../images/longboard/longboard.jpg"></a>
 
 A custom electric longboard created from scratch. Built around an Arduino Uno and motor shield, the electrical system is designed to run on 24 volts and is controlled from a small R/C transmitter.

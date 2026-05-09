@@ -1,16 +1,4 @@
 <!-- Internal Disclaimer: I am writing after waking up from anesthesia. -->
-
-# Capstone Project: VR-analogous Camera Control System for FPV Pilots
-
-
-<div>
-    <img src="https://img.shields.io/badge/ESP32-black">
-    <img src="https://img.shields.io/badge/RSCA_2025_Winner-darkgreen">
-    <img src="https://img.shields.io/badge/Completed_2025-green">
-</div>
-
-<br>
-
 <iframe src="https://www.youtube.com/embed/KP6AFJprnVQ"></iframe>
 
 > *Submitted as my Engaged Learning Experience for the Kellogg Honor College, Cal Poly Pomona.* <br>

@@ -1,11 +1,3 @@
-# Encrypted Video over ESP-NOW ("EVEN-4301")
-
-<div>
-    <img src="https://img.shields.io/badge/ESP32-black">
-    <img src="https://img.shields.io/badge/Class_Project-blue">
-    <img src="https://img.shields.io/badge/Completed_2025-green">
-</div>
-
 <a href="../images/even/thumbnail.gif" target="_blank">
     <img src="../images/even/thumbnail.gif">
 </a>
