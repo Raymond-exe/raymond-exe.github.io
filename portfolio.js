@@ -3,7 +3,7 @@ const getBody = () => document.getElementById('body');
 
 // Used to remember where the user scrolled on the main portfolio page
 let resetScroll = 0;
-let projectTitles = {};
+let projectData = {};
 
 function toggleDarkMode() {
     const element = document.body;
@@ -12,7 +12,7 @@ function toggleDarkMode() {
     html.classList.toggle('dark-mode');
 }
 
-function showProjectViewer(project, title = '') {
+function showProjectViewer(project) {
     // hide main portfolio view
     const portfolio = document.getElementById('portfolio-container');
     portfolio.classList.add('hidden');
@@ -23,14 +23,14 @@ function showProjectViewer(project, title = '') {
 
     // specify project to show on markdown renderer
     const markdown = document.getElementById('markdown-renderer');
-    markdown.src = project;
+    markdown.src = project.file;
 
     // add hash for linking specific projects
-    const filename = project.split('/').pop().split('.')[0];
+    const filename = project.file.split('/').pop().split('.')[0];
     history.replaceState(null, '', `${window.location.pathname}${window.location.search}#${filename}`);
 
     // update title
-    setTabTitle(title);
+    setTabTitle(project.title);
 
     // Scroll to top of page
     resetScroll = getBody().scrollTop;
@@ -78,7 +78,7 @@ async function loadProjects(callback = () => {}) {
     let hiddenProjectCount = 0;
 
     projects.forEach(project => {
-        projectTitles[project.file] = project.title;
+        projectData[project.file] = project;
 
         if (project.hidden) {
             hiddenProjectCount++;
@@ -87,7 +87,7 @@ async function loadProjects(callback = () => {}) {
 
         const button = document.createElement('button');
         button.classList.add('project-link');
-        button.onclick = () => showProjectViewer(project.file, project.title);
+        button.onclick = () => showProjectViewer(project);
 
         const projectTitle = document.createElement('h2');
         projectTitle.classList.add('project-title');
@@ -134,8 +134,8 @@ addEventListener("load", () => {
     loadProjects(() => {
         // detect hash if present
         const hash = window.location.hash.substring(1);
-        if (`./projects/${hash}.md` in projectTitles) {
-            showProjectViewer(`./projects/${hash}.md`, projectTitles[`./projects/${hash}.md`]);
+        if (`./projects/${hash}.md` in projectData) {
+            showProjectViewer(projectData[`./projects/${hash}.md`]);
         }
 
         // update instruction to say "Tap" if display is vertical
